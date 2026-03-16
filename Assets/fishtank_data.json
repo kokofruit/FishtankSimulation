@@ -385,7 +385,116 @@
             "image": ""
         }
     },
-    "decor": {},
+    "decor": {
+        "plants" : {
+            "small" : {
+                "price" : 0,
+                "image" : ""
+            },
+            "small" : {
+                "price" : 0,
+                "image" : ""
+            },
+            "small" : {
+                "price" : 0,
+                "image" : ""
+            },
+            "small" : {
+                "price" : 0,
+                "image" : ""
+            },
+            "small" : {
+                "price" : 0,
+                "image" : ""
+            },
+            "small" : {
+                "price" : 0,
+                "image" : ""
+            },
+            "small" : {
+                "price" : 0,
+                "image" : ""
+            },
+            "small" : {
+                "price" : 0,
+                "image" : ""
+            }
+        },
+        "driftwood" : {
+            "driftwood" : {
+                "price" : 10.99,
+                "image" : ""
+            },
+            "log" : {
+                "price" : 17.99,
+                "image" : ""
+            },
+            "tree" : {
+                "price" : 25.99,
+                "image" : ""
+            }
+        },
+        "coral" : {
+            "small" : {
+                "price" : 10.59,
+                "image" : ""
+            },
+            "medium" : {
+                "price" : 13.99,
+                "image" : ""
+            },
+            "swim_through_coral" : {
+                "price" : 23.99,
+                "image" : ""
+            }
+        },
+        "caves" : {
+            "small" : {
+                "price" : 12.99,
+                "image" : ""
+            },
+            "medium" : {
+                "price" : 15.99,
+                "image" : ""
+            },
+            "large" : {
+                "price" : 21.99,
+                "image" : ""
+            }
+        },
+        "buildings" : {
+            "squidward" : {
+                "price" : 17.99,
+                "image" : ""
+            },
+            "spongebob" : {
+                "price" : 20.99,
+                "image" : ""
+            },
+            "shack" : {
+                "price" : 12.99,
+                "image" : ""
+            }
+        },
+        "misc" : {
+            "couch" : {
+                "price" : 16.95,
+                "image" : ""
+            },
+            "squidward" : {
+                "price" : 14.99,
+                "image" : ""
+            },
+            "turtle_statue" : {
+                "price" : 11.99,
+                "image" : ""
+            },
+            "fish_statue" : {
+                "price" : 10.99,
+                "image" : ""
+            }
+        }
+    },
     "substrate": {
         "sm_gravel" : {
             "name" : "Small Gravel",
@@ -410,7 +519,7 @@
         "soil" : {
             "name" : "Soil / Clay",
             "description" : "Soil and clay are great for plants, but it makes the water cloudy at first.",
-            "price" : 0
+            "price" : 3.6
         },
         "plant" : {
             "name" : "Planted Substrate",
