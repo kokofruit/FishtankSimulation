@@ -1,0 +1,421 @@
+{
+    "fish": {
+        "angelfish": {
+            "name": "Angelfish",
+            "gallons": 30,
+            "count": [1, 1],
+            "friends": [
+                "clownfish",
+                "corydoras",
+                "gramma",
+                "shrimp",
+                "starfish",
+                "snail"
+            ],
+            "decor": [],
+            "substrate": [],
+            "diet": [],
+            "ph": [6.8, 7.8],
+            "temp": [78, 84],
+            "dkh": [3, 8],
+            "salinity": [0, 1.025],
+            "price": [10, 20],
+            "description": "",
+            "image": ""
+        },
+        "betta": {
+            "name": "Betta Fish",
+            "gallons": 5,
+            "count": [1, 1],
+            "friends": [
+                "corydoras",
+                "danios",
+                "guppy",
+                "otocinclus",
+                "rasbora",
+                "shrimp",
+                "snail",
+                "tetra"
+            ],
+            "decor": [],
+            "substrate": ["sand", "lg_gravel"],
+            "diet": [],
+            "ph": [6.5, 7.5],
+            "temp": [74, 84],
+            "dkh": [3, 5],
+            "salinity": [0, 0],
+            "price": [4, 10],
+            "description": "",
+            "image": ""
+        },
+        "shrimp": {
+            "name": "Cherry Shrimp",
+            "gallons": 1,
+            "count": [10, 99],
+            "friends": [
+                "angelfish",
+                "betta",
+                "clownfish",
+                "corydoras",
+                "danios",
+                "guppy",
+                "killifish",
+                "otocinclus",
+                "rasbora",
+                "snail",
+                "tetra"
+            ],
+            "decor": [],
+            "substrate": [],
+            "diet": [],
+            "ph": [6.4, 8.0],
+            "temp": [65, 85],
+            "dkh": [0, 10],
+            "salinity": [0, 0],
+            "price": [4, 6],
+            "description": "",
+            "image": ""
+        },
+        "starfish": {
+            "name": "Chocolate Chip Starfish",
+            "gallons": 50,
+            "count": [1, 99],
+            "friends": [
+                "angelfish",
+                "gramma"
+            ],
+            "decor": [],
+            "substrate": [],
+            "diet": [],
+            "ph": [8.1, 8.4],
+            "temp": [72, 78],
+            "dkh": [8, 12],
+            "salinity": [1.020, 1.026],
+            "price": [10, 18],
+            "description": "",
+            "image": ""
+        },
+        "clownfish": {
+            "name": "Clownfish",
+            "gallons": 10,
+            "count": [2, 2],
+            "friends": [
+                "angelfish",
+                "firefish",
+                "gramma",
+                "shrimp",
+                "snail"
+            ],
+            "decor": [],
+            "substrate": ["sand"],
+            "diet": [],
+            "ph": [7.5, 8.2],
+            "temp": [75, 82],
+            "dkh": [8, 12],
+            "salinity": [1.020, 1.026],
+            "price": [15, 20],
+            "description": "",
+            "image": ""
+        },
+        "corydoras": {
+            "name": "Corydoras",
+            "gallons": 4,
+            "count": [6, 99],
+            "friends": [
+                "angelfish",
+                "betta",
+                "danios",
+                "guppy",
+                "killifish",
+                "otocinclus",
+                "rasbora",
+                "shrimp",
+                "snail",
+                "tetra"
+            ],
+            "decor": [],
+            "substrate": ["sand"],
+            "diet": [],
+            "ph": [6.0, 7.5],
+            "temp": [74, 80],
+            "dkh": [2, 10],
+            "salinity": [0, 0],
+            "price": [5, 7],
+            "description": "",
+            "image": ""
+        },
+        "danios": {
+            "name": "Danios",
+            "gallons": 2,
+            "count": [6, 99],
+            "friends": [
+                "betta",
+                "corydoras",
+                "killifish",
+                "otocinclus",
+                "rasbora",
+                "shrimp",
+                "snail",
+                "tetra"
+            ],
+            "decor": [],
+            "substrate": [],
+            "diet": [],
+            "ph": [6.8, 7.8],
+            "temp": [64, 75],
+            "dkh": [3, 8],
+            "salinity": [0, 0],
+            "price": [2, 4],
+            "description": "",
+            "image": ""
+        },
+        "goldfish": {
+            "name": "Goldfish",
+            "gallons": 20,
+            "count": [2, 3],
+            "friends": [
+                "snail"
+            ],
+            "decor": [],
+            "substrate": ["sand"],
+            "diet": [],
+            "ph": [7.0, 8.4],
+            "temp": [68, 74],
+            "dkh": [4, 8],
+            "salinity": [0, 0],
+            "price": [5, 30],
+            "description": "",
+            "image": ""
+        },
+        "guppy": {
+            "name": "Guppy",
+            "gallons": 2,
+            "count": [4, 99],
+            "friends": [
+                "betta",
+                "corydoras",
+                "killifish",
+                "otocinclus",
+                "shrimp",
+                "snail",
+                "tetra"
+            ],
+            "decor": [],
+            "substrate": [],
+            "diet": [],
+            "ph": [7.0, 8.0],
+            "temp": [72, 82],
+            "dkh": [8, 12],
+            "salinity": [0, 0],
+            "price": [5, 15],
+            "description": "",
+            "image": ""
+        },
+        "firefish": {
+            "name": "Helfrichi Firefish",
+            "gallons": 15,
+            "count": [1, 2],
+            "friends": [
+                "clownfish",
+                "snail"
+            ],
+            "decor": [],
+            "substrate": [],
+            "diet": [],
+            "ph": [8.1, 8.4],
+            "temp": [72, 79],
+            "dkh": [8, 12],
+            "salinity": [1.020, 1.025],
+            "price": [120, 180],
+            "description": "",
+            "image": ""
+        },
+        "killifish": {
+            "name": "Killifish",
+            "gallons": 5,
+            "count": [2, 3],
+            "friends": [
+                "corydoras",
+                "danios",
+                "guppy",
+                "rasbora",
+                "shrimp",
+                "snail",
+                "tetra"
+            ],
+            "decor": [],
+            "substrate": ["sand", "sm_gravel", "lg_gravel"],
+            "diet": [],
+            "ph": [6.0, 7.0],
+            "temp": [68, 75],
+            "dkh": [7, 10],
+            "salinity": [0, 0],
+            "price": [4, 12],
+            "description": "",
+            "image": ""
+        },
+        "tetra": {
+            "name": "Neon Tetra",
+            "gallons": 2,
+            "count": [6, 99],
+            "friends": [
+                "betta",
+                "corydoras",
+                "danios",
+                "guppy",
+                "killifish",
+                "otocinclus",
+                "rasbora",
+                "shrimp",
+                "snail",
+                "tetra"
+            ],
+            "decor": [],
+            "substrate": ["sand", "sm_gravel", "lg_gravel"],
+            "diet": [],
+            "ph": [6.8, 7.8],
+            "temp": [75, 80],
+            "dkh": [3, 8],
+            "salinity": [0, 0],
+            "price": [3, 5],
+            "description": "",
+            "image": ""
+        },
+        "snail": {
+            "name": "Nerite Snail",
+            "gallons": 5,
+            "count": [1, 99],
+            "friends": [
+                "angelfish",
+                "betta",
+                "clownfish",
+                "corydoras",
+                "danios",
+                "firefish",
+                "goldfish",
+                "gramma",
+                "guppy",
+                "killifish",
+                "otocinclus",
+                "rasbora",
+                "shrimp",
+                "snail",
+                "tetra"
+            ],
+            "decor": [],
+            "substrate": ["sand"],
+            "diet": [],
+            "ph": [7.5, 8.5],
+            "temp": [72, 78],
+            "dkh": [2, 12],
+            "salinity": [0, 1.025],
+            "price": [2, 6],
+            "description": "",
+            "image": ""
+        },
+        "otocinclus": {
+            "name": "Otocinclus",
+            "gallons": 3,
+            "count": [5, 99],
+            "friends": [
+                "betta",
+                "corydoras",
+                "danios",
+                "guppy",
+                "rasbora",
+                "shrimp",
+                "snail",
+                "tetra"
+            ],
+            "decor": [],
+            "substrate": [],
+            "diet": [],
+            "ph": [6.5, 7.5],
+            "temp": [72, 79],
+            "dkh": [6, 15],
+            "salinity": [0, 0],
+            "price": [3, 5],
+            "description": "",
+            "image": ""
+        },
+        "rasbora": {
+            "name": "Rasbora",
+            "gallons": 2,
+            "count": [6, 99],
+            "friends": [
+                "betta",
+                "corydoras",
+                "danios",
+                "killifish",
+                "otocinclus",
+                "shrimp",
+                "snail",
+                "tetra"
+            ],
+            "decor": [],
+            "substrate": [],
+            "diet": [],
+            "ph": [6.0, 7.0],
+            "temp": [73, 82],
+            "dkh": [6, 15],
+            "salinity": [0, 0],
+            "price": [4, 13],
+            "description": "",
+            "image": ""
+        },
+        "gramma": {
+            "name": "Royal Gramma",
+            "gallons": 30,
+            "count": [1, 1],
+            "friends": [
+                "angelfish",
+                "clownfish",
+                "starfish",
+                "snail"
+            ],
+            "decor": [],
+            "substrate": ["sand"],
+            "diet": [],
+            "ph": [8.1, 8.4],
+            "temp": [72, 78],
+            "dkh": [8, 12],
+            "salinity": [1.020, 1.025],
+            "price": [30, 40],
+            "description": "",
+            "image": ""
+        }
+    },
+    "decor": {},
+    "substrate": {
+        "sm_gravel" : {
+            "name" : "Small Gravel",
+            "description" : "The small rocks help hold plants, and smaller fish can't swallow it.",
+            "price" : 1
+        },
+        "lg_gravel" : {
+            "name" : "Large Gravel",
+            "description" : "The small rocks help hold plants, and many fish can't swallow it.",
+            "price" : 1.8
+        },
+        "sand" : {
+            "name" : "Sand",
+            "description" : "Fine sand can help hold plants, and it is best for bottom-dwelling fish.",
+            "price" : 1.2
+        },
+        "coral" : {
+            "name" : "Crushed Coral",
+            "description" : "Ground coral substrate helps to raise and maintain pH levels.",
+            "price" : 0.8
+        },
+        "soil" : {
+            "name" : "Soil / Clay",
+            "description" : "Soil and clay are great for plants, but it makes the water cloudy at first.",
+            "price" : 0
+        },
+        "plant" : {
+            "name" : "Planted Substrate",
+            "description" : "This is specifically made to help plants grow.",
+            "price" : 2.5
+        }
+    }
+}
