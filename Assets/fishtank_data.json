@@ -12,7 +12,14 @@
                 "starfish",
                 "snail"
             ],
-            "decor": [],
+            "decor": {
+                "plants" : ["sword", "anubias"],
+                "driftwood" : ["driftwood","log","tree"],
+                "coral" : [],
+                "caves" : [],
+                "buildings" : [],
+                "misc" : []
+            },
             "substrate": [],
             "diet": [],
             "ph": [6.8, 7.8],
@@ -20,8 +27,7 @@
             "dkh": [3, 8],
             "salinity": [0, 1.025],
             "price": [10, 20],
-            "description": "",
-            "image": ""
+            "description": ""
         },
         "betta": {
             "name": "Betta Fish",
@@ -37,7 +43,14 @@
                 "snail",
                 "tetra"
             ],
-            "decor": [],
+            "decor": {
+                "plants" : ["grassy","sword","anubias","fern","moss","floating","rotala"],
+                "driftwood" : ["log"],
+                "coral" : [],
+                "caves" : ["small","medium","large"],
+                "buildings" : ["shack"],
+                "misc" : ["couch"]
+            },
             "substrate": ["sand", "lg_gravel"],
             "diet": [],
             "ph": [6.5, 7.5],
@@ -45,8 +58,7 @@
             "dkh": [3, 5],
             "salinity": [0, 0],
             "price": [4, 10],
-            "description": "",
-            "image": ""
+            "description": ""
         },
         "shrimp": {
             "name": "Cherry Shrimp",
@@ -65,7 +77,14 @@
                 "snail",
                 "tetra"
             ],
-            "decor": [],
+            "decor": {
+                "plants" : ["grassy","fern","moss","rotala"],
+                "driftwood" : ["driftwood","log","tree"],
+                "coral" : [],
+                "caves" : ["small"],
+                "buildings" : [],
+                "misc" : []
+            },
             "substrate": [],
             "diet": [],
             "ph": [6.4, 8.0],
@@ -73,8 +92,7 @@
             "dkh": [0, 10],
             "salinity": [0, 0],
             "price": [4, 6],
-            "description": "",
-            "image": ""
+            "description": ""
         },
         "starfish": {
             "name": "Chocolate Chip Starfish",
@@ -84,7 +102,14 @@
                 "angelfish",
                 "gramma"
             ],
-            "decor": [],
+            "decor": {
+                "plants" : [],
+                "driftwood" : [],
+                "coral" : [],
+                "caves" : ["small","medium","large"],
+                "buildings" : [],
+                "misc" : ["rock"]
+            },
             "substrate": [],
             "diet": [],
             "ph": [8.1, 8.4],
@@ -92,8 +117,7 @@
             "dkh": [8, 12],
             "salinity": [1.020, 1.026],
             "price": [10, 18],
-            "description": "",
-            "image": ""
+            "description": ""
         },
         "clownfish": {
             "name": "Clownfish",
@@ -106,7 +130,14 @@
                 "shrimp",
                 "snail"
             ],
-            "decor": [],
+            "decor": {
+                "plants" : [],
+                "driftwood" : [],
+                "coral" : [],
+                "caves" : [],
+                "buildings" : [],
+                "misc" : []
+            },
             "substrate": ["sand"],
             "diet": [],
             "ph": [7.5, 8.2],
@@ -114,8 +145,7 @@
             "dkh": [8, 12],
             "salinity": [1.020, 1.026],
             "price": [15, 20],
-            "description": "",
-            "image": ""
+            "description": ""
         },
         "corydoras": {
             "name": "Corydoras",
@@ -133,7 +163,14 @@
                 "snail",
                 "tetra"
             ],
-            "decor": [],
+            "decor": {
+                "plants" : [],
+                "driftwood" : [],
+                "coral" : [],
+                "caves" : [],
+                "buildings" : [],
+                "misc" : []
+            },
             "substrate": ["sand"],
             "diet": [],
             "ph": [6.0, 7.5],
@@ -141,8 +178,7 @@
             "dkh": [2, 10],
             "salinity": [0, 0],
             "price": [5, 7],
-            "description": "",
-            "image": ""
+            "description": ""
         },
         "danios": {
             "name": "Danios",
@@ -158,7 +194,14 @@
                 "snail",
                 "tetra"
             ],
-            "decor": [],
+            "decor": {
+                "plants" : [],
+                "driftwood" : [],
+                "coral" : [],
+                "caves" : [],
+                "buildings" : [],
+                "misc" : []
+            },
             "substrate": [],
             "diet": [],
             "ph": [6.8, 7.8],
@@ -166,8 +209,7 @@
             "dkh": [3, 8],
             "salinity": [0, 0],
             "price": [2, 4],
-            "description": "",
-            "image": ""
+            "description": ""
         },
         "goldfish": {
             "name": "Goldfish",
@@ -176,7 +218,14 @@
             "friends": [
                 "snail"
             ],
-            "decor": [],
+            "decor": {
+                "plants" : [],
+                "driftwood" : [],
+                "coral" : [],
+                "caves" : [],
+                "buildings" : [],
+                "misc" : []
+            },
             "substrate": ["sand"],
             "diet": [],
             "ph": [7.0, 8.4],
@@ -184,8 +233,7 @@
             "dkh": [4, 8],
             "salinity": [0, 0],
             "price": [5, 30],
-            "description": "",
-            "image": ""
+            "description": ""
         },
         "guppy": {
             "name": "Guppy",
@@ -200,7 +248,14 @@
                 "snail",
                 "tetra"
             ],
-            "decor": [],
+            "decor": {
+                "plants" : [],
+                "driftwood" : [],
+                "coral" : [],
+                "caves" : [],
+                "buildings" : [],
+                "misc" : []
+            },
             "substrate": [],
             "diet": [],
             "ph": [7.0, 8.0],
@@ -208,8 +263,7 @@
             "dkh": [8, 12],
             "salinity": [0, 0],
             "price": [5, 15],
-            "description": "",
-            "image": ""
+            "description": ""
         },
         "firefish": {
             "name": "Helfrichi Firefish",
@@ -219,7 +273,14 @@
                 "clownfish",
                 "snail"
             ],
-            "decor": [],
+            "decor": {
+                "plants" : [],
+                "driftwood" : [],
+                "coral" : [],
+                "caves" : [],
+                "buildings" : [],
+                "misc" : []
+            },
             "substrate": [],
             "diet": [],
             "ph": [8.1, 8.4],
@@ -227,8 +288,7 @@
             "dkh": [8, 12],
             "salinity": [1.020, 1.025],
             "price": [120, 180],
-            "description": "",
-            "image": ""
+            "description": ""
         },
         "killifish": {
             "name": "Killifish",
@@ -243,7 +303,14 @@
                 "snail",
                 "tetra"
             ],
-            "decor": [],
+            "decor": {
+                "plants" : [],
+                "driftwood" : [],
+                "coral" : [],
+                "caves" : [],
+                "buildings" : [],
+                "misc" : []
+            },
             "substrate": ["sand", "sm_gravel", "lg_gravel"],
             "diet": [],
             "ph": [6.0, 7.0],
@@ -251,8 +318,7 @@
             "dkh": [7, 10],
             "salinity": [0, 0],
             "price": [4, 12],
-            "description": "",
-            "image": ""
+            "description": ""
         },
         "tetra": {
             "name": "Neon Tetra",
@@ -270,7 +336,14 @@
                 "snail",
                 "tetra"
             ],
-            "decor": [],
+            "decor": {
+                "plants" : [],
+                "driftwood" : [],
+                "coral" : [],
+                "caves" : [],
+                "buildings" : [],
+                "misc" : []
+            },
             "substrate": ["sand", "sm_gravel", "lg_gravel"],
             "diet": [],
             "ph": [6.8, 7.8],
@@ -278,8 +351,7 @@
             "dkh": [3, 8],
             "salinity": [0, 0],
             "price": [3, 5],
-            "description": "",
-            "image": ""
+            "description": ""
         },
         "snail": {
             "name": "Nerite Snail",
@@ -302,7 +374,14 @@
                 "snail",
                 "tetra"
             ],
-            "decor": [],
+            "decor": {
+                "plants" : [],
+                "driftwood" : [],
+                "coral" : [],
+                "caves" : [],
+                "buildings" : [],
+                "misc" : []
+            },
             "substrate": ["sand"],
             "diet": [],
             "ph": [7.5, 8.5],
@@ -310,8 +389,7 @@
             "dkh": [2, 12],
             "salinity": [0, 1.025],
             "price": [2, 6],
-            "description": "",
-            "image": ""
+            "description": ""
         },
         "otocinclus": {
             "name": "Otocinclus",
@@ -327,7 +405,14 @@
                 "snail",
                 "tetra"
             ],
-            "decor": [],
+            "decor": {
+                "plants" : [],
+                "driftwood" : [],
+                "coral" : [],
+                "caves" : [],
+                "buildings" : [],
+                "misc" : []
+            },
             "substrate": [],
             "diet": [],
             "ph": [6.5, 7.5],
@@ -335,8 +420,7 @@
             "dkh": [6, 15],
             "salinity": [0, 0],
             "price": [3, 5],
-            "description": "",
-            "image": ""
+            "description": ""
         },
         "rasbora": {
             "name": "Rasbora",
@@ -352,7 +436,14 @@
                 "snail",
                 "tetra"
             ],
-            "decor": [],
+            "decor": {
+                "plants" : [],
+                "driftwood" : [],
+                "coral" : [],
+                "caves" : [],
+                "buildings" : [],
+                "misc" : []
+            },
             "substrate": [],
             "diet": [],
             "ph": [6.0, 7.0],
@@ -360,8 +451,7 @@
             "dkh": [6, 15],
             "salinity": [0, 0],
             "price": [4, 13],
-            "description": "",
-            "image": ""
+            "description": ""
         },
         "gramma": {
             "name": "Royal Gramma",
@@ -373,7 +463,14 @@
                 "starfish",
                 "snail"
             ],
-            "decor": [],
+            "decor": {
+                "plants" : [],
+                "driftwood" : [],
+                "coral" : [],
+                "caves" : [],
+                "buildings" : [],
+                "misc" : []
+            },
             "substrate": ["sand"],
             "diet": [],
             "ph": [8.1, 8.4],
@@ -381,117 +478,124 @@
             "dkh": [8, 12],
             "salinity": [1.020, 1.025],
             "price": [30, 40],
-            "description": "",
-            "image": ""
+            "description": ""
         }
     },
     "decor": {
         "plants" : {
-            "small" : {
-                "price" : 0,
-                "image" : ""
+            "grassy" : {
+                "name": "Grassy Plant",
+                "price" : 8.99
             },
-            "small" : {
-                "price" : 0,
-                "image" : ""
+            "sword" : {
+                "name": "Amazon Sword Plant",
+                "price" : 9.99
             },
-            "small" : {
-                "price" : 0,
-                "image" : ""
+            "anubias" : {
+                "name": "Anubias Plant",
+                "price" : 10.99
             },
-            "small" : {
-                "price" : 0,
-                "image" : ""
+            "fern" : {
+                "name": "Java Fern",
+                "price" : 8.49
             },
-            "small" : {
-                "price" : 0,
-                "image" : ""
+            "moss" : {
+                "name": "Java Moss",
+                "price" : 9.99
             },
-            "small" : {
-                "price" : 0,
-                "image" : ""
+            "pond" : {
+                "name": "Pond Weed",
+                "price" : 8.99
             },
-            "small" : {
-                "price" : 0,
-                "image" : ""
+            "floating" : {
+                "name": "Floating Plant",
+                "price" : 7.49
             },
-            "small" : {
-                "price" : 0,
-                "image" : ""
+            "rotala" : {
+                "name": "Rotala Rotundifolia",
+                "price" : 8.49
             }
         },
         "driftwood" : {
             "driftwood" : {
-                "price" : 10.99,
-                "image" : ""
+                "name": "Driftwood",
+                "price" : 10.99
             },
             "log" : {
-                "price" : 17.99,
-                "image" : ""
+                "name": "Big Log",
+                "price" : 17.99
             },
             "tree" : {
-                "price" : 25.99,
-                "image" : ""
+                "name": "Driftwood Tree",
+                "price" : 25.99
             }
         },
         "coral" : {
             "small" : {
-                "price" : 10.59,
-                "image" : ""
+                "name": "Small Coral",
+                "price" : 10.59
             },
             "medium" : {
-                "price" : 13.99,
-                "image" : ""
+                "name": "Medium Coral",
+                "price" : 13.99
             },
-            "swim_through_coral" : {
-                "price" : 23.99,
-                "image" : ""
+            "swimmable" : {
+                "name": "Swim-Through Coral",
+                "price" : 23.99
+            },
+            "anenome" : {
+                "name" : "Anenome",
+                "price" : 50.99
             }
         },
         "caves" : {
             "small" : {
-                "price" : 12.99,
-                "image" : ""
+                "name": "Small Cave",
+                "price" : 12.99
             },
             "medium" : {
-                "price" : 15.99,
-                "image" : ""
+                "name": "Medium Cave",
+                "price" : 15.99
             },
             "large" : {
-                "price" : 21.99,
-                "image" : ""
+                "name": "Large Cave",
+                "price" : 21.99
             }
         },
         "buildings" : {
             "squidward" : {
-                "price" : 17.99,
-                "image" : ""
+                "name": "Squid's House",
+                "price" : 17.99
             },
             "spongebob" : {
-                "price" : 20.99,
-                "image" : ""
+                "name": "Sponge's House",
+                "price" : 20.99
             },
             "shack" : {
-                "price" : 12.99,
-                "image" : ""
+                "name": "Shack",
+                "price" : 12.99
             }
         },
         "misc" : {
+            "rock" : {
+                "name" : "Aquatic Rock",
+                "price" : 7.99
+            },
             "couch" : {
-                "price" : 16.95,
-                "image" : ""
+                "name": "Fish Couch",
+                "price" : 16.95
             },
             "squidward" : {
-                "price" : 14.99,
-                "image" : ""
+                "name": "Squid Figure",
+                "price" : 14.99
             },
             "turtle_statue" : {
-                "price" : 11.99,
-                "image" : ""
+                "name": "Turtle Statue",
+                "price" : 11.99
             },
             "fish_statue" : {
-                "price" : 10.99,
-                "image" : ""
+                "name": "Fish Statue",
+                "price" : 10.99
             }
         }
     },
