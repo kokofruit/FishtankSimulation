@@ -599,36 +599,66 @@
             }
         }
     },
-    "substrate": {
-        "sm_gravel" : {
-            "name" : "Small Gravel",
-            "description" : "The small rocks help hold plants, and smaller fish can't swallow it.",
-            "price" : 1
-        },
-        "lg_gravel" : {
-            "name" : "Large Gravel",
-            "description" : "The small rocks help hold plants, and many fish can't swallow it.",
-            "price" : 1.8
-        },
-        "sand" : {
-            "name" : "Sand",
-            "description" : "Fine sand can help hold plants, and it is best for bottom-dwelling fish.",
-            "price" : 1.2
-        },
-        "coral" : {
-            "name" : "Crushed Coral",
-            "description" : "Ground coral substrate helps to raise and maintain pH levels.",
-            "price" : 0.8
-        },
-        "soil" : {
-            "name" : "Soil / Clay",
-            "description" : "Soil and clay are great for plants, but it makes the water cloudy at first.",
-            "price" : 3.6
-        },
-        "plant" : {
-            "name" : "Planted Substrate",
-            "description" : "This is specifically made to help plants grow.",
-            "price" : 2.5
-        }
+  "substrate": {
+    "sm_gravel": {
+      "name": "Small Gravel",
+      "description": "The small rocks help hold plants, and smaller fish can't swallow it.",
+      "price": 1
+    },
+    "lg_gravel": {
+      "name": "Large Gravel",
+      "description": "The small rocks help hold plants, and many fish can't swallow it.",
+      "price": 1.8
+    },
+    "sand": {
+      "name": "Sand",
+      "description": "Fine sand can help hold plants, and it is best for bottom-dwelling fish.",
+      "price": 1.2
+    },
+    "coral": {
+      "name": "Crushed Coral",
+      "description": "Ground coral substrate helps to raise and maintain pH levels.",
+      "price": 0.8
+    },
+    "soil": {
+      "name": "Soil / Clay",
+      "description": "Soil and clay are great for plants, but it makes the water cloudy at first.",
+      "price": 3.6
+    },
+    "plant": {
+      "name": "Planted Substrate",
+      "description": "This is specifically made to help plants grow.",
+      "price": 2.5
     }
+  },
+  "diet": {
+    "flakes": {
+      "name": "Flakes",
+      "price": 4.99
+    },
+    "pellets": {
+      "name": "Pellets",
+      "price": 5.99
+    },
+    "bloodworms": {
+      "name": "Bloodworms",
+      "price": 9.99
+    },
+    "shrimp": {
+      "name": "Shrimp",
+      "price": 8.99
+    },
+    "daphnia": {
+      "name": "Daphnia",
+      "price": 14.99
+    },
+    "algae": {
+      "name": "Algae",
+      "price": 9.99
+    },
+    "veg": {
+      "name": "Vegetables",
+      "price": 8.99
+    }
+  }
 }
