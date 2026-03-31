@@ -33,8 +33,10 @@ public class SimulationManager : MonoBehaviour
         }
 
         // load the json
-        JSONObject jSONObject = JsonUtility.FromJson<JSONObject>(jsonFile.text);
-        print(jSONObject);
+        // JSONClass jsonClass = JsonUtility.FromJson<JSONClass>(jsonFile.text);
+        // print(jsonClass.fish);
+        JSONReader.JSONClass json = JsonUtility.FromJson<JSONReader.JSONClass>(jsonFile.text);
+        json.FishRead();
     }
 
 

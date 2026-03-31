@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: daffc94099295334c93c0781d0f51b97
+guid: f0f2ea98af48a234ea907a7015b599c1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6563066755110389082
-    second: Soil_0
+      213: -8025992449720396209
+    second: Coral_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Soil_0
+      name: Coral_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 497
-        height: 62
+        width: 122
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a55c78fe072b41b50800000000000000
-      internalID: 6563066755110389082
+      spriteID: f46d278f362fd9090800000000000000
+      internalID: -8025992449720396209
       vertices: []
       indices: 
       edges: []

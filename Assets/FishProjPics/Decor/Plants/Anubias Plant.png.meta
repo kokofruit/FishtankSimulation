@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Anubias Plant_0: -4509757122881478312
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

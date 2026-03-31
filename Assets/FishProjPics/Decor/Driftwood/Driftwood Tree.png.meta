@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Driftwood Tree_0: 1252078942798340088
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

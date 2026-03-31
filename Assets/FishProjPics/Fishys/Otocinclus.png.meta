@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Otocinclus_0: -8250805910230804603
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

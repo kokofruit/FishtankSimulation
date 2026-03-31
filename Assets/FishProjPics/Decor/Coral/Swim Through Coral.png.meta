@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Swim Through Coral_0: 2858036492378017609
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
