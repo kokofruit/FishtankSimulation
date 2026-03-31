@@ -1,9 +1,13 @@
 {
-    "fish": {
-        "angelfish": {
+    "fish": [
+        {
+            "id": "angelfish",
             "name": "Angelfish",
             "gallons": 30,
-            "count": [1, 1],
+            "count": [
+                1,
+                1
+            ],
             "friends": [
                 "clownfish",
                 "corydoras",
@@ -13,26 +17,61 @@
                 "snail"
             ],
             "decor": {
-                "plants" : ["sword", "anubias", "fern"],
-                "driftwood" : ["driftwood","log","tree"],
-                "coral" : [],
-                "caves" : [],
-                "buildings" : [],
-                "misc" : []
+                "plants": [
+                    "sword",
+                    "anubias",
+                    "fern"
+                ],
+                "driftwood": [
+                    "driftwood",
+                    "log",
+                    "tree"
+                ],
+                "coral": [],
+                "caves": [],
+                "buildings": [],
+                "misc": []
             },
-            "substrate": ["sand", "sm_gravel"],
-            "diet": ["flakes", "pellets", "bloodworms", "shrimp"],
-            "ph": [6.8, 7.8],
-            "temp": [78, 84],
-            "dkh": [3, 8],
-            "salinity": [0, 1.025],
-            "price": [10, 20],
+            "substrate": [
+                "sand",
+                "sm_gravel"
+            ],
+            "diet": [
+                "flakes",
+                "pellets",
+                "bloodworms",
+                "shrimp"
+            ],
+            "ph": [
+                6.8,
+                7.8
+            ],
+            "temp": [
+                78,
+                84
+            ],
+            "dkh": [
+                3,
+                8
+            ],
+            "salinity": [
+                0,
+                1.025
+            ],
+            "price": [
+                10,
+                20
+            ],
             "description": ""
         },
-        "betta": {
+        {
+            "id": "betta",
             "name": "Betta Fish",
             "gallons": 5,
-            "count": [1, 1],
+            "count": [
+                1,
+                1
+            ],
             "friends": [
                 "corydoras",
                 "danios",
@@ -44,26 +83,72 @@
                 "tetra"
             ],
             "decor": {
-                "plants" : ["grassy","sword","anubias","fern","moss","floating","rotala"],
-                "driftwood" : ["log"],
-                "coral" : [],
-                "caves" : ["small","medium","large"],
-                "buildings" : ["shack"],
-                "misc" : ["couch"]
+                "plants": [
+                    "grassy",
+                    "sword",
+                    "anubias",
+                    "fern",
+                    "moss",
+                    "floating",
+                    "rotala"
+                ],
+                "driftwood": [
+                    "log"
+                ],
+                "coral": [],
+                "caves": [
+                    "small",
+                    "medium",
+                    "large"
+                ],
+                "buildings": [
+                    "shack"
+                ],
+                "misc": [
+                    "couch"
+                ]
             },
-            "substrate": ["sand", "lg_gravel"],
-            "diet": ["flakes", "pellets", "bloodworms", "shrimp", "daphnia"],
-            "ph": [6.5, 7.5],
-            "temp": [74, 84],
-            "dkh": [3, 5],
-            "salinity": [0, 0],
-            "price": [4, 10],
+            "substrate": [
+                "sand",
+                "lg_gravel"
+            ],
+            "diet": [
+                "flakes",
+                "pellets",
+                "bloodworms",
+                "shrimp",
+                "daphnia"
+            ],
+            "ph": [
+                6.5,
+                7.5
+            ],
+            "temp": [
+                74,
+                84
+            ],
+            "dkh": [
+                3,
+                5
+            ],
+            "salinity": [
+                0,
+                0
+            ],
+            "price": [
+                4,
+                10
+            ],
             "description": ""
         },
-        "shrimp": {
+        {
+            "id": "shrimp",
             "name": "Cherry Shrimp",
             "gallons": 1,
-            "count": [10, 99],
+            "count": [
+                10,
+                99
+            ],
             "friends": [
                 "angelfish",
                 "betta",
@@ -78,51 +163,121 @@
                 "tetra"
             ],
             "decor": {
-                "plants" : ["grassy","fern","moss","rotala"],
-                "driftwood" : ["driftwood","log","tree"],
-                "coral" : [],
-                "caves" : ["small"],
-                "buildings" : [],
-                "misc" : []
+                "plants": [
+                    "grassy",
+                    "fern",
+                    "moss",
+                    "rotala"
+                ],
+                "driftwood": [
+                    "driftwood",
+                    "log",
+                    "tree"
+                ],
+                "coral": [],
+                "caves": [
+                    "small"
+                ],
+                "buildings": [],
+                "misc": []
             },
-            "substrate": ["sand", "sm_gravel", "blck_sand"],
-            "diet": ["algae", "pellets", "veg"],
-            "ph": [6.4, 8.0],
-            "temp": [65, 85],
-            "dkh": [0, 10],
-            "salinity": [0, 0],
-            "price": [4, 6],
+            "substrate": [
+                "sand",
+                "sm_gravel",
+                "blck_sand"
+            ],
+            "diet": [
+                "algae",
+                "pellets",
+                "veg"
+            ],
+            "ph": [
+                6.4,
+                8.0
+            ],
+            "temp": [
+                65,
+                85
+            ],
+            "dkh": [
+                0,
+                10
+            ],
+            "salinity": [
+                0,
+                0
+            ],
+            "price": [
+                4,
+                6
+            ],
             "description": ""
         },
-        "starfish": {
+        {
+            "id": "starfish",
             "name": "Chocolate Chip Starfish",
             "gallons": 50,
-            "count": [1, 99],
+            "count": [
+                1,
+                99
+            ],
             "friends": [
                 "angelfish",
                 "gramma"
             ],
             "decor": {
-                "plants" : [],
-                "driftwood" : [],
-                "coral" : [],
-                "caves" : ["small","medium","large"],
-                "buildings" : [],
-                "misc" : ["rock"]
+                "plants": [],
+                "driftwood": [],
+                "coral": [],
+                "caves": [
+                    "small",
+                    "medium",
+                    "large"
+                ],
+                "buildings": [],
+                "misc": [
+                    "rock"
+                ]
             },
-            "substrate": ["sand"],
-            "diet": ["algae", "shrimp", "flakes", "pellets"],
-            "ph": [8.1, 8.4],
-            "temp": [72, 78],
-            "dkh": [8, 12],
-            "salinity": [1.020, 1.026],
-            "price": [10, 18],
+            "substrate": [
+                "sand"
+            ],
+            "diet": [
+                "algae",
+                "shrimp",
+                "flakes",
+                "pellets"
+            ],
+            "ph": [
+                8.1,
+                8.4
+            ],
+            "temp": [
+                72,
+                78
+            ],
+            "dkh": [
+                8,
+                12
+            ],
+            "salinity": [
+                1.020,
+                1.026
+            ],
+            "price": [
+                10,
+                18
+            ],
             "description": ""
         },
-        "clownfish": {
+        {
+            "id": "clownfish",
             "name": "Clownfish",
             "gallons": 10,
-            "count": [2, 2],
+            "count": [
+                2,
+                2
+            ],
             "friends": [
                 "angelfish",
                 "firefish",
@@ -131,26 +286,63 @@
                 "snail"
             ],
             "decor": {
-                "plants" : ["anemone"],
-                "driftwood" : [],
-                "coral" : ["duncan", "toadstool", "torch"],
-                "caves" : ["small", "medium"],
-                "buildings" : [],
-                "misc" : ["rock"]
+                "plants": [
+                    "anemone"
+                ],
+                "driftwood": [],
+                "coral": [
+                    "duncan",
+                    "toadstool",
+                    "torch"
+                ],
+                "caves": [
+                    "small",
+                    "medium"
+                ],
+                "buildings": [],
+                "misc": [
+                    "rock"
+                ]
             },
-            "substrate": ["sand"],
-            "diet": ["algae", "shrimp", "flakes", "pellets"],
-            "ph": [7.5, 8.2],
-            "temp": [75, 82],
-            "dkh": [8, 12],
-            "salinity": [1.020, 1.026],
-            "price": [15, 20],
+            "substrate": [
+                "sand"
+            ],
+            "diet": [
+                "algae",
+                "shrimp",
+                "flakes",
+                "pellets"
+            ],
+            "ph": [
+                7.5,
+                8.2
+            ],
+            "temp": [
+                75,
+                82
+            ],
+            "dkh": [
+                8,
+                12
+            ],
+            "salinity": [
+                1.020,
+                1.026
+            ],
+            "price": [
+                15,
+                20
+            ],
             "description": ""
         },
-        "corydoras": {
+        {
+            "id": "corydoras",
             "name": "Corydoras",
             "gallons": 4,
-            "count": [6, 99],
+            "count": [
+                6,
+                99
+            ],
             "friends": [
                 "angelfish",
                 "betta",
@@ -164,26 +356,61 @@
                 "tetra"
             ],
             "decor": {
-                "plants" : [],
-                "driftwood" : ["driftwood", "log"],
-                "coral" : [],
-                "caves" : ["small", "medium"],
-                "buildings" : [],
-                "misc" : ["rock"]
+                "plants": [],
+                "driftwood": [
+                    "driftwood",
+                    "log"
+                ],
+                "coral": [],
+                "caves": [
+                    "small",
+                    "medium"
+                ],
+                "buildings": [],
+                "misc": [
+                    "rock"
+                ]
             },
-            "substrate": ["sand"],
-            "diet": ["bloodworms", "shrimp", "daphnia", "veg", "pellets"],
-            "ph": [6.0, 7.5],
-            "temp": [74, 80],
-            "dkh": [2, 10],
-            "salinity": [0, 0],
-            "price": [5, 7],
+            "substrate": [
+                "sand"
+            ],
+            "diet": [
+                "bloodworms",
+                "shrimp",
+                "daphnia",
+                "veg",
+                "pellets"
+            ],
+            "ph": [
+                6.0,
+                7.5
+            ],
+            "temp": [
+                74,
+                80
+            ],
+            "dkh": [
+                2,
+                10
+            ],
+            "salinity": [
+                0,
+                0
+            ],
+            "price": [
+                5,
+                7
+            ],
             "description": ""
         },
-        "danios": {
+        {
+            "id": "danios",
             "name": "Danios",
             "gallons": 2,
-            "count": [6, 99],
+            "count": [
+                6,
+                99
+            ],
             "friends": [
                 "betta",
                 "corydoras",
@@ -195,50 +422,123 @@
                 "tetra"
             ],
             "decor": {
-                "plants" : ["fern", "anubias", "moss"],
-                "driftwood" : ["driftwood"],
-                "coral" : [],
-                "caves" : ["small", "medium", "large"],
-                "buildings" : [],
-                "misc" : []
+                "plants": [
+                    "fern",
+                    "anubias",
+                    "moss"
+                ],
+                "driftwood": [
+                    "driftwood"
+                ],
+                "coral": [],
+                "caves": [
+                    "small",
+                    "medium",
+                    "large"
+                ],
+                "buildings": [],
+                "misc": []
             },
-            "substrate": ["sand", "sm_gravel"],
-            "diet": ["flakes", "pellets", "bloodworms", "shrimp", "daphnia"],
-            "ph": [6.8, 7.8],
-            "temp": [64, 75],
-            "dkh": [3, 8],
-            "salinity": [0, 0],
-            "price": [2, 4],
+            "substrate": [
+                "sand",
+                "sm_gravel"
+            ],
+            "diet": [
+                "flakes",
+                "pellets",
+                "bloodworms",
+                "shrimp",
+                "daphnia"
+            ],
+            "ph": [
+                6.8,
+                7.8
+            ],
+            "temp": [
+                64,
+                75
+            ],
+            "dkh": [
+                3,
+                8
+            ],
+            "salinity": [
+                0,
+                0
+            ],
+            "price": [
+                2,
+                4
+            ],
             "description": ""
         },
-        "goldfish": {
+        {
+            "id": "goldfish",
             "name": "Goldfish",
             "gallons": 20,
-            "count": [2, 3],
+            "count": [
+                2,
+                3
+            ],
             "friends": [
                 "snail"
             ],
             "decor": {
-                "plants" : ["fern", "anubias", "moss"],
-                "driftwood" : [],
-                "coral" : [],
-                "caves" : ["large"],
-                "buildings" : [],
-                "misc" : ["rock"]
+                "plants": [
+                    "fern",
+                    "anubias",
+                    "moss"
+                ],
+                "driftwood": [],
+                "coral": [],
+                "caves": [
+                    "large"
+                ],
+                "buildings": [],
+                "misc": [
+                    "rock"
+                ]
             },
-            "substrate": ["sand"],
-            "diet": ["flakes", "pellets", "bloodworms", "shrimp", "veg"],
-            "ph": [7.0, 8.4],
-            "temp": [68, 74],
-            "dkh": [4, 8],
-            "salinity": [0, 0],
-            "price": [5, 30],
+            "substrate": [
+                "sand"
+            ],
+            "diet": [
+                "flakes",
+                "pellets",
+                "bloodworms",
+                "shrimp",
+                "veg"
+            ],
+            "ph": [
+                7.0,
+                8.4
+            ],
+            "temp": [
+                68,
+                74
+            ],
+            "dkh": [
+                4,
+                8
+            ],
+            "salinity": [
+                0,
+                0
+            ],
+            "price": [
+                5,
+                30
+            ],
             "description": ""
         },
-        "guppy": {
+        {
+            "id": "guppy",
             "name": "Guppy",
             "gallons": 2,
-            "count": [4, 99],
+            "count": [
+                4,
+                99
+            ],
             "friends": [
                 "betta",
                 "corydoras",
@@ -249,51 +549,122 @@
                 "tetra"
             ],
             "decor": {
-                "plants" : ["grass", "hornwort", "moss"],
-                "driftwood" : ["driftwood"],
-                "coral" : [],
-                "caves" : ["small", "medium"],
-                "buildings" : [],
-                "misc" : ["rock"]
+                "plants": [
+                    "grass",
+                    "hornwort",
+                    "moss"
+                ],
+                "driftwood": [
+                    "driftwood"
+                ],
+                "coral": [],
+                "caves": [
+                    "small",
+                    "medium"
+                ],
+                "buildings": [],
+                "misc": [
+                    "rock"
+                ]
             },
-            "substrate": ["sand", "blck_sand", "sm_gravel"],
-            "diet": ["flakes", "pellets", "shrimp", "daphnia"],
-            "ph": [7.0, 8.0],
-            "temp": [72, 82],
-            "dkh": [8, 12],
-            "salinity": [0, 0],
-            "price": [5, 15],
+            "substrate": [
+                "sand",
+                "blck_sand",
+                "sm_gravel"
+            ],
+            "diet": [
+                "flakes",
+                "pellets",
+                "shrimp",
+                "daphnia"
+            ],
+            "ph": [
+                7.0,
+                8.0
+            ],
+            "temp": [
+                72,
+                82
+            ],
+            "dkh": [
+                8,
+                12
+            ],
+            "salinity": [
+                0,
+                0
+            ],
+            "price": [
+                5,
+                15
+            ],
             "description": ""
         },
-        "firefish": {
+        {
+            "id": "firefish",
             "name": "Helfrichi Firefish",
             "gallons": 15,
-            "count": [1, 2],
+            "count": [
+                1,
+                2
+            ],
             "friends": [
                 "clownfish",
                 "snail"
             ],
             "decor": {
-                "plants" : [],
-                "driftwood" : [],
-                "coral" : [],
-                "caves" : ["small", "medium"],
-                "buildings" : [],
-                "misc" : ["rock"]
+                "plants": [],
+                "driftwood": [],
+                "coral": [],
+                "caves": [
+                    "small",
+                    "medium"
+                ],
+                "buildings": [],
+                "misc": [
+                    "rock"
+                ]
             },
-            "substrate": ["sand"],
-            "diet": ["shrimp", "daphnia", "bloodworms", "flakes", "pellets"],
-            "ph": [8.1, 8.4],
-            "temp": [72, 79],
-            "dkh": [8, 12],
-            "salinity": [1.020, 1.025],
-            "price": [120, 180],
+            "substrate": [
+                "sand"
+            ],
+            "diet": [
+                "shrimp",
+                "daphnia",
+                "bloodworms",
+                "flakes",
+                "pellets"
+            ],
+            "ph": [
+                8.1,
+                8.4
+            ],
+            "temp": [
+                72,
+                79
+            ],
+            "dkh": [
+                8,
+                12
+            ],
+            "salinity": [
+                1.020,
+                1.025
+            ],
+            "price": [
+                120,
+                180
+            ],
             "description": ""
         },
-        "killifish": {
+        {
+            "id": "killifish",
             "name": "Killifish",
             "gallons": 5,
-            "count": [2, 3],
+            "count": [
+                2,
+                3
+            ],
             "friends": [
                 "corydoras",
                 "danios",
@@ -304,26 +675,62 @@
                 "tetra"
             ],
             "decor": {
-                "plants" : ["moss", "hornwort", "fern"],
-                "driftwood" : ["driftwood"],
-                "coral" : [],
-                "caves" : [],
-                "buildings" : [],
-                "misc" : []
+                "plants": [
+                    "moss",
+                    "hornwort",
+                    "fern"
+                ],
+                "driftwood": [
+                    "driftwood"
+                ],
+                "coral": [],
+                "caves": [],
+                "buildings": [],
+                "misc": []
             },
-            "substrate": ["sand", "blck_sand", "sm_gravel", "lg_gravel"],
-            "diet": ["shrimp", "daphnia", "bloodworms", "flakes", "pellets"],
-            "ph": [6.0, 7.0],
-            "temp": [68, 75],
-            "dkh": [7, 10],
-            "salinity": [0, 0],
-            "price": [4, 12],
+            "substrate": [
+                "sand",
+                "blck_sand",
+                "sm_gravel",
+                "lg_gravel"
+            ],
+            "diet": [
+                "shrimp",
+                "daphnia",
+                "bloodworms",
+                "flakes",
+                "pellets"
+            ],
+            "ph": [
+                6.0,
+                7.0
+            ],
+            "temp": [
+                68,
+                75
+            ],
+            "dkh": [
+                7,
+                10
+            ],
+            "salinity": [
+                0,
+                0
+            ],
+            "price": [
+                4,
+                12
+            ],
             "description": ""
         },
-        "tetra": {
+        {
+            "id": "tetra",
             "name": "Neon Tetra",
             "gallons": 2,
-            "count": [6, 99],
+            "count": [
+                6,
+                99
+            ],
             "friends": [
                 "betta",
                 "corydoras",
@@ -337,26 +744,62 @@
                 "tetra"
             ],
             "decor": {
-                "plants" : ["anubias", "moss", "fern", "sword"],
-                "driftwood" : ["driftwood", "log"],
-                "coral" : [],
-                "caves" : [],
-                "buildings" : [],
-                "misc" : []
+                "plants": [
+                    "anubias",
+                    "moss",
+                    "fern",
+                    "sword"
+                ],
+                "driftwood": [
+                    "driftwood",
+                    "log"
+                ],
+                "coral": [],
+                "caves": [],
+                "buildings": [],
+                "misc": []
             },
-            "substrate": ["sand", "sm_gravel", "blck_sand"],
-            "diet": ["flakes", "pellets", "shrimp", "bloodworms"],
-            "ph": [6.8, 7.8],
-            "temp": [75, 80],
-            "dkh": [3, 8],
-            "salinity": [0, 0],
-            "price": [3, 5],
+            "substrate": [
+                "sand",
+                "sm_gravel",
+                "blck_sand"
+            ],
+            "diet": [
+                "flakes",
+                "pellets",
+                "shrimp",
+                "bloodworms"
+            ],
+            "ph": [
+                6.8,
+                7.8
+            ],
+            "temp": [
+                75,
+                80
+            ],
+            "dkh": [
+                3,
+                8
+            ],
+            "salinity": [
+                0,
+                0
+            ],
+            "price": [
+                3,
+                5
+            ],
             "description": ""
         },
-        "snail": {
+        {
+            "id": "snail",
             "name": "Nerite Snail",
             "gallons": 5,
-            "count": [1, 99],
+            "count": [
+                1,
+                99
+            ],
             "friends": [
                 "angelfish",
                 "betta",
@@ -375,26 +818,59 @@
                 "tetra"
             ],
             "decor": {
-                "plants" : ["fern", "anubias", "moss", "duckweed"],
-                "driftwood" : ["driftwood"],
-                "coral" : [],
-                "caves" : [],
-                "buildings" : [],
-                "misc" : ["rock"]
+                "plants": [
+                    "fern",
+                    "anubias",
+                    "moss",
+                    "duckweed"
+                ],
+                "driftwood": [
+                    "driftwood"
+                ],
+                "coral": [],
+                "caves": [],
+                "buildings": [],
+                "misc": [
+                    "rock"
+                ]
             },
-            "substrate": ["sand"],
-            "diet": ["algae", "veg"],
-            "ph": [7.5, 8.5],
-            "temp": [72, 78],
-            "dkh": [2, 12],
-            "salinity": [0, 1.025],
-            "price": [2, 6],
+            "substrate": [
+                "sand"
+            ],
+            "diet": [
+                "algae",
+                "veg"
+            ],
+            "ph": [
+                7.5,
+                8.5
+            ],
+            "temp": [
+                72,
+                78
+            ],
+            "dkh": [
+                2,
+                12
+            ],
+            "salinity": [
+                0,
+                1.025
+            ],
+            "price": [
+                2,
+                6
+            ],
             "description": ""
         },
-        "otocinclus": {
+        {
+            "id": "otocinclus",
             "name": "Otocinclus",
             "gallons": 3,
-            "count": [5, 99],
+            "count": [
+                5,
+                99
+            ],
             "friends": [
                 "betta",
                 "corydoras",
@@ -406,26 +882,56 @@
                 "tetra"
             ],
             "decor": {
-                "plants" : ["moss", "anubias", "fern"],
-                "driftwood" : ["driftwood"],
-                "coral" : [],
-                "caves" : [],
-                "buildings" : [],
-                "misc" : []
+                "plants": [
+                    "moss",
+                    "anubias",
+                    "fern"
+                ],
+                "driftwood": [
+                    "driftwood"
+                ],
+                "coral": [],
+                "caves": [],
+                "buildings": [],
+                "misc": []
             },
-            "substrate": ["sand", "sm_gravel"],
-            "diet": ["algae"],
-            "ph": [6.5, 7.5],
-            "temp": [72, 79],
-            "dkh": [6, 15],
-            "salinity": [0, 0],
-            "price": [3, 5],
+            "substrate": [
+                "sand",
+                "sm_gravel"
+            ],
+            "diet": [
+                "algae"
+            ],
+            "ph": [
+                6.5,
+                7.5
+            ],
+            "temp": [
+                72,
+                79
+            ],
+            "dkh": [
+                6,
+                15
+            ],
+            "salinity": [
+                0,
+                0
+            ],
+            "price": [
+                3,
+                5
+            ],
             "description": ""
         },
-        "rasbora": {
+        {
+            "id": "rasbora",
             "name": "Rasbora",
             "gallons": 2,
-            "count": [6, 99],
+            "count": [
+                6,
+                99
+            ],
             "friends": [
                 "betta",
                 "corydoras",
@@ -437,26 +943,63 @@
                 "tetra"
             ],
             "decor": {
-                "plants" : ["fern", "moss", "duckweed"],
-                "driftwood" : ["driftwood"],
-                "coral" : [],
-                "caves" : [],
-                "buildings" : [],
-                "misc" : ["rock"]
+                "plants": [
+                    "fern",
+                    "moss",
+                    "duckweed"
+                ],
+                "driftwood": [
+                    "driftwood"
+                ],
+                "coral": [],
+                "caves": [],
+                "buildings": [],
+                "misc": [
+                    "rock"
+                ]
             },
-            "substrate": ["sand", "sm_gravel", "blck_sand"],
-            "diet": ["flakes", "pellets", "daphnia", "bloodworms", "veg"],
-            "ph": [6.0, 7.0],
-            "temp": [73, 82],
-            "dkh": [6, 15],
-            "salinity": [0, 0],
-            "price": [4, 13],
+            "substrate": [
+                "sand",
+                "sm_gravel",
+                "blck_sand"
+            ],
+            "diet": [
+                "flakes",
+                "pellets",
+                "daphnia",
+                "bloodworms",
+                "veg"
+            ],
+            "ph": [
+                6.0,
+                7.0
+            ],
+            "temp": [
+                73,
+                82
+            ],
+            "dkh": [
+                6,
+                15
+            ],
+            "salinity": [
+                0,
+                0
+            ],
+            "price": [
+                4,
+                13
+            ],
             "description": ""
         },
-        "gramma": {
+        {
+            "id": "gramma",
             "name": "Royal Gramma",
             "gallons": 30,
-            "count": [1, 1],
+            "count": [
+                1,
+                1
+            ],
             "friends": [
                 "angelfish",
                 "clownfish",
@@ -464,171 +1007,269 @@
                 "snail"
             ],
             "decor": {
-                "plants" : [],
-                "driftwood" : ["tree"],
-                "coral" : [],
-                "caves" : ["small", "medium", "large"],
-                "buildings" : [],
-                "misc" : ["rock"]
+                "plants": [],
+                "driftwood": [
+                    "tree"
+                ],
+                "coral": [],
+                "caves": [
+                    "small",
+                    "medium",
+                    "large"
+                ],
+                "buildings": [],
+                "misc": [
+                    "rock"
+                ]
             },
-            "substrate": ["sand"],
-            "diet": ["shrimp", "pellets", "flakes"],
-            "ph": [8.1, 8.4],
-            "temp": [72, 78],
-            "dkh": [8, 12],
-            "salinity": [1.020, 1.025],
-            "price": [30, 40],
+            "substrate": [
+                "sand"
+            ],
+            "diet": [
+                "shrimp",
+                "pellets",
+                "flakes"
+            ],
+            "ph": [
+                8.1,
+                8.4
+            ],
+            "temp": [
+                72,
+                78
+            ],
+            "dkh": [
+                8,
+                12
+            ],
+            "salinity": [
+                1.020,
+                1.025
+            ],
+            "price": [
+                30,
+                40
+            ],
             "description": ""
         }
-    },
+    ],
     "decor": {
-        "plants" : {
-            "grassy" : {
+        "plants": [
+            {
+                "id": "grassy",
                 "name": "Grassy Plant",
-                "price" : 8.99
+                "price": 8.99
             },
-            "sword" : {
+            {
+                "id": "sword",
                 "name": "Amazon Sword Plant",
-                "price" : 9.99
+                "price": 9.99
             },
-            "anubias" : {
+            {
+                "id": "anubias",
                 "name": "Anubias Plant",
-                "price" : 10.99
+                "price": 10.99
             },
-            "fern" : {
+            {
+                "id": "fern",
                 "name": "Java Fern",
-                "price" : 8.49
+                "price": 8.49
             },
-            "moss" : {
+            {
+                "id": "moss",
                 "name": "Java Moss",
-                "price" : 9.99
+                "price": 9.99
             },
-            "pond" : {
+            {
+                "id": "pond",
                 "name": "Pond Weed",
-                "price" : 8.99
+                "price": 8.99
             },
-            "floating" : {
+            {
+                "id": "floating",
                 "name": "Floating Plant",
-                "price" : 7.49
+                "price": 7.49
             },
-            "rotala" : {
+            {
+                "id": "rotala",
                 "name": "Rotala Rotundifolia",
-                "price" : 8.49
+                "price": 8.49
             }
-        },
-        "driftwood" : {
-            "driftwood" : {
+        ],
+        "driftwood": [
+            {
+                "id": "driftwood",
                 "name": "Driftwood",
-                "price" : 10.99
+                "price": 10.99
             },
-            "log" : {
+            {
+                "id": "log",
                 "name": "Big Log",
-                "price" : 17.99
+                "price": 17.99
             },
-            "tree" : {
+            {
+                "id": "tree",
                 "name": "Driftwood Tree",
-                "price" : 25.99
+                "price": 25.99
             }
-        },
-        "coral" : {
-            "small" : {
+        ],
+        "coral": [
+            {
+                "id": "small",
                 "name": "Small Coral",
-                "price" : 10.59
+                "price": 10.59
             },
-            "medium" : {
+            {
+                "id": "medium",
                 "name": "Medium Coral",
-                "price" : 13.99
+                "price": 13.99
             },
-            "swimmable" : {
+            {
+                "id": "swimmable",
                 "name": "Swim-Through Coral",
-                "price" : 23.99
+                "price": 23.99
             },
-            "anenome" : {
-                "name" : "Anenome",
-                "price" : 50.99
+            {
+                "id": "anenome",
+                "name": "Anenome",
+                "price": 50.99
             }
-        },
-        "caves" : {
-            "small" : {
+        ],
+        "caves": [
+            {
+                "id": "small",
                 "name": "Small Cave",
-                "price" : 12.99
+                "price": 12.99
             },
-            "medium" : {
+            {
+                "id": "medium",
                 "name": "Medium Cave",
-                "price" : 15.99
+                "price": 15.99
             },
-            "large" : {
+            {
+                "id": "large",
                 "name": "Large Cave",
-                "price" : 21.99
+                "price": 21.99
             }
-        },
-        "buildings" : {
-            "squidward" : {
+        ],
+        "buildings": [
+            {
+                "id": "squidward",
                 "name": "Squid's House",
-                "price" : 17.99
+                "price": 17.99
             },
-            "spongebob" : {
+            {
+                "id": "spongebob",
                 "name": "Sponge's House",
-                "price" : 20.99
+                "price": 20.99
             },
-            "shack" : {
+            {
+                "id": "shack",
                 "name": "Shack",
-                "price" : 12.99
+                "price": 12.99
             }
-        },
-        "misc" : {
-            "rock" : {
-                "name" : "Aquatic Rock",
-                "price" : 7.99
+        ],
+        "misc": [
+            {
+                "id": "rock",
+                "name": "Aquatic Rock",
+                "price": 7.99
             },
-            "couch" : {
+            {
+                "id": "couch",
                 "name": "Fish Couch",
-                "price" : 16.95
+                "price": 16.95
             },
-            "squidward" : {
+            {
+                "id": "squidward",
                 "name": "Squid Figure",
-                "price" : 14.99
+                "price": 14.99
             },
-            "turtle_statue" : {
+            {
+                "id": "turtle_statue",
                 "name": "Turtle Statue",
-                "price" : 11.99
+                "price": 11.99
             },
-            "fish_statue" : {
+            {
+                "id": "fish_statue",
                 "name": "Fish Statue",
-                "price" : 10.99
+                "price": 10.99
             }
-        }
+        ]
     },
-    "substrate": {
-        "sm_gravel" : {
-            "name" : "Small Gravel",
-            "description" : "The small rocks help hold plants, and smaller fish can't swallow it.",
-            "price" : 1
+    "substrate": [
+        {
+            "id": "sm_gravel",
+            "name": "Small Gravel",
+            "description": "The small rocks help hold plants, and smaller fish can't swallow it.",
+            "price": 1
         },
-        "lg_gravel" : {
-            "name" : "Large Gravel",
-            "description" : "The small rocks help hold plants, and many fish can't swallow it.",
-            "price" : 1.8
+        {
+            "id": "lg_gravel",
+            "name": "Large Gravel",
+            "description": "The small rocks help hold plants, and many fish can't swallow it.",
+            "price": 1.8
         },
-        "sand" : {
-            "name" : "Sand",
-            "description" : "Fine sand can help hold plants, and it is best for bottom-dwelling fish.",
-            "price" : 1.2
+        {
+            "id": "sand",
+            "name": "Sand",
+            "description": "Fine sand can help hold plants, and it is best for bottom-dwelling fish.",
+            "price": 1.2
         },
-        "coral" : {
-            "name" : "Crushed Coral",
-            "description" : "Ground coral substrate helps to raise and maintain pH levels.",
-            "price" : 0.8
+        {
+            "id": "coral",
+            "name": "Crushed Coral",
+            "description": "Ground coral substrate helps to raise and maintain pH levels.",
+            "price": 0.8
         },
-        "soil" : {
-            "name" : "Soil / Clay",
-            "description" : "Soil and clay are great for plants, but it makes the water cloudy at first.",
-            "price" : 3.6
+        {
+            "id": "soil",
+            "name": "Soil / Clay",
+            "description": "Soil and clay are great for plants, but it makes the water cloudy at first.",
+            "price": 3.6
         },
-        "plant" : {
-            "name" : "Planted Substrate",
-            "description" : "This is specifically made to help plants grow.",
-            "price" : 2.5
+        {
+            "id": "plant",
+            "name": "Planted Substrate",
+            "description": "This is specifically made to help plants grow.",
+            "price": 2.5
         }
-    }
+    ],
+    "diet": [
+        {
+            "id": "flakes",
+            "name": "Flakes",
+            "price": 4.99
+        },
+        {
+            "id": "pellets",
+            "name": "Pellets",
+            "price": 5.99
+        },
+        {
+            "id": "bloodworms",
+            "name": "Bloodworms",
+            "price": 9.99
+        },
+        {
+            "id": "shrimp",
+            "name": "Shrimp",
+            "price": 8.99
+        },
+        {
+            "id": "daphnia",
+            "name": "Daphnia",
+            "price": 14.99
+        },
+        {
+            "id": "algae",
+            "name": "Algae",
+            "price": 9.99
+        },
+        {
+            "id": "veg",
+            "name": "Vegetables",
+            "price": 8.99
+        }
+    ]
 }
