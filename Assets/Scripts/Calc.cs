@@ -14,6 +14,8 @@ public class Calc : MonoBehaviour
     {
         public HashSet<string> friends;
         public GameObject button;
+
+        private Vector3 stupid_temp = new Vector3(0,0,0);
     
     }
 
@@ -22,7 +24,10 @@ public class Calc : MonoBehaviour
     {
         //load fish from json here into all fish and good fish because all fish are good fish if you think about it really  im not trying to get like emotional or anything here its just the fish deserve better and i feel you guys take them for granted  fish are important for the ecosystem yknow    i got off track   fish are good      for now
         //also make the buttons here
-
+        foreach (var fish in _allFish)
+        { 
+            
+        }
         
     }
 
