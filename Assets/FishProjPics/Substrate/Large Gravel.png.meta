@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 81d19f4c973aa994d849439ee724d6a0
+guid: aa1dae147e40c3946972c4ac0ee85d22
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3578582641699816866
-    second: Gravel_0
+      213: -3498763983915103046
+    second: Large Gravel_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gravel_0
+      name: Large Gravel_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 400
-        height: 155
+        width: 122
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e5a7a1a2c02565ec0800000000000000
-      internalID: -3578582641699816866
+      spriteID: abc4fc1a1b4e17fc0800000000000000
+      internalID: -3498763983915103046
       vertices: []
       indices: 
       edges: []

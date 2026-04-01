@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Goldphish_0: -1530892762866343052
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
