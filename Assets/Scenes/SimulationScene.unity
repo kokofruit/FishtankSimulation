@@ -148,7 +148,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f8134544e6cc6249873e1b803a96c85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jsonFile: {fileID: 4900000, guid: ea2f815ec91608b41aaf3eb840e47f37, type: 3}
+  jsonPath: Text/fishtank_data
+  json:
+    fish: []
+    decor:
+      plants: []
+      driftwood: []
+      coral: []
+      caves: []
+      buildings: []
+      misc: []
+    substrate: []
+    diet: []
   fishInventory: []
   _screens:
   - {fileID: 0}

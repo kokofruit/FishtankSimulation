@@ -33,14 +33,39 @@ public class JSONReader : MonoBehaviour
     };
 
     [Serializable]
+    public class Decoration
+    {
+        public string id;
+        public string name;
+        public float price;
+    }
+
+    [Serializable]
     public class Decor
     {
-        public string[] plants;
-        public string[] driftwood;
-        public string[] coral;
-        public string[] caves;
-        public string[] buildings;
-        public string[] misc;
+        public Decoration[] plants;
+        public Decoration[] driftwood;
+        public Decoration[] coral;
+        public Decoration[] caves;
+        public Decoration[] buildings;
+        public Decoration[] misc;
+    }
+
+    [Serializable]
+    public class Substrate
+    {
+        public string id;
+        public string name;
+        public string description;
+        public float price;
+    }
+
+    [Serializable]
+    public class Diet
+    {
+        public string id;
+        public string name;
+        public float price;
     }
 
     [Serializable]
@@ -48,15 +73,17 @@ public class JSONReader : MonoBehaviour
     {
         public Fish[] fish;
         public Decor decor;
+        public Substrate[] substrate;
+        public Diet[] diet;
 
-        public void FishRead()
+        public Fish GetFish(string id)
         {
-            // foreach (Fish item in fish)
-            // {
-            //     print(item.decor.plants.Length);
-            // }
-            print(decor.plants.Length);
+            Fish returnFish = null;
+            foreach (Fish fishEntry in fish)
+            {
+                if (fishEntry.id == id) returnFish = fishEntry;
+            }
+            return returnFish;
         }
     }
-
 }

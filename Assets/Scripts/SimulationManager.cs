@@ -7,10 +7,14 @@ public class SimulationManager : MonoBehaviour
     public static SimulationManager instance;
 
     // the json file
-    public TextAsset jsonFile;
+    [SerializeField] private string jsonPath;
+    public JSONReader.JSONClass json;
 
     // inventory
-    public List<string> fishInventory;
+    // var for tank size here
+    public List<JSONReader.Fish> fishInventory;
+    public List<JSONReader.Decoration> decorationInventory;
+    public JSONReader.Substrate substrateInventory;
 
     // the array of UI
     [SerializeField] private CanvasGroup[] _screens = new CanvasGroup[5];
@@ -33,10 +37,8 @@ public class SimulationManager : MonoBehaviour
         }
 
         // load the json
-        // JSONClass jsonClass = JsonUtility.FromJson<JSONClass>(jsonFile.text);
-        // print(jsonClass.fish);
-        JSONReader.JSONClass json = JsonUtility.FromJson<JSONReader.JSONClass>(jsonFile.text);
-        json.FishRead();
+        var jsonTextAsset = Resources.Load<TextAsset>(jsonPath);
+        json = JsonUtility.FromJson<JSONReader.JSONClass>(jsonTextAsset.text);
     }
 
 
