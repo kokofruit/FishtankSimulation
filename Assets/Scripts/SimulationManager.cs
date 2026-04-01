@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SimulationManager : MonoBehaviour
 {
@@ -71,4 +72,13 @@ public class SimulationManager : MonoBehaviour
         _screens[_screenIndex].blocksRaycasts = true;
         _screens[_screenIndex].enabled = true;
     }
+
+    // this works in theory
+    //public void GetImage()
+    //{
+    //    string imagePath = "Images/fish/" + json.GetFish("betta").id;
+    //    Sprite imageSprite = Resources.Load<Sprite>(imagePath);
+    //    image.sprite = imageSprite;
+    //    image.GetComponent<RectTransform>().sizeDelta = imageSprite.rect.size;
+    //}
 }
