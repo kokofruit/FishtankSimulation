@@ -2,11 +2,11 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FishButtonTemp : MonoBehaviour
+public class FishButton : MonoBehaviour
 {
     public JSONReader.Fish fish;
-    [SerializeField] Button _addButton;
-    [SerializeField] TMP_Text _fishNameText;
+    [SerializeField] Toggle _addToggle;
+    [SerializeField] Text _fishNameText;
 
     public void SetFish(JSONReader.Fish newFish)
     {
@@ -16,6 +16,6 @@ public class FishButtonTemp : MonoBehaviour
 
     public void SetEnabled(bool isInteractable)
     {
-        _addButton.interactable = isInteractable;
+        _addToggle.interactable = isInteractable;
     }
 }

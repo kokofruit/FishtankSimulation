@@ -49,13 +49,11 @@ public class SimulationManager : MonoBehaviour
         if (_screenIndex + 1 >= _screens.Length) return;
 
         // turn off current screen
-        _screens[_screenIndex].blocksRaycasts = false;
-        _screens[_screenIndex].enabled = false;
+        _screens[_screenIndex].gameObject.SetActive(false);
         // increase screen index
         _screenIndex++;
         // turn on new screen
-        _screens[_screenIndex].blocksRaycasts = true;
-        _screens[_screenIndex].enabled = true;
+        _screens[_screenIndex].gameObject.SetActive(true);
     }
 
     public void PreviousScreen()
@@ -64,11 +62,13 @@ public class SimulationManager : MonoBehaviour
         if (_screenIndex - 1 < 0) return;
 
         // turn off current screen
+        _screens[_screenIndex].alpha = 0;
         _screens[_screenIndex].blocksRaycasts = false;
         _screens[_screenIndex].enabled = false;
         // decrease screen index
         _screenIndex++;
         // turn on new screen
+        _screens[_screenIndex].alpha = 1;
         _screens[_screenIndex].blocksRaycasts = true;
         _screens[_screenIndex].enabled = true;
     }
