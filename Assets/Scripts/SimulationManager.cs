@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SimulationManager : MonoBehaviour
 {
@@ -7,11 +8,11 @@ public class SimulationManager : MonoBehaviour
     public static SimulationManager instance;
 
     // the json file
-    [SerializeField] private string jsonPath;
+    [SerializeField] private string _jsonPath;
     public JSONReader.JSONClass json;
 
     // inventory
-    // var for tank size here
+    public int tankSize = 0;
     public List<JSONReader.Fish> fishInventory;
     public List<JSONReader.Decoration> decorationInventory;
     public JSONReader.Substrate substrateInventory;
@@ -37,7 +38,7 @@ public class SimulationManager : MonoBehaviour
         }
 
         // load the json
-        var jsonTextAsset = Resources.Load<TextAsset>(jsonPath);
+        var jsonTextAsset = Resources.Load<TextAsset>(_jsonPath);
         json = JsonUtility.FromJson<JSONReader.JSONClass>(jsonTextAsset.text);
     }
 
@@ -71,4 +72,13 @@ public class SimulationManager : MonoBehaviour
         _screens[_screenIndex].blocksRaycasts = true;
         _screens[_screenIndex].enabled = true;
     }
+
+    // this works in theory
+    //public void GetImage()
+    //{
+    //    string imagePath = "Images/fish/" + json.GetFish("betta").id;
+    //    Sprite imageSprite = Resources.Load<Sprite>(imagePath);
+    //    image.sprite = imageSprite;
+    //    image.GetComponent<RectTransform>().sizeDelta = imageSprite.rect.size;
+    //}
 }
