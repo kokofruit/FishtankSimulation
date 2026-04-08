@@ -40,16 +40,6 @@ public class JSONReader : MonoBehaviour
         public float price;
     }
 
-    [Serializable]
-    public class Decor
-    {
-        public Decoration[] plants;
-        public Decoration[] driftwood;
-        public Decoration[] coral;
-        public Decoration[] caves;
-        public Decoration[] buildings;
-        public Decoration[] misc;
-    }
 
     [Serializable]
     public class Substrate
@@ -72,7 +62,7 @@ public class JSONReader : MonoBehaviour
     public class JSONClass
     {
         public Fish[] fish;
-        public Decor decor;
+        public Decoration[] decor;
         public Substrate[] substrate;
         public Diet[] diet;
     }

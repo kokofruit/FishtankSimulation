@@ -21,5 +21,6 @@ public class FishOption : MonoBehaviour
     {
         fish = newFish;
         _nameText.text = fish.name;
+        _iconImg.sprite=Resources.Load<Sprite>("Images/fish/" + fish.id);
     }
 }

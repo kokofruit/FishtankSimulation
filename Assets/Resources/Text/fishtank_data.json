@@ -1053,8 +1053,7 @@
             "description": ""
         }
     ],
-    "decor": {
-        "plants": [
+    "decor": [
             {
                 "id": "grassy",
                 "name": "Grassy Plant",
@@ -1094,9 +1093,7 @@
                 "id": "rotala",
                 "name": "Rotala Rotundifolia",
                 "price": 8.49
-            }
-        ],
-        "driftwood": [
+            },
             {
                 "id": "driftwood",
                 "name": "Driftwood",
@@ -1111,9 +1108,7 @@
                 "id": "tree",
                 "name": "Driftwood Tree",
                 "price": 25.99
-            }
-        ],
-        "coral": [
+            },
             {
                 "id": "small",
                 "name": "Small Coral",
@@ -1133,9 +1128,7 @@
                 "id": "anenome",
                 "name": "Anenome",
                 "price": 50.99
-            }
-        ],
-        "caves": [
+            },
             {
                 "id": "small",
                 "name": "Small Cave",
@@ -1150,9 +1143,7 @@
                 "id": "large",
                 "name": "Large Cave",
                 "price": 21.99
-            }
-        ],
-        "buildings": [
+            },
             {
                 "id": "squidward",
                 "name": "Squid's House",
@@ -1167,9 +1158,7 @@
                 "id": "shack",
                 "name": "Shack",
                 "price": 12.99
-            }
-        ],
-        "misc": [
+            },
             {
                 "id": "rock",
                 "name": "Aquatic Rock",
@@ -1195,8 +1184,7 @@
                 "name": "Fish Statue",
                 "price": 10.99
             }
-        ]
-    },
+        ],
     "substrate": [
         {
             "id": "sm_gravel",
