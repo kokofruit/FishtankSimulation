@@ -6,9 +6,11 @@ public class FishScreen : MonoBehaviour
 {
     private int _remainingGallons;
     [SerializeField] private RectTransform _scrollViewContent;
-    private Dictionary<string, FishButtonTemp> _mothsFishDict;
+    [SerializeField] private GameObject _fishButtonPrefab;
+    private Dictionary<string, FishButton> _allFishButtons = new();
+    private HashSet<string> _allowedFish = new();
 
-    // I think Phil is doing a lot of stuff for this so i'm mostly doing tank related stuff
+
     void Start()
     {
         // set remaining gallons to maximum by default
@@ -16,15 +18,72 @@ public class FishScreen : MonoBehaviour
 
         foreach (JSONReader.Fish fish in SimulationManager.instance.json.fish)
         {
-            
+            // create listing
+            FishButton button = Instantiate(_fishButtonPrefab, _scrollViewContent).GetComponent<FishButton>();
+            button.SetFish(fish);
+
+            // add listener
+            button.GetComponent<Toggle>().onValueChanged.AddListener((bool value) => HandleInput(value, fish));
+
+            // add to dict
+            _allFishButtons.Add(fish.id, button);
+
+            // add to allowed fish
+            _allowedFish.Add(fish.id);
         }
     }
 
-    private void CheckGallons()
+    void HandleInput(bool state, JSONReader.Fish fish)
     {
-        foreach (FishButtonTemp fishButton in _mothsFishDict.Values)
+        if (state) AddFish(fish);
+        else RemoveFish(fish);
+    }
+
+    void AddFish(JSONReader.Fish fish)
+    {
+        // Do not allow bad fish
+        if (!_allowedFish.Contains(fish.id)) return;
+
+        // Add to inv
+        SimulationManager.instance.fishInventory.Add(fish);
+
+        // Update allowed fish
+        _allowedFish.IntersectWith(fish.friends);
+        _allowedFish.Add(fish.id);
+
+        // Set allowed fish toggles
+        SetInteractable();
+    }
+
+    void RemoveFish(JSONReader.Fish fish)
+    {
+        // Remove fish
+        SimulationManager.instance.fishInventory.Remove(fish);
+
+        // Recalculate allowed fish
+        _allowedFish = new HashSet<string>(_allFishButtons.Keys);
+        foreach (JSONReader.Fish jerry in SimulationManager.instance.fishInventory)
         {
-            fishButton.SetEnabled(fishButton.fish.gallons <= _remainingGallons);
+            _allowedFish.IntersectWith(jerry.friends);
+        }
+
+        // Set allowed fish toggles
+        SetInteractable();
+    }
+
+    void SetInteractable()
+    {
+        foreach (KeyValuePair<string, FishButton> keyValue in _allFishButtons)
+        {
+            keyValue.Value.SetEnabled(_allowedFish.Contains(keyValue.Key));
         }
     }
+
+    // private void CheckGallons()
+    // {
+    //     foreach (FishButton fishButton in _mothsFishDict.Values)
+    //     {
+    //         fishButton.SetEnabled(fishButton.fish.gallons <= _remainingGallons);
+    //     }
+    // }
 }
