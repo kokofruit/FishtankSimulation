@@ -75,15 +75,5 @@ public class JSONReader : MonoBehaviour
         public Decor decor;
         public Substrate[] substrate;
         public Diet[] diet;
-
-        public Fish GetFish(string id)
-        {
-            Fish returnFish = null;
-            foreach (Fish fishEntry in fish)
-            {
-                if (fishEntry.id == id) returnFish = fishEntry;
-            }
-            return returnFish;
-        }
     }
 }

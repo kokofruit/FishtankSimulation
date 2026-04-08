@@ -13,7 +13,8 @@ public class SimulationManager : MonoBehaviour
 
     // inventory
     public int tankSize = 0;
-    public List<JSONReader.Fish> fishInventory;
+    // public List<JSONReader.Fish> fishInventory;
+    public Dictionary<JSONReader.Fish, int> fishInv = new();
     public List<JSONReader.Decoration> decorationInventory;
     public JSONReader.Substrate substrateInventory;
 
@@ -71,6 +72,22 @@ public class SimulationManager : MonoBehaviour
         _screens[_screenIndex].alpha = 1;
         _screens[_screenIndex].blocksRaycasts = true;
         _screens[_screenIndex].enabled = true;
+    }
+
+    public void AddToFishInv(JSONReader.Fish fish)
+    {
+        // add to quantity if already in inventory
+        if (fishInv.ContainsKey(fish)) fishInv[fish]++;
+        // otherwise, add to inventory with quantity of one
+        else fishInv.Add(fish, 1);
+    }
+
+    public void RemoveFromFishInv(JSONReader.Fish fish)
+    {
+        // if not in inventory, do nothing
+        if (!fishInv.ContainsKey(fish)) return;
+        // decrease quantity and remove if zero or less
+        if (--fishInv[fish] < 1) fishInv.Remove(fish);
     }
 
     // this works in theory
