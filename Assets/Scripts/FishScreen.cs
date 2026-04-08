@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,6 +8,11 @@ public class FishScreen : MonoBehaviour
     private int _remainingGallons;
     [SerializeField] private RectTransform _scrollViewContent;
     [SerializeField] private GameObject _fishButtonPrefab;
+
+    [SerializeField] private TMP_Text _displayName;
+    [SerializeField] private Image _displayImage;
+    [SerializeField] private TMP_Text _displayDescription;
+
     private Dictionary<string, FishButton> _allFishButtons = new();
     private HashSet<string> _allowedFish = new();
 
@@ -53,6 +59,9 @@ public class FishScreen : MonoBehaviour
 
         // Set allowed fish toggles
         SetInteractable();
+
+        //Edit info panel
+        SetDisplay(fish);
     }
 
     void RemoveFish(JSONReader.Fish fish)
@@ -62,13 +71,25 @@ public class FishScreen : MonoBehaviour
 
         // Recalculate allowed fish
         _allowedFish = new HashSet<string>(_allFishButtons.Keys);
+
+
         foreach (JSONReader.Fish jerry in SimulationManager.instance.fishInventory)
         {
             _allowedFish.IntersectWith(jerry.friends);
+            _allowedFish.Add(jerry.id);
         }
 
         // Set allowed fish toggles
         SetInteractable();
+    }
+
+    void SetDisplay(JSONReader.Fish fish) {
+        _displayName.text = fish.name;
+
+        //TODO: json still needs this
+        //_displayDescription.text=fish.description;
+
+        _displayImage.sprite = Resources.Load<Sprite>("Images/fish/" + fish.id);
     }
 
     void SetInteractable()
