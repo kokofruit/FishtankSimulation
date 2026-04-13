@@ -3,39 +3,28 @@ using UnityEngine.UI;
 
 public class TankScreen : MonoBehaviour
 {
-    [SerializeField] private Button _smTankBtn;
-    [SerializeField] private Button _mdTankBtn;
-    [SerializeField] private Button _lgTankBtn;
+    [SerializeField] private Toggle _smTankTog;
+    [SerializeField] private Toggle _mdTankTog;
+    [SerializeField] private Toggle _lgTankTog;
     [SerializeField] private Button _nextBtn;
 
-    void OnEnable()
+    void Start()
     {
-        // add listeners to size selection buttons
-        _smTankBtn.onClick.AddListener(() => SetTank(25));
-        _mdTankBtn.onClick.AddListener(() => SetTank(25));
-        _lgTankBtn.onClick.AddListener(() => SetTank(25));
+        // set default tank size
+        SetTank(10);
 
-        // disable the next button if the tank size is unselected
-        _nextBtn.interactable = SimulationManager.instance.tankSize != 0;
+        // add listeners to size selection buttons
+        _smTankTog.onValueChanged.AddListener((bool value) => SetTank(10));
+        _mdTankTog.onValueChanged.AddListener((bool value) => SetTank(25));
+        _lgTankTog.onValueChanged.AddListener((bool value) => SetTank(50));
+
         // add listener to the next button
         _nextBtn.onClick.AddListener(() => SimulationManager.instance.NextScreen());
     }
-
-    void OnDisable()
-    {
-        // remove listeners
-        _smTankBtn.onClick.RemoveAllListeners();
-        _mdTankBtn.onClick.RemoveAllListeners();
-        _lgTankBtn.onClick.RemoveAllListeners();
-        _nextBtn.onClick.RemoveAllListeners();
-    }
-
 
     void SetTank(int size)
     {
         // set the size variable of the sim manager
         SimulationManager.instance.tankSize = size;
-        // enable the next button if the tank size set to a non-zero value
-        _nextBtn.interactable = size != 0;
     }
 }

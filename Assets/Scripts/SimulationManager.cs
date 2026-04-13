@@ -13,9 +13,11 @@ public class SimulationManager : MonoBehaviour
 
     // inventory
     public int tankSize = 0;
-    public List<JSONReader.Fish> fishInventory;
-    public List<JSONReader.Decoration> decorationInventory;
+    // public List<JSONReader.Fish> fishInventory;
+    public Dictionary<JSONReader.Fish, int> fishInv = new();
+    public HashSet<JSONReader.Decoration> decorationInventory=new();
     public JSONReader.Substrate substrateInventory;
+    public float totalCost;
 
     // the array of UI
     [SerializeField] private CanvasGroup[] _screens = new CanvasGroup[5];
@@ -62,15 +64,31 @@ public class SimulationManager : MonoBehaviour
         if (_screenIndex - 1 < 0) return;
 
         // turn off current screen
-        _screens[_screenIndex].alpha = 0;
-        _screens[_screenIndex].blocksRaycasts = false;
-        _screens[_screenIndex].enabled = false;
+        _screens[_screenIndex].gameObject.SetActive(false);
         // decrease screen index
-        _screenIndex++;
+        _screenIndex--;
         // turn on new screen
-        _screens[_screenIndex].alpha = 1;
-        _screens[_screenIndex].blocksRaycasts = true;
-        _screens[_screenIndex].enabled = true;
+        _screens[_screenIndex].gameObject.SetActive(true);
+    }
+
+    public void AddToFishInv(JSONReader.Fish fish)
+    {
+        // add to quantity if already in inventory
+        if (fishInv.ContainsKey(fish)) fishInv[fish]++;
+        // otherwise, add to inventory with quantity of one
+        else fishInv.Add(fish, 1);
+        //update cost tally
+        totalCost += fish.price[0];
+    }
+
+    public void RemoveFromFishInv(JSONReader.Fish fish)
+    {
+        // if not in inventory, do nothing
+        if (!fishInv.ContainsKey(fish)) return;
+        // decrease quantity and remove if zero or less
+        if (--fishInv[fish] < 1) fishInv.Remove(fish);
+        //update cost tally
+        totalCost -= fish.price[0];
     }
 
     // this works in theory
@@ -81,4 +99,46 @@ public class SimulationManager : MonoBehaviour
     //    image.sprite = imageSprite;
     //    image.GetComponent<RectTransform>().sizeDelta = imageSprite.rect.size;
     //}
+
+    override public string ToString() {
+        float phLow = 0;
+        float phHigh = 0;
+
+        float tempLow = 0;
+        float tempHigh = 0;
+
+        float dkhLow = 0;
+        float dkhHigh = 0;
+
+        int numFish=fishInv.Count;
+
+
+        string output = "Fish:\n";
+        foreach (KeyValuePair<JSONReader.Fish,int> KVpair in fishInv) {
+            output += "("+ KVpair.Value+")"+KVpair.Key.name + ": $" + KVpair.Key.price[0] + "\n";
+            phLow += KVpair.Key.ph[0];
+            phHigh += KVpair.Key.ph[1];
+
+            tempLow += KVpair.Key.temp[0];
+            tempHigh += KVpair.Key.temp[1];
+
+            dkhLow += KVpair.Key.dkh[0];
+            dkhHigh += KVpair.Key.dkh[1];
+        }
+        output += "\nDecor:\n";
+        foreach (JSONReader.Decoration BigD in decorationInventory)
+        {
+            output += BigD.name+": $"+BigD.price+"\n";
+        }
+        output += "\nSubstrate: \n"+substrateInventory.name+": $"+substrateInventory.price+"\n";
+
+        output += "\nph: " + (phLow / numFish) + "-" + (phHigh / numFish) + "\n";
+        output += "\ntemp: " + (tempLow / numFish) + "-" + (tempHigh / numFish) + "\n";
+        output += "\ndkh: " + (dkhLow / numFish) + "-" + (dkhHigh / numFish) + "\n";
+
+
+        output += "\nTotal Cost: $" + totalCost;
+
+        return output;
+    }
 }

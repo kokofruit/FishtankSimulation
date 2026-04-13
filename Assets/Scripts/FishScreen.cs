@@ -5,16 +5,19 @@ using UnityEngine.UI;
 
 public class FishScreen : MonoBehaviour
 {
-    private int _remainingGallons;
+    // selection variables
     [SerializeField] private RectTransform _scrollViewContent;
     [SerializeField] private GameObject _fishButtonPrefab;
-
-    [SerializeField] private TMP_Text _displayName;
-    [SerializeField] private Image _displayImage;
-    [SerializeField] private TMP_Text _displayDescription;
-
-    private Dictionary<string, FishButton> _allFishButtons = new();
+    private Dictionary<string, FishOption> _allFishOptions = new();
     private HashSet<string> _allowedFish = new();
+
+    // display variables
+    [SerializeField] private TMP_Text _displayTitle;
+    [SerializeField] private Image _displayImage;
+    [SerializeField] private TMP_Text _displayDesc;
+
+    // other
+    private int _remainingGallons;
 
 
     void Start()
@@ -25,24 +28,25 @@ public class FishScreen : MonoBehaviour
         foreach (JSONReader.Fish fish in SimulationManager.instance.json.fish)
         {
             // create listing
-            FishButton button = Instantiate(_fishButtonPrefab, _scrollViewContent).GetComponent<FishButton>();
+            FishOption button = Instantiate(_fishButtonPrefab, _scrollViewContent).GetComponent<FishOption>();
             button.SetFish(fish);
 
-            // add listener
-            button.GetComponent<Toggle>().onValueChanged.AddListener((bool value) => HandleInput(value, fish));
+            // add listeners
+            button.button.onClick.AddListener(() => DisplayFish(fish));
+            button.addBtn.onClick.AddListener(() => AddFish(fish));
+            button.removeBtn.onClick.AddListener(() => RemoveFish(fish));
 
             // add to dict
-            _allFishButtons.Add(fish.id, button);
+            _allFishOptions.Add(fish.id, button);
 
             // add to allowed fish
             _allowedFish.Add(fish.id);
         }
-    }
 
-    void HandleInput(bool state, JSONReader.Fish fish)
-    {
-        if (state) AddFish(fish);
-        else RemoveFish(fish);
+        // disable bad options off the bat
+        SetInteractable();
+        // set display off the bat
+        DisplayFish(SimulationManager.instance.json.fish[0]);
     }
 
     void AddFish(JSONReader.Fish fish)
@@ -51,36 +55,43 @@ public class FishScreen : MonoBehaviour
         if (!_allowedFish.Contains(fish.id)) return;
 
         // Add to inv
-        SimulationManager.instance.fishInventory.Add(fish);
+        SimulationManager.instance.AddToFishInv(fish);
+        // set quantity
+        _allFishOptions[fish.id].quantityText.SetText(SimulationManager.instance.fishInv[fish].ToString());
 
+        // subtract gallons
+        _remainingGallons -= fish.gallons;
         // Update allowed fish
         _allowedFish.IntersectWith(fish.friends);
         _allowedFish.Add(fish.id);
-
         // Set allowed fish toggles
         SetInteractable();
 
-        //Edit info panel
-        SetDisplay(fish);
+        // display fish
+        DisplayFish(fish);
     }
 
     void RemoveFish(JSONReader.Fish fish)
     {
+        // set quantity
+        _allFishOptions[fish.id].quantityText.SetText("" + (SimulationManager.instance.fishInv[fish] - 1));
         // Remove fish
-        SimulationManager.instance.fishInventory.Remove(fish);
+        SimulationManager.instance.RemoveFromFishInv(fish);
 
         // Recalculate allowed fish
-        _allowedFish = new HashSet<string>(_allFishButtons.Keys);
-
-
-        foreach (JSONReader.Fish jerry in SimulationManager.instance.fishInventory)
+        _allowedFish = new HashSet<string>(_allFishOptions.Keys);
+        foreach (JSONReader.Fish jerry in SimulationManager.instance.fishInv.Keys)
         {
             _allowedFish.IntersectWith(jerry.friends);
             _allowedFish.Add(jerry.id);
         }
-
+        // add gallons
+        _remainingGallons += fish.gallons;
         // Set allowed fish toggles
         SetInteractable();
+
+        // display fish
+        DisplayFish(fish);
     }
 
     void SetDisplay(JSONReader.Fish fish) {
@@ -94,17 +105,21 @@ public class FishScreen : MonoBehaviour
 
     void SetInteractable()
     {
-        foreach (KeyValuePair<string, FishButton> keyValue in _allFishButtons)
+        foreach (KeyValuePair<string, FishOption> keyValue in _allFishOptions)
         {
-            keyValue.Value.SetEnabled(_allowedFish.Contains(keyValue.Key));
+            // allow fish to be added as long as they are compatible and there is enough room
+            keyValue.Value.addBtn.interactable = _allowedFish.Contains(keyValue.Key) && keyValue.Value.fish.gallons <= _remainingGallons;
+            // turn off minus button if the quantity is zero
+            keyValue.Value.removeBtn.interactable = SimulationManager.instance.fishInv.ContainsKey(keyValue.Value.fish);
         }
     }
 
-    // private void CheckGallons()
-    // {
-    //     foreach (FishButton fishButton in _mothsFishDict.Values)
-    //     {
-    //         fishButton.SetEnabled(fishButton.fish.gallons <= _remainingGallons);
-    //     }
-    // }
+    void DisplayFish(JSONReader.Fish fish)
+    {
+        _displayTitle.SetText(fish.name);
+        Sprite sprite = Resources.Load<Sprite>("Images/fish/" + fish.id);
+        _displayImage.sprite = sprite;
+        _displayImage.transform.localScale = new Vector3(1, sprite.rect.height/sprite.rect.width, 1);
+        _displayDesc.SetText(fish.description);
+    }
 }
