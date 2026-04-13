@@ -49,6 +49,23 @@ public class FishScreen : MonoBehaviour
         DisplayFish(SimulationManager.instance.json.fish[0]);
     }
 
+    private void OnEnable()
+    {
+        // set remaining gallons to maximum by default
+        _remainingGallons = SimulationManager.instance.tankSize;
+
+        //reset shizz here
+        SimulationManager.instance.fishInv = new();
+
+        FishOption.Reset();
+
+        _allowedFish = new HashSet<string>(_allFishOptions.Keys);
+        // disable bad options off the bat
+        SetInteractable();
+        // set display off the bat
+        DisplayFish(SimulationManager.instance.json.fish[0]);
+    }
+
     void AddFish(JSONReader.Fish fish)
     {
         // Do not allow bad fish
@@ -95,10 +112,10 @@ public class FishScreen : MonoBehaviour
     }
 
     void SetDisplay(JSONReader.Fish fish) {
-        _displayName.text = fish.name;
+        _displayTitle.text = fish.name;
 
         //TODO: json still needs this
-        //_displayDescription.text=fish.description;
+        //_displayDesc.text=fish.description;
 
         _displayImage.sprite = Resources.Load<Sprite>("Images/fish/" + fish.id);
     }
