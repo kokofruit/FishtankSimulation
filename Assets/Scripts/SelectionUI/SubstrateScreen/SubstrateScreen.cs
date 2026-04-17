@@ -36,6 +36,8 @@ public class SubstrateScreen : MonoBehaviour
         // set display off the bat
         DisplaySubstrate(SimulationManager.instance.json.substrate[0]);
 
+        // set default substrate
+        AddSubstrate(SimulationManager.instance.json.substrate[0]);
     }
 
     void ToggleInteract(bool b, JSONReader.Substrate substrate)
@@ -47,9 +49,10 @@ public class SubstrateScreen : MonoBehaviour
     void AddSubstrate(JSONReader.Substrate substrate)
     {
         //remove previous substrte cost
-        if(SimulationManager.instance.substrateInventory!=null) SimulationManager.instance.totalCost-= SimulationManager.instance.substrateInventory.price;
-        
-        SimulationManager.instance.substrateInventory= substrate;
+        if (SimulationManager.instance.substrateInventory != null)
+            SimulationManager.instance.totalCost -= SimulationManager.instance.substrateInventory.price;
+
+        SimulationManager.instance.substrateInventory = substrate;
         //update cost tally
         SimulationManager.instance.totalCost += substrate.price;
     }

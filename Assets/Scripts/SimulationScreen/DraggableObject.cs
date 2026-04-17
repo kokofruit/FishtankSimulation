@@ -35,7 +35,7 @@ public class DraggableObject : MonoBehaviour, IDragHandler, IBeginDragHandler, I
     {
         Image image = GetComponent<Image>();
         // TODO: Set scale !!!!!!!
-        transform.localScale = Vector3.one * 3;
+        transform.localScale = Vector3.one;
         // Set image
         Sprite sprite = Resources.Load<Sprite>("Images/Decor/" + decoration.name);
         image.sprite = sprite;
