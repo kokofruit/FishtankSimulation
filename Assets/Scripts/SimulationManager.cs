@@ -15,7 +15,7 @@ public class SimulationManager : MonoBehaviour
     public int tankSize = 0;
     // public List<JSONReader.Fish> fishInventory;
     public Dictionary<JSONReader.Fish, int> fishInv = new();
-    public HashSet<JSONReader.Decoration> decorationInventory=new();
+    public HashSet<JSONReader.Decoration> decorationInventory = new();
     public JSONReader.Substrate substrateInventory;
     public float totalCost;
 
@@ -100,7 +100,8 @@ public class SimulationManager : MonoBehaviour
     //    image.GetComponent<RectTransform>().sizeDelta = imageSprite.rect.size;
     //}
 
-    override public string ToString() {
+    override public string ToString()
+    {
         float phLow = 0;
         float phHigh = 0;
 
@@ -110,12 +111,13 @@ public class SimulationManager : MonoBehaviour
         float dkhLow = 0;
         float dkhHigh = 0;
 
-        int numFish=fishInv.Count;
+        int numFish = fishInv.Count;
 
 
         string output = "Fish:\n";
-        foreach (KeyValuePair<JSONReader.Fish,int> KVpair in fishInv) {
-            output += "("+ KVpair.Value+")"+KVpair.Key.name + ": $" + KVpair.Key.price[0] + "\n";
+        foreach (KeyValuePair<JSONReader.Fish, int> KVpair in fishInv)
+        {
+            output += "(" + KVpair.Value + ")" + KVpair.Key.name + ": $" + KVpair.Key.price[0] + "\n";
             phLow += KVpair.Key.ph[0];
             phHigh += KVpair.Key.ph[1];
 
@@ -128,9 +130,9 @@ public class SimulationManager : MonoBehaviour
         output += "\nDecor:\n";
         foreach (JSONReader.Decoration BigD in decorationInventory)
         {
-            output += BigD.name+": $"+BigD.price+"\n";
+            output += BigD.name + ": $" + BigD.price + "\n";
         }
-        output += "\nSubstrate: \n"+substrateInventory.name+": $"+substrateInventory.price+"\n";
+        output += "\nSubstrate: \n" + substrateInventory.name + ": $" + substrateInventory.price + "\n";
 
         output += "\nph: " + (phLow / numFish) + "-" + (phHigh / numFish) + "\n";
         output += "\ntemp: " + (tempLow / numFish) + "-" + (tempHigh / numFish) + "\n";

@@ -9,12 +9,22 @@ public class DraggingManager : MonoBehaviour
 
     [SerializeField] private Rect _boundingBox;
 
+    [SerializeField] private GameObject _draggablePrefab;
+
     public DraggableObject currentDraggable;
 
 
     private void OnEnable()
     {
         SetBoundingBoxRect();
+
+        foreach (JSONReader.Decoration decoration in SimulationManager.instance.decorationInventory)
+        {
+            DraggableObject draggableObject = Instantiate(_draggablePrefab, _boundingBox.center, Quaternion.identity).GetComponent<DraggableObject>();
+            draggableObject.transform.SetParent(_defaultLayer);
+            draggableObject.transform.localScale = Vector3.one;
+            draggableObject.SetDecor(decoration);
+        }
     }
 
     public void StartDraggingObject(DraggableObject draggedObject)
@@ -26,8 +36,6 @@ public class DraggingManager : MonoBehaviour
     public void StopDraggingObject(DraggableObject draggedObject)
     {
         draggedObject.transform.SetParent(_defaultLayer);
-        print(draggedObject.transform.localPosition);
-        print(draggedObject.transform.position);
         currentDraggable = null;
     }
 
