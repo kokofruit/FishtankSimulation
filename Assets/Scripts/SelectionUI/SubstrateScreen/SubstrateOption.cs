@@ -12,6 +12,7 @@ public class SubstrateOption : MonoBehaviour
     void Awake()
     {
         button = GetComponent<Toggle>();
+        button.group = GetComponentInParent<ToggleGroup>();
     }
 
     public void SetSubstrate(JSONReader.Substrate newSub)
