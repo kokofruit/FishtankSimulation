@@ -16,7 +16,10 @@ public class FishScreen : MonoBehaviour
     [SerializeField] private Image _displayImage;
     [SerializeField] private TMP_Text _displayDesc;
 
+    [SerializeField] private PopUpScreen _popUpScreen;
+
     // other
+    [SerializeField] private Button _nextBtn;
     private int _remainingGallons;
 
 
@@ -47,6 +50,8 @@ public class FishScreen : MonoBehaviour
         SetInteractable();
         // set display off the bat
         DisplayFish(SimulationManager.instance.json.fish[0]);
+
+        _nextBtn.onClick.AddListener(penis);
     }
 
     private void OnEnable()
@@ -138,5 +143,20 @@ public class FishScreen : MonoBehaviour
         _displayImage.sprite = sprite;
         _displayImage.transform.localScale = new Vector3(1, sprite.rect.height/sprite.rect.width, 1);
         _displayDesc.SetText(fish.description);
+    }
+
+    void penis() {
+        foreach (KeyValuePair<JSONReader.Fish,int> benson in SimulationManager.instance.fishInv)
+        {
+            if (benson.Key.count[0]>benson.Value && benson.Key.count[1] < benson.Value) {
+                _popUpScreen.live(
+                    benson.Key.name+
+                    " requires that it must be in a shcool of between "
+                    + benson.Key.count[0]+" and " + benson.Key.count[1]+ 
+                    " of itself.");
+                return;
+            }
+            SimulationManager.instance.NextScreen();
+        }
     }
 }
