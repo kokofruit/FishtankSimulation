@@ -9,8 +9,8 @@ public class FlockManager : MonoBehaviour
     public GameObject fishPrefab;
     public int numFish = 20;
     public GameObject[] allFish;
-    public Vector3 swimLimits = new Vector3(5.0f, 5.0f, 5.0f);
-    public Vector3 goalPos = Vector3.zero;
+    public Vector2 swimLimits = new Vector2(5.0f, 5.0f);
+    public Vector2 goalPos = Vector2.zero;
 
     [Header("Fish Settings")]
     [Range(0.0f, 5.0f)] public float minSpeed;
@@ -26,10 +26,10 @@ public class FlockManager : MonoBehaviour
         for (int i = 0; i < numFish; ++i)
         {
 
-            Vector3 pos = this.transform.position + new Vector3(
+            Vector2 pos = this.transform.position + new Vector2(
                 Random.Range(-swimLimits.x, swimLimits.x),
-                Random.Range(-swimLimits.y, swimLimits.y),
-                Random.Range(-swimLimits.z, swimLimits.z));
+                Random.Range(-swimLimits.y, swimLimits.y)
+                );
 
             allFish[i] = Instantiate(fishPrefab, pos, Quaternion.identity);
         }
@@ -45,10 +45,9 @@ public class FlockManager : MonoBehaviour
         if (Random.Range(0, 100) < 10)
         {
 
-            goalPos = this.transform.position + new Vector3(
+            goalPos = this.transform.position + new Vector2(
                 Random.Range(-swimLimits.x, swimLimits.x),
-                Random.Range(-swimLimits.y, swimLimits.y),
-                Random.Range(-swimLimits.z, swimLimits.z));
+                Random.Range(-swimLimits.y, swimLimits.y));
         }
     }
 }

@@ -34,7 +34,7 @@ public class Flock : MonoBehaviour
         if (turning)
         {
 
-            Vector3 direction = FlockManager.FM.transform.position - transform.position;
+            Vector2 direction = FlockManager.FM.transform.position - transform.position;
             transform.rotation = Quaternion.Slerp(
                 transform.rotation,
                 Quaternion.LookRotation(direction),
@@ -66,8 +66,8 @@ public class Flock : MonoBehaviour
         GameObject[] gos;
         gos = FlockManager.FM.allFish;
 
-        Vector3 vCentre = Vector3.zero;
-        Vector3 vAvoid = Vector3.zero;
+        Vector2 vCentre = Vector2.zero;
+        Vector2 vAvoid = Vector2.zero;
 
         float gSpeed = 0.01f;
         float mDistance;
@@ -79,7 +79,7 @@ public class Flock : MonoBehaviour
             if (go != this.gameObject)
             {
 
-                mDistance = Vector3.Distance(go.transform.position, this.transform.position);
+                mDistance = Vector2.Distance(go.transform.position, this.transform.position);
                 if (mDistance <= FlockManager.FM.neighbourDistance)
                 {
 
@@ -110,8 +110,8 @@ public class Flock : MonoBehaviour
                 speed = FlockManager.FM.maxSpeed;
             }
 
-            Vector3 direction = (vCentre + vAvoid) - transform.position;
-            if (direction != Vector3.zero)
+            Vector2 direction = (vCentre + vAvoid) - transform.position;
+            if (direction != Vector2.zero)
             {
 
                 transform.rotation = Quaternion.Slerp(
