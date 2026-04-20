@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Guppy_0: 4395249411444638742
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

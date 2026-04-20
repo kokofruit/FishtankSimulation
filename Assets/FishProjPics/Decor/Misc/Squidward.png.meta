@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Squidward_0: 2092320331362565190
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

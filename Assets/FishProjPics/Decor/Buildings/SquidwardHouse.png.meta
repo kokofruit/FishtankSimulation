@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SquidwardHouse_0: -5231605569843730526
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
