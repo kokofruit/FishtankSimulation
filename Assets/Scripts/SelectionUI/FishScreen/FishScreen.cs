@@ -146,17 +146,21 @@ public class FishScreen : MonoBehaviour
     }
 
     void penis() {
+        Debug.Log("dom");
         foreach (KeyValuePair<JSONReader.Fish,int> benson in SimulationManager.instance.fishInv)
         {
-            if (benson.Key.count[0]>benson.Value && benson.Key.count[1] < benson.Value) {
+            Debug.Log("domenic");
+            if ((benson.Key.count[0]>benson.Value) || (benson.Key.count[1] < benson.Value)) {
+                Debug.Log("domenic cannela");
                 _popUpScreen.live(
                     benson.Key.name+
-                    " requires that it must be in a shcool of between "
+                    " requires that it must be in a school of between "
                     + benson.Key.count[0]+" and " + benson.Key.count[1]+ 
                     " of itself.");
                 return;
             }
-            SimulationManager.instance.NextScreen();
         }
+        _popUpScreen.kill();
+        SimulationManager.instance.NextScreen();
     }
 }
