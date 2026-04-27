@@ -1,6 +1,7 @@
 {
     "fish": [
         {
+            "scale": 1.5,
             "id": "angelfish",
             "name": "Angelfish",
             "gallons": 30,
@@ -64,84 +65,86 @@
             ],
             "description": ""
         },
-        {
-            "id": "betta",
-            "name": "Betta Fish",
-            "gallons": 5,
-            "count": [
-                1,
-                1
-            ],
-            "friends": [
-                "corydoras",
-                "danios",
-                "guppy",
-                "otocinclus",
-                "rasbora",
-                "shrimp",
-                "snail",
-                "tetra"
-            ],
-            "decor": {
-                "plants": [
-                    "grassy",
-                    "sword",
-                    "anubias",
-                    "fern",
-                    "moss",
-                    "floating",
-                    "rotala"
-                ],
-                "driftwood": [
-                    "log"
-                ],
-                "coral": [],
-                "caves": [
-                    "small",
-                    "medium",
-                    "large"
-                ],
-                "buildings": [
-                    "shack"
-                ],
-                "misc": [
-                    "couch"
-                ]
-            },
-            "substrate": [
-                "sand",
-                "lg_gravel"
-            ],
-            "diet": [
-                "flakes",
-                "pellets",
-                "bloodworms",
-                "shrimp",
-                "daphnia"
-            ],
-            "ph": [
-                6.5,
-                7.5
-            ],
-            "temp": [
-                74,
-                84
-            ],
-            "dkh": [
-                3,
-                5
-            ],
-            "salinity": [
-                0,
-                0
-            ],
-            "price": [
-                4,
-                10
-            ],
-            "description": ""
+      {
+        "scale": 1,
+        "id": "betta",
+        "name": "Betta Fish",
+        "gallons": 5,
+        "count": [
+          1,
+          1
+        ],
+        "friends": [
+          "corydoras",
+          "danios",
+          "guppy",
+          "otocinclus",
+          "rasbora",
+          "shrimp",
+          "snail",
+          "tetra"
+        ],
+        "decor": {
+          "plants": [
+            "grassy",
+            "sword",
+            "anubias",
+            "fern",
+            "moss",
+            "floating",
+            "rotala"
+          ],
+          "driftwood": [
+            "log"
+          ],
+          "coral": [],
+          "caves": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "buildings": [
+            "shack"
+          ],
+          "misc": [
+            "couch"
+          ]
         },
+        "substrate": [
+          "sand",
+          "lg_gravel"
+        ],
+        "diet": [
+          "flakes",
+          "pellets",
+          "bloodworms",
+          "shrimp",
+          "daphnia"
+        ],
+        "ph": [
+          6.5,
+          7.5
+        ],
+        "temp": [
+          74,
+          84
+        ],
+        "dkh": [
+          3,
+          5
+        ],
+        "salinity": [
+          0,
+          0
+        ],
+        "price": [
+          4,
+          10
+        ],
+        "description": ""
+      },
         {
+            "scale": 0.5,
             "id": "shrimp",
             "name": "Cherry Shrimp",
             "gallons": 1,
@@ -214,6 +217,7 @@
             "description": ""
         },
         {
+            "scale": 1.5,
             "id": "starfish",
             "name": "Chocolate Chip Starfish",
             "gallons": 50,
@@ -271,6 +275,7 @@
             "description": ""
         },
         {
+            "scale": 1.2,
             "id": "clownfish",
             "name": "Clownfish",
             "gallons": 10,
@@ -335,75 +340,77 @@
             ],
             "description": ""
         },
-        {
-            "id": "corydoras",
-            "name": "Corydoras",
-            "gallons": 4,
-            "count": [
-                6,
-                99
-            ],
-            "friends": [
-                "angelfish",
-                "betta",
-                "danios",
-                "guppy",
-                "killifish",
-                "otocinclus",
-                "rasbora",
-                "shrimp",
-                "snail",
-                "tetra"
-            ],
-            "decor": {
-                "plants": [],
-                "driftwood": [
-                    "driftwood",
-                    "log"
-                ],
-                "coral": [],
-                "caves": [
-                    "small",
-                    "medium"
-                ],
-                "buildings": [],
-                "misc": [
-                    "rock"
-                ]
-            },
-            "substrate": [
-                "sand"
-            ],
-            "diet": [
-                "bloodworms",
-                "shrimp",
-                "daphnia",
-                "veg",
-                "pellets"
-            ],
-            "ph": [
-                6.0,
-                7.5
-            ],
-            "temp": [
-                74,
-                80
-            ],
-            "dkh": [
-                2,
-                10
-            ],
-            "salinity": [
-                0,
-                0
-            ],
-            "price": [
-                5,
-                7
-            ],
-            "description": ""
+      {
+        "scale": 1.2,
+        "id": "corydoras",
+        "name": "Corydoras",
+        "gallons": 4,
+        "count": [
+          6,
+          99
+        ],
+        "friends": [
+          "angelfish",
+          "betta",
+          "danios",
+          "guppy",
+          "killifish",
+          "otocinclus",
+          "rasbora",
+          "shrimp",
+          "snail",
+          "tetra"
+        ],
+        "decor": {
+          "plants": [],
+          "driftwood": [
+            "driftwood",
+            "log"
+          ],
+          "coral": [],
+          "caves": [
+            "small",
+            "medium"
+          ],
+          "buildings": [],
+          "misc": [
+            "rock"
+          ]
         },
+        "substrate": [
+          "sand"
+        ],
+        "diet": [
+          "bloodworms",
+          "shrimp",
+          "daphnia",
+          "veg",
+          "pellets"
+        ],
+        "ph": [
+          6.0,
+          7.5
+        ],
+        "temp": [
+          74,
+          80
+        ],
+        "dkh": [
+          2,
+          10
+        ],
+        "salinity": [
+          0,
+          0
+        ],
+        "price": [
+          5,
+          7
+        ],
+        "description": ""
+      },
         {
+            "scale": 0.5,
             "id": "danios",
             "name": "Danios",
             "gallons": 2,
@@ -473,6 +480,7 @@
             "description": ""
         },
         {
+            "scale": 1,
             "id": "goldfish",
             "name": "Goldfish",
             "gallons": 20,
@@ -532,6 +540,7 @@
             "description": ""
         },
         {
+            "scale": 0.5,
             "id": "guppy",
             "name": "Guppy",
             "gallons": 2,
@@ -601,6 +610,7 @@
             "description": ""
         },
         {
+            "scale": 0.5,
             "id": "firefish",
             "name": "Helfrichi Firefish",
             "gallons": 15,
@@ -658,6 +668,7 @@
             "description": ""
         },
         {
+            "scale": 1,
             "id": "killifish",
             "name": "Killifish",
             "gallons": 5,
@@ -724,6 +735,7 @@
             "description": ""
         },
         {
+            "scale": 0.5,
             "id": "tetra",
             "name": "Neon Tetra",
             "gallons": 2,
@@ -793,6 +805,7 @@
             "description": ""
         },
         {
+            "scale": 0.7,
             "id": "snail",
             "name": "Nerite Snail",
             "gallons": 5,
@@ -864,6 +877,7 @@
             "description": ""
         },
         {
+            "scale": 1,
             "id": "otocinclus",
             "name": "Otocinclus",
             "gallons": 3,
@@ -925,6 +939,7 @@
             "description": ""
         },
         {
+            "scale": 0.5,
             "id": "rasbora",
             "name": "Rasbora",
             "gallons": 2,
@@ -993,6 +1008,7 @@
             "description": ""
         },
         {
+            "scale": 1.5,
             "id": "gramma",
             "name": "Royal Gramma",
             "gallons": 30,
@@ -1057,132 +1073,160 @@
             {
                 "id": "grassy",
                 "name": "Grassy Plant",
-                "price": 8.99
+                "price": 8.99,
+                "scale": 1.2
             },
             {
                 "id": "sword",
                 "name": "Amazon Sword Plant",
-                "price": 9.99
+                "price": 9.99,
+                "scale": 1.5
             },
             {
                 "id": "anubias",
                 "name": "Anubias Plant",
-                "price": 10.99
+                "price": 10.99,
+                "scale": 1.5
             },
             {
                 "id": "fern",
                 "name": "Java Fern",
-                "price": 8.49
+                "price": 8.49,
+                "scale": 1
             },
             {
                 "id": "moss",
                 "name": "Java Moss",
-                "price": 9.99
+                "price": 9.99,
+                "scale": 0.5
             },
             {
                 "id": "pond",
                 "name": "Pond Weed",
-                "price": 8.99
+                "price": 8.99,
+                "scale": 1.5
+
             },
             {
                 "id": "floating",
                 "name": "Floating Plant",
-                "price": 7.49
+                "price": 7.49,
+                "scale": 1.5
             },
             {
                 "id": "rotala",
                 "name": "Rotala Rotundifolia",
-                "price": 8.49
+                "price": 8.49,
+                "scale":  1.5
             },
             {
                 "id": "driftwood",
                 "name": "Driftwood",
-                "price": 10.99
+                "price": 10.99,
+                "scale": 1.2
             },
             {
                 "id": "log",
                 "name": "Big Log",
-                "price": 17.99
+                "price": 17.99,
+                "scale": 1.8
+
             },
             {
                 "id": "tree",
                 "name": "Driftwood Tree",
-                "price": 25.99
+                "price": "25.99",
+                "scale": 2
             },
             {
                 "id": "small",
                 "name": "Small Coral",
-                "price": 10.59
+                "price": 10.59,
+                "scale": 0.5
             },
             {
                 "id": "medium",
                 "name": "Medium Coral",
-                "price": 13.99
+                "price": 13.99,
+                "scale": 1.2
             },
             {
                 "id": "swimmable",
                 "name": "Swim-Through Coral",
-                "price": 23.99
+                "price": 23.99,
+                "scale": 2
             },
             {
                 "id": "anenome",
                 "name": "Anenome",
-                "price": 50.99
+                "price": 50.99,
+                "scale": 0.5
             },
             {
                 "id": "small",
                 "name": "Small Cave",
-                "price": 12.99
+                "price": 12.99,
+                "scale": 1
             },
             {
                 "id": "medium",
                 "name": "Medium Cave",
-                "price": 15.99
+                "price": 15.99,
+                "scale": 1.5
             },
             {
                 "id": "large",
                 "name": "Large Cave",
-                "price": 21.99
+                "price": 21.99,
+                "scale": 2
             },
             {
                 "id": "squidward",
                 "name": "Squid's House",
-                "price": 17.99
+                "price": 17.99,
+                "scale": 1.5
             },
             {
                 "id": "spongebob",
                 "name": "Sponge's House",
-                "price": 20.99
+                "price": 20.99,
+                "scale": 1.5
             },
             {
                 "id": "shack",
                 "name": "Shack",
-                "price": 12.99
+                "price": 12.99,
+                "scale": 1.5
             },
             {
                 "id": "rock",
                 "name": "Aquatic Rock",
-                "price": 7.99
+                "price": 7.99,
+                "scale": 0.5
             },
             {
                 "id": "couch",
                 "name": "Fish Couch",
-                "price": 16.95
+                "price": 16.95,
+                "scale": 0.5
             },
             {
                 "id": "squidward",
                 "name": "Squid Figure",
-                "price": 14.99
+                "price": 14.99,
+                "scale": 0.7
             },
             {
                 "id": "turtle_statue",
                 "name": "Turtle Statue",
-                "price": 11.99
+                "price": 11.99,
+                "scale": 0.5
             },
             {
                 "id": "fish_statue",
                 "name": "Fish Statue",
-                "price": 10.99
+                "price": 10.99,
+                "scale": 0.5
             }
         ],
     "substrate": [
