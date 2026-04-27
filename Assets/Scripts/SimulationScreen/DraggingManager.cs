@@ -6,6 +6,7 @@ public class DraggingManager : MonoBehaviour
 
     [SerializeField] private RectTransform _defaultLayer;
     [SerializeField] private RectTransform _dragLayer;
+    [SerializeField] private RectTransform _finalLayer;
 
     [SerializeField] private Rect _boundingBox;
 
@@ -55,5 +56,15 @@ public class DraggingManager : MonoBehaviour
         Vector2 size = new Vector2(size_x, size_y);
 
         _boundingBox = new Rect(position, size);
+    }
+
+    public void NextScreen()
+    {
+        foreach (DraggableObject draggable in FindObjectsByType<DraggableObject>(FindObjectsSortMode.None))
+        {
+            draggable.transform.SetParent(_finalLayer);
+            Destroy(draggable);
+        }
+        SimulationManager.instance.NextScreen();
     }
 }
