@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UIElements;
 
 public class Flock : MonoBehaviour
 {
 
     float speed;
+    Vector2 moveDirection;
     bool turning = false;
 
     void Start()
@@ -17,10 +20,12 @@ public class Flock : MonoBehaviour
 
     void Update()
     {
+        Vector2 position = transform.position;
+        Vector2 center = FlockManager.FM.transform.position;
+        Vector2 limits = FlockManager.FM.swimLimits;
+        
 
-        Bounds b = new Bounds(FlockManager.FM.transform.position, FlockManager.FM.swimLimits * 2.0f);
-
-        if (!b.Contains(transform.position))
+        if (Mathf.Abs(position.x - center.x) > limits.x || Mathf.Abs(position.y - center.y) > limits.y)
         {
 
             turning = true;
@@ -34,11 +39,8 @@ public class Flock : MonoBehaviour
         if (turning)
         {
 
-            Vector2 direction = FlockManager.FM.transform.position - transform.position;
-            transform.rotation = Quaternion.Slerp(
-                transform.rotation,
-                Quaternion.LookRotation(direction),
-                FlockManager.FM.rotationSpeed * Time.deltaTime);
+            Vector2 directionToCenter = (center - position).normalized;
+            moveDirection = Vector2.Lerp(moveDirection, directionToCenter, speed);
         }
         else
         {
@@ -57,9 +59,24 @@ public class Flock : MonoBehaviour
             }
         }
 
-        this.transform.Translate(0.0f, 0.0f, speed * Time.deltaTime);
+        moveDirection.Normalize();
+
+        Flip(moveDirection);
+
+        this.transform.Translate(moveDirection* speed * Time.deltaTime);
     }
 
+    void Flip(Vector2 direction)
+    {
+        if (direction.x > 0.01f)
+        {
+            transform.localScale = new Vector3(1,1,1);
+        }
+        else if (direction.x < -0.01f)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+    }
     private void ApplyRules()
     {
 
@@ -78,30 +95,34 @@ public class Flock : MonoBehaviour
 
             if (go != this.gameObject)
             {
+                Vector2 otherPosition = go.transform.position;
+                Vector2 myPosition = transform.position;
 
-                mDistance = Vector2.Distance(go.transform.position, this.transform.position);
+                mDistance = Vector2.Distance(otherPosition, myPosition);
+
                 if (mDistance <= FlockManager.FM.neighbourDistance)
                 {
 
-                    vCentre += go.transform.position;
+                    vCentre += otherPosition;
                     groupSize++;
 
                     if (mDistance < 1.0f)
                     {
 
-                        vAvoid = vAvoid + (this.transform.position - go.transform.position);
+                        vAvoid += (myPosition - otherPosition);
                     }
 
                     Flock anotherFlock = go.GetComponent<Flock>();
-                    gSpeed = gSpeed + anotherFlock.speed;
+                    gSpeed += anotherFlock.speed;
                 }
             }
         }
 
         if (groupSize > 0)
         {
+            Vector2 myPosition = transform.position;
 
-            vCentre = vCentre / groupSize + (FlockManager.FM.goalPos - this.transform.position);
+            vCentre = vCentre / groupSize + (FlockManager.FM.goalPos - myPosition);
             speed = gSpeed / groupSize;
 
             if (speed > FlockManager.FM.maxSpeed)
@@ -110,15 +131,8 @@ public class Flock : MonoBehaviour
                 speed = FlockManager.FM.maxSpeed;
             }
 
-            Vector2 direction = (vCentre + vAvoid) - transform.position;
-            if (direction != Vector2.zero)
-            {
-
-                transform.rotation = Quaternion.Slerp(
-                    transform.rotation,
-                    Quaternion.LookRotation(direction),
-                    FlockManager.FM.rotationSpeed * Time.deltaTime);
-            }
+            Vector2 direction = (vCentre + vAvoid) - myPosition;
+            moveDirection = Vector2.Lerp(moveDirection, direction.normalized, speed);
         }
     }
 }

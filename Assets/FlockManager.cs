@@ -6,7 +6,7 @@ public class FlockManager : MonoBehaviour
 {
 
     public static FlockManager FM;
-    public GameObject fishPrefab;
+    public List<GameObject> fishPrefabs;
     public int numFish = 20;
     public GameObject[] allFish;
     public Vector2 swimLimits = new Vector2(5.0f, 5.0f);
@@ -26,12 +26,14 @@ public class FlockManager : MonoBehaviour
         for (int i = 0; i < numFish; ++i)
         {
 
-            Vector2 pos = this.transform.position + new Vector2(
+            Vector2 pos = (Vector2)this.transform.position + new Vector2(
                 Random.Range(-swimLimits.x, swimLimits.x),
                 Random.Range(-swimLimits.y, swimLimits.y)
                 );
 
-            allFish[i] = Instantiate(fishPrefab, pos, Quaternion.identity);
+            GameObject prefab = fishPrefabs[Random.Range(0, fishPrefabs.Count)];
+
+            allFish[i] = Instantiate(prefab, new Vector3(pos.x, pos.y, 0), Quaternion.identity);
         }
 
         FM = this;
@@ -45,7 +47,7 @@ public class FlockManager : MonoBehaviour
         if (Random.Range(0, 100) < 10)
         {
 
-            goalPos = this.transform.position + new Vector2(
+            goalPos = (Vector2)this.transform.position + new Vector2(
                 Random.Range(-swimLimits.x, swimLimits.x),
                 Random.Range(-swimLimits.y, swimLimits.y));
         }
