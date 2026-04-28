@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      S_AmazonSword_0: 4806673001734402206
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

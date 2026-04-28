@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AmazonSwordPlant_0: -1425387865208484495
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

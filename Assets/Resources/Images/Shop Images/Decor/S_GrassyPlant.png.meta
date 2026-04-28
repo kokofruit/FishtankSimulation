@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      S_GrassyPlant_0: -2821371170132992932
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

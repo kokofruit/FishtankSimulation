@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      S_SmallGravel_0: -89519712815591334
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

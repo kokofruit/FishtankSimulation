@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      S_AquaticRock_0: 3080780510903100184
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

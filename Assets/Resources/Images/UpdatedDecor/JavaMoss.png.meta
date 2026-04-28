@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      JavaMoss_0: 3836438786100439440
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

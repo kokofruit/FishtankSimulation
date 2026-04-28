@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      S_Corydoras_0: -2108667548240834664
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

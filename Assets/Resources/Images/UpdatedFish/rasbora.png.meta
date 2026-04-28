@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rasbora_0: 5579393171050790162
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

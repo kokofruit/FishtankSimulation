@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PondWeed_0: -5861799120796270622
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

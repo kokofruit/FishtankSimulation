@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      angelfish_0: 6740244376260901819
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

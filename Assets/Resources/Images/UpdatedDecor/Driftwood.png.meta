@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Driftwood_0: -519577046388947190
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

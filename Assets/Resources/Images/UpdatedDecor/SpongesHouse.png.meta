@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SpongesHouse_0: 979446881919789502
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

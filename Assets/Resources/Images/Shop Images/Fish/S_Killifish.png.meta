@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      S_Killifish_0: -6571310412287680715
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

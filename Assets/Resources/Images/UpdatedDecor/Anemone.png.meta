@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Anemone_0: 1098820029867108818
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
