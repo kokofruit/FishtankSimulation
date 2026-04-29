@@ -20,6 +20,7 @@ public class JSONReader : MonoBehaviour
         public string id;
         public string name;
         public int gallons;
+        public int[] count;
         public string[] friends;
         public FishDecor decor;
         public string[] substrate;

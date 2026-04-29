@@ -16,7 +16,10 @@ public class FishScreen : MonoBehaviour
     [SerializeField] private Image _displayImage;
     [SerializeField] private TMP_Text _displayDesc;
 
+    [SerializeField] private PopUpScreen _popUpScreen;
+
     // other
+    [SerializeField] private Button _nextBtn;
     private int _remainingGallons;
 
 
@@ -43,6 +46,25 @@ public class FishScreen : MonoBehaviour
             _allowedFish.Add(fish.id);
         }
 
+        // disable bad options off the bat
+        SetInteractable();
+        // set display off the bat
+        DisplayFish(SimulationManager.instance.json.fish[0]);
+
+        _nextBtn.onClick.AddListener(penis);
+    }
+
+    private void OnEnable()
+    {
+        // set remaining gallons to maximum by default
+        _remainingGallons = SimulationManager.instance.tankSize;
+
+        //reset shizz here
+        SimulationManager.instance.fishInv = new();
+
+        FishOption.Reset();
+
+        _allowedFish = new HashSet<string>(_allFishOptions.Keys);
         // disable bad options off the bat
         SetInteractable();
         // set display off the bat
@@ -94,6 +116,15 @@ public class FishScreen : MonoBehaviour
         DisplayFish(fish);
     }
 
+    void SetDisplay(JSONReader.Fish fish) {
+        _displayTitle.text = fish.name;
+
+        //TODO: json still needs this
+        //_displayDesc.text=fish.description;
+
+        _displayImage.sprite = Resources.Load<Sprite>("Images/fish/" + fish.id);
+    }
+
     void SetInteractable()
     {
         foreach (KeyValuePair<string, FishOption> keyValue in _allFishOptions)
@@ -112,5 +143,24 @@ public class FishScreen : MonoBehaviour
         _displayImage.sprite = sprite;
         _displayImage.transform.localScale = new Vector3(1, sprite.rect.height/sprite.rect.width, 1);
         _displayDesc.SetText(fish.description);
+    }
+
+    void penis() {
+        Debug.Log("dom");
+        foreach (KeyValuePair<JSONReader.Fish,int> benson in SimulationManager.instance.fishInv)
+        {
+            Debug.Log("domenic");
+            if ((benson.Key.count[0]>benson.Value) || (benson.Key.count[1] < benson.Value)) {
+                Debug.Log("domenic cannela");
+                _popUpScreen.live(
+                    benson.Key.name+
+                    " requires that it must be in a school of between "
+                    + benson.Key.count[0]+" and " + benson.Key.count[1]+ 
+                    " of itself.");
+                return;
+            }
+        }
+        _popUpScreen.kill();
+        SimulationManager.instance.NextScreen();
     }
 }
