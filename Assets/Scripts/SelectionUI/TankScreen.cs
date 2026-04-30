@@ -16,7 +16,7 @@ public class TankScreen : MonoBehaviour
         // add listeners to size selection buttons
         _smTankTog.onValueChanged.AddListener((bool value) => SetTank(10));
         _mdTankTog.onValueChanged.AddListener((bool value) => SetTank(25));
-        _lgTankTog.onValueChanged.AddListener((bool value) => SetTank(50));
+        _lgTankTog.onValueChanged.AddListener((bool value) => SetTank(55));
     }
 
     void SetTank(int size)

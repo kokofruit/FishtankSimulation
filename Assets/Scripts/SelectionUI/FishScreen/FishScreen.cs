@@ -139,9 +139,8 @@ public class FishScreen : MonoBehaviour
     void DisplayFish(JSONReader.Fish fish)
     {
         _displayTitle.SetText(fish.name);
-        Sprite sprite = Resources.Load<Sprite>("Images/fish/" + fish.id);
+        Sprite sprite = Resources.Load<Sprite>("Images/Shop/Fish/" + fish.id);
         _displayImage.sprite = sprite;
-        _displayImage.transform.localScale = new Vector3(1, sprite.rect.height/sprite.rect.width, 1);
         _displayDesc.SetText(fish.description);
     }
 

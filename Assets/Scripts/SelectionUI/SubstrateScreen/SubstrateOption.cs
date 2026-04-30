@@ -19,7 +19,7 @@ public class SubstrateOption : MonoBehaviour
     {
         substrate = newSub;
         _nameText.text = substrate.name;
-        _iconImg.sprite = Resources.Load<Sprite>("Images/Substrate/" + substrate.name);
+        _iconImg.sprite = Resources.Load<Sprite>("Images/Display/Substrate/" + substrate.id);
         priceText.text="$"+substrate.price;
     }
 }

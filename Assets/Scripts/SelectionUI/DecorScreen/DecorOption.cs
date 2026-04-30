@@ -22,7 +22,7 @@ public class DecorOption : MonoBehaviour
     {
         decor = newDecor;
         _nameText.text = decor.name;
-        _iconImg.sprite = Resources.Load<Sprite>("Images/Decor/"+ decor.name);
+        _iconImg.sprite = Resources.Load<Sprite>("Images/Shop/Decor/"+ decor.name);
         priceText.text="$"+decor.price;
         selected = false;
     }

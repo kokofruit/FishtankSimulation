@@ -1158,7 +1158,7 @@
             },
             {
                 "id": "anenome",
-                "name": "Anenome",
+                "name": "Anemone",
                 "price": 50.99,
                 "scale": 0.5
             },
@@ -1259,12 +1259,6 @@
             "name": "Soil / Clay",
             "description": "Soil and clay are great for plants, but it makes the water cloudy at first.",
             "price": 3.6
-        },
-        {
-            "id": "plant",
-            "name": "Planted Substrate",
-            "description": "This is specifically made to help plants grow.",
-            "price": 2.5
         }
     ],
     "diet": [

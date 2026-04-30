@@ -29,6 +29,12 @@ public class SubstrateScreen : MonoBehaviour
             SubstrateOption button = Instantiate(_substrateButtonPrefab, _scrollViewContent).GetComponent<SubstrateOption>();
             button.SetSubstrate(substrate);
 
+            // set first as selected (hard coding this bc i'm lazy lol)
+            if (substrate.id == "sm_gravel")
+            {
+                button.button.Select();
+            }
+
             // add listeners
             button.button.onValueChanged.AddListener((bool b) => ToggleInteract(b, substrate));
         }
@@ -62,9 +68,8 @@ public class SubstrateScreen : MonoBehaviour
     void DisplaySubstrate(JSONReader.Substrate substrate)
     {
         _displayTitle.SetText(substrate.name);
-        Sprite sprite = Resources.Load<Sprite>("Images/Substrate/" + substrate.name);
+        Sprite sprite = Resources.Load<Sprite>("Images/Shop/Substrate/" + substrate.id);
         _displayImage.sprite = sprite;
-        _displayImage.transform.localScale = new Vector3(1, sprite.rect.height / sprite.rect.width, 1);
         _displayDesc.SetText("$" + substrate.price);
     }
 }
