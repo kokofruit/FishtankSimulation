@@ -67,4 +67,13 @@ public class DraggingManager : MonoBehaviour
         }
         SimulationManager.instance.NextScreen();
     }
+
+    public void PreviousScreen()
+    {
+        foreach (DraggableObject draggable in FindObjectsByType<DraggableObject>(FindObjectsSortMode.None))
+        {
+            Destroy(draggable.gameObject);
+        }
+        SimulationManager.instance.PreviousScreen();
+    }
 }
