@@ -6,6 +6,13 @@ public class SchoolManager : MonoBehaviour
     public GameObject[] schoolMembers;
     public float schoolAreaRadius = 100;
 
+    // child vars
+    public float minSpeed = 30f;
+    public float maxSpeed = 80f;
+    public float neighborDistance = 30f;
+    public float proxDistance = 10f;
+    public float rotationSpeed = 10f;
+
     public void Initialize(JSONReader.Fish fishType, int schoolSize)
     {
         schoolMembers = new GameObject[schoolSize];
@@ -16,11 +23,11 @@ public class SchoolManager : MonoBehaviour
             position += Random.insideUnitCircle * schoolAreaRadius;
 
             // create empty fish object
-            schoolMembers[i] = Instantiate(SimulationManager.instance.fishPrefab, position, Quaternion.identity);
+            schoolMembers[i] = Instantiate(SimulationManager.instance.fishPrefab, position, Quaternion.identity, transform);
             if (schoolMembers[i].TryGetComponent(out SchoolMember schoolMember))
             {
-                schoolMember.SetFish(fishType);
                 schoolMember.schoolManager = this;
+                schoolMember.SetFish(fishType);
             }
         }
     }

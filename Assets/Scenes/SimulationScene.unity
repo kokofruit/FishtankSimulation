@@ -3642,7 +3642,7 @@ MonoBehaviour:
     decor: []
     substrate: []
     diet: []
-  tankSize: 0
+  tankSize: 25
   substrateInventory:
     id: 
     name: 
@@ -3651,11 +3651,9 @@ MonoBehaviour:
   totalCost: 0
   _screens:
   - {fileID: 450934121}
-  - {fileID: 277781102}
   - {fileID: 2137922652}
-  - {fileID: 480246327}
-  - {fileID: 2038692615}
-  - {fileID: 700965985}
+  - {fileID: 1578616069}
+  fishPrefab: {fileID: 1951546858181286889, guid: 6326b3321ae11554f8f494cb012c4013, type: 3}
 --- !u!4 &638301068
 Transform:
   m_ObjectHideFlags: 0
@@ -10804,6 +10802,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1578616068}
   - component: {fileID: 1578616069}
+  - component: {fileID: 1578616070}
   m_Layer: 0
   m_Name: Fish Presentation
   m_TagString: Untagged
@@ -10845,6 +10844,19 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &1578616070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578616067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba6dbdeca8f249c4dae4cb85ece02555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _schoolManagerPrefab: {fileID: 5619242355559888064, guid: 50f370e26686704429c50a6db5a7538f, type: 3}
 --- !u!1 &1633563552
 GameObject:
   m_ObjectHideFlags: 0
