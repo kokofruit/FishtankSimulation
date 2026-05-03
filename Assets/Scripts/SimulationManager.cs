@@ -24,10 +24,6 @@ public class SimulationManager : MonoBehaviour
     // the screen index
     private int _screenIndex = 0;
 
-    // the prefab for swimming fish
-    public GameObject fishPrefab;
-
-
     void Awake()
     {
         // Set the singleton instance

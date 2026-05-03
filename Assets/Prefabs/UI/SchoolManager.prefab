@@ -48,10 +48,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81c2e5fbeb71b5149b82f605aa8988ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  presentationScreen: {fileID: 0}
   schoolMembers: []
-  schoolAreaRadius: 50
-  minSpeed: 40
-  maxSpeed: 80
-  neighborDistance: 80
-  proxDistance: 30
+  schoolAreaRadius: 200
+  minSpeed: 160
+  maxSpeed: 320
+  neighborDistance: 400
+  proxDistance: 120
   rotationSpeed: 2.5
+  goalPos: {x: 0, y: 0, z: 0}
+  groupMoveSpeed: 80

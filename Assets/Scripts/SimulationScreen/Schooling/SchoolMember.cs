@@ -1,30 +1,37 @@
+// written using https://learn.unity.com/tutorial/flocking
+
 using UnityEngine;
 
 public class SchoolMember : MonoBehaviour
 {
+    // the manager of this fish's school
     public SchoolManager schoolManager;
+    // the overall screen manager
+    private PresentationScreen _presentationScreen;
 
+    // the current speed for this fish
     public float speed;
 
     public void SetFish(JSONReader.Fish fish)
     {
         speed = Random.Range(schoolManager.minSpeed, schoolManager.maxSpeed);
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
+        _presentationScreen = schoolManager.presentationScreen;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (schoolManager)
-        {
-            ApplyRules();
-            transform.Translate(0, 0, speed * Time.deltaTime);
-        }
+        // exit if there's no school manager, which shouldn't be possible, but,,,, y'know
+        if (!schoolManager) return;
+
+        // random chance to apply the rules
+        if (Random.value < 0.5f) ApplyRules();
+        // random chance to vary the speed
+        if (Random.value < 0.1f) speed = Random.Range(schoolManager.minSpeed, schoolManager.maxSpeed);
+
+        // move in the current direction
+        transform.Translate(0, 0, speed * Time.deltaTime);
+        transform.position = _presentationScreen.ClampToBounds(transform.position);
     }
 
     void ApplyRules()
@@ -38,9 +45,9 @@ public class SchoolMember : MonoBehaviour
         float groupSpeed = 0.01f;
         int groupSize = 0;
 
+        // process for all neighbors except itself
         foreach (GameObject neighbor in neighbors)
         {
-            // exit if this is the same one
             if (neighbor != this.gameObject)
             {
                 // calculate distance
@@ -64,12 +71,13 @@ public class SchoolMember : MonoBehaviour
             }
         }
 
+        // if there is a school, do some calculations
         if (groupSize > 0)
         {
-            vCenter = vCenter / groupSize;
-            speed = groupSpeed / groupSize;
+            vCenter = vCenter / groupSize + schoolManager.transform.position - transform.position;
+            speed = Mathf.Clamp(groupSpeed / groupSize, schoolManager.minSpeed, schoolManager.maxSpeed);
 
-            Vector3 direction = (vCenter + vAvoid - transform.position);
+            Vector3 direction = vCenter + vAvoid - transform.position;
             if (direction != Vector3.zero)
             {
                 transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), schoolManager.rotationSpeed * Time.deltaTime);

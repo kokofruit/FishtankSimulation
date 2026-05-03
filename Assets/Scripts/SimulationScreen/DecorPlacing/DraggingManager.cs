@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DraggingManager : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class DraggingManager : MonoBehaviour
     [SerializeField] private Rect _boundingBox;
 
     [SerializeField] private GameObject _draggablePrefab;
+    [SerializeField] private Image _substrateImage;
+
 
     public DraggableObject currentDraggable;
 
@@ -26,6 +29,8 @@ public class DraggingManager : MonoBehaviour
             draggableObject.transform.localScale = Vector3.one;
             draggableObject.SetDecor(decoration);
         }
+
+        _substrateImage.sprite = Resources.Load<Sprite>("Images/Display/Substrate/" + SimulationManager.instance.substrateInventory.id);
     }
 
     public void StartDraggingObject(DraggableObject draggedObject)
@@ -65,6 +70,7 @@ public class DraggingManager : MonoBehaviour
             draggable.transform.SetParent(_finalLayer);
             Destroy(draggable);
         }
+        _substrateImage.transform.SetParent(_finalLayer);
         SimulationManager.instance.NextScreen();
     }
 

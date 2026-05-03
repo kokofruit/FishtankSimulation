@@ -1,12 +1,25 @@
+// written using https://learn.unity.com/tutorial/flocking
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class SchoolManager : MonoBehaviour
 {
+    // the overall screen manager
+    public PresentationScreen presentationScreen;
+    
+    [Header("School Variables")]
+    // the members of this school
     public GameObject[] schoolMembers;
+    // the spawn radius for this school
     public float schoolAreaRadius = 100;
+    // the goal position of this school
+    public Vector3 goalPos;
+    // the movement speed of the overall group
+    public float groupMoveSpeed = 20f;
 
-    // child vars
+    [Header("Fish Variables")]
     public float minSpeed = 30f;
     public float maxSpeed = 80f;
     public float neighborDistance = 30f;
@@ -23,24 +36,32 @@ public class SchoolManager : MonoBehaviour
             position += Random.insideUnitCircle * schoolAreaRadius;
 
             // create empty fish object
-            schoolMembers[i] = Instantiate(SimulationManager.instance.fishPrefab, position, Quaternion.identity, transform);
+            schoolMembers[i] = Instantiate(presentationScreen.fishPrefab, position, Quaternion.identity, transform);
             if (schoolMembers[i].TryGetComponent(out SchoolMember schoolMember))
             {
                 schoolMember.schoolManager = this;
                 schoolMember.SetFish(fishType);
             }
         }
+        goalPos = transform.position;
+
+        StartCoroutine(nameof(MoveToRandomPoint));
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private IEnumerator MoveToRandomPoint()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        goalPos = presentationScreen.GetRandomPointInBounds(schoolAreaRadius);
+        while (true)
+        {
+            if (Vector3.Distance(transform.position, goalPos) < 0.5f)
+            {
+                goalPos = presentationScreen.GetRandomPointInBounds(schoolAreaRadius);
+            }
+            else
+            {
+                transform.position = Vector3.MoveTowards(transform.position, goalPos, groupMoveSpeed * Time.deltaTime);
+                yield return new WaitForFixedUpdate();
+            }
+        }
     }
 }
