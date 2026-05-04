@@ -5,18 +5,21 @@ public class DraggingManager : MonoBehaviour
 {
     // Based on code from https://medium.com/medialesson/drag-drop-for-ui-elements-in-unity-the-simple-ish-way-9efcb4617648
 
+    // the rect transforms of different layers
     [SerializeField] private RectTransform _defaultLayer;
     [SerializeField] private RectTransform _dragLayer;
     [SerializeField] private RectTransform _finalLayer;
 
-    [SerializeField] private Rect _boundingBox;
+    // the constraints for dragging
+    private Rect _boundingBox;
 
+    // the prefab for draggable decor
     [SerializeField] private GameObject _draggablePrefab;
-    [SerializeField] private Image _substrateImage;
-
-
+    // the current dragged object
     public DraggableObject currentDraggable;
 
+    // the image for the substrate
+    [SerializeField] private Image _substrateImage;
 
     private void OnEnable()
     {
@@ -65,21 +68,26 @@ public class DraggingManager : MonoBehaviour
 
     public void NextScreen()
     {
+        // move the substrate image to the final layer
+        _substrateImage.transform.SetParent(_finalLayer);
+        // move each decor image to the final layer
         foreach (DraggableObject draggable in FindObjectsByType<DraggableObject>(FindObjectsSortMode.None))
         {
             draggable.transform.SetParent(_finalLayer);
             Destroy(draggable);
         }
-        _substrateImage.transform.SetParent(_finalLayer);
+        // go to the next screen
         SimulationManager.instance.NextScreen();
     }
 
     public void PreviousScreen()
     {
+        // destroy each draggable since they'll be recreated
         foreach (DraggableObject draggable in FindObjectsByType<DraggableObject>(FindObjectsSortMode.None))
         {
             Destroy(draggable.gameObject);
         }
+        // go to the last screen
         SimulationManager.instance.PreviousScreen();
     }
 }

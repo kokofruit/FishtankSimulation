@@ -1,6 +1,7 @@
 // written using https://learn.unity.com/tutorial/flocking
 
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SchoolMember : MonoBehaviour
 {
@@ -9,13 +10,21 @@ public class SchoolMember : MonoBehaviour
     // the overall screen manager
     private PresentationScreen _presentationScreen;
 
+    // the image for this fish
+    [SerializeField] Image image;
+
     // the current speed for this fish
     public float speed;
+
+    private Vector3 _lastPosition = Vector3.zero;
 
     public void SetFish(JSONReader.Fish fish)
     {
         speed = Random.Range(schoolManager.minSpeed, schoolManager.maxSpeed);
         _presentationScreen = schoolManager.presentationScreen;
+        image.sprite = Resources.Load<Sprite>("Images/Display/Fish/" + fish.id);
+        transform.localScale = Vector3.one * (-0.0125f * SimulationManager.instance.tankSize + 1.125f);
+        // 20f / (SimulationManager.instance.tankSize + 10f);
     }
 
     // Update is called once per frame
@@ -32,6 +41,18 @@ public class SchoolMember : MonoBehaviour
         // move in the current direction
         transform.Translate(0, 0, speed * Time.deltaTime);
         transform.position = _presentationScreen.ClampToBounds(transform.position);
+
+        // correct the image rotation
+        image.transform.rotation = Quaternion.identity;
+        // correct the image position
+        image.transform.position = new Vector3(transform.position.x, transform.position.y, -1);
+        // set the image direction
+        if (Mathf.Abs((_lastPosition - transform.position).x) > 2f)
+        {
+            float imageXScale = Mathf.Sign((_lastPosition - transform.position).x);
+            image.transform.localScale = new Vector3(imageXScale, 1, 1);
+            _lastPosition = transform.position;
+        }
     }
 
     void ApplyRules()

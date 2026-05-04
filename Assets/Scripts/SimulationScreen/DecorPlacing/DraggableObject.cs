@@ -34,8 +34,7 @@ public class DraggableObject : MonoBehaviour, IDragHandler, IBeginDragHandler, I
     public void SetDecor(JSONReader.Decoration decoration)
     {
         Image image = GetComponent<Image>();
-        // TODO: Set scale !!!!!!!
-        transform.localScale = Vector3.one;
+        transform.localScale = Vector3.one * (-0.0125f * SimulationManager.instance.tankSize + 1.125f);
         // Set image
         Sprite sprite = Resources.Load<Sprite>("Images/Display/Decor/" + decoration.name);
         image.sprite = sprite;

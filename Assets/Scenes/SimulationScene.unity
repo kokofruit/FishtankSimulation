@@ -4592,15 +4592,9 @@ MonoBehaviour:
   _defaultLayer: {fileID: 931664894}
   _dragLayer: {fileID: 736159196}
   _finalLayer: {fileID: 1089117168}
-  _boundingBox:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
   _draggablePrefab: {fileID: 1581195921698914929, guid: 16e17fb687b8c0d4ab53f3708821be9d, type: 3}
-  _substrateImage: {fileID: 0}
   currentDraggable: {fileID: 0}
+  _substrateImage: {fileID: 254546447}
 --- !u!225 &700965985
 CanvasGroup:
   m_ObjectHideFlags: 0

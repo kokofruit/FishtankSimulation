@@ -14,7 +14,7 @@ public class PresentationScreen : MonoBehaviour
             if (SMGameObject.TryGetComponent(out SchoolManager schoolManager))
             {
                 schoolManager.presentationScreen = this;
-                schoolManager.Initialize(fishType, 10);
+                schoolManager.Initialize(fishType, SimulationManager.instance.fishInv[fishType]);
             }
         }
     }
