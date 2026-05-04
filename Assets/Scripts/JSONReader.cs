@@ -39,6 +39,7 @@ public class JSONReader : MonoBehaviour
         public string id;
         public string name;
         public float price;
+        public string description;
     }
 
 

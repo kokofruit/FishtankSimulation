@@ -1074,159 +1074,185 @@
                 "id": "grassy",
                 "name": "Grassy Plant",
                 "price": 8.99,
-                "scale": 1.2
+                "scale": 1.2,
+                "description": "Creates natural hiding spots for fish, enhance oxygen levels, and offer an attractive look for aquariums."
             },
             {
                 "id": "sword",
                 "name": "Amazon Sword Plant",
                 "price": 9.99,
-                "scale": 1.5
+                "scale": 1.5,
+                "description": "Hardy, beginner-friendly plant, perfect as a centerpiece or background plant."
             },
             {
                 "id": "anubias",
                 "name": "Anubias Plant",
                 "price": 10.99,
-                "scale": 1.5
+                "scale": 1.5,
+                "description": "Hardy, slow-growing, low-maintenance plant popular for its dark green leaves."
             },
             {
                 "id": "fern",
                 "name": "Java Fern",
                 "price": 8.49,
-                "scale": 1
+                "scale": 1,
+                "description": "Hardy, slow-growing, low-maintenance plant popular for its dark green, leathery leaves."
             },
             {
                 "id": "moss",
                 "name": "Java Moss",
                 "price": 9.99,
-                "scale": 0.5
+                "scale": 0.5,
+                "description": "Hardy, fast-growing, low-maintenance moss ideal for beginners."
             },
             {
                 "id": "pond",
                 "name": "Pond Weed",
                 "price": 8.99,
-                "scale": 1.5
+                "scale": 1.5,
+                "description": "Hardy, fast-growing, plants used for oxygenation, algae control, and providing shelter for critters."
 
             },
             {
                 "id": "floating",
                 "name": "Floating Plant",
                 "price": 7.49,
-                "scale": 1.5
+                "scale": 1.5,
+                "description": "Fast-growing, surface-dwelling plants that offer natural filtration, shading, and shelter."
             },
             {
                 "id": "rotala",
                 "name": "Rotala Rotundifolia",
                 "price": 8.49,
-                "scale":  1.5
+                "scale":  1.5,
+                "description": "Popular, fast-growing, and versatile stem plant perfect for aquascaping, offering soft texture and vibrant colors from green to deep red."
             },
             {
                 "id": "driftwood",
                 "name": "Driftwood",
                 "price": 10.99,
-                "scale": 1.2
+                "scale": 1.2,
+                "description": "Natural, water-matured hardwood used for decoration and functionality."
             },
             {
                 "id": "log",
                 "name": "Big Log",
                 "price": 17.99,
-                "scale": 1.8
+                "scale": 1.8,
+                "description": "Sunken tree look-alike offering natural-looking and hollow shelters for critters to hide, play, and sleep in."
 
             },
             {
                 "id": "tree",
                 "name": "Driftwood Tree",
                 "price": "25.99",
-                "scale": 2
+                "scale": 2,
+                "description": "Natural wood designed to mimic underwater trees for decoration and functionality."
             },
             {
                 "id": "small",
                 "name": "Small Coral",
                 "price": 10.59,
-                "scale": 0.5
+                "scale": 0.5,
+                "description": "Corals provide essential habitat, shelter, and security for critters while improving water quality."
             },
             {
                 "id": "medium",
                 "name": "Medium Coral",
                 "price": 13.99,
-                "scale": 1.2
+                "scale": 1.2,
+                "description": "Corals provide essential habitat, shelter, and security for critters while improving water quality."
             },
             {
                 "id": "swimmable",
                 "name": "Swim-Through Coral",
                 "price": 23.99,
-                "scale": 2
+                "scale": 2,
+                "description": "A multi-coral structure that allows critters to explore, hide, and sleep."
             },
             {
                 "id": "anenome",
                 "name": "Anenome",
                 "price": 50.99,
-                "scale": 0.5
+                "scale": 0.5,
+                "description": "Popular, photosynthetic cnidarians that provide vibrant colors and, often, a home for clownfish."
             },
             {
                 "id": "small",
                 "name": "Small Cave",
                 "price": 12.99,
-                "scale": 1
+                "scale": 1,
+                "description": "Essential decorations designed to offer security and reduce stress."
             },
             {
                 "id": "medium",
                 "name": "Medium Cave",
                 "price": 15.99,
-                "scale": 1.5
+                "scale": 1.5,
+                "description": "Essential decorations designed to offer security and reduce stress."
             },
             {
                 "id": "large",
                 "name": "Large Cave",
                 "price": 21.99,
-                "scale": 2
+                "scale": 2,
+                "description": "Essential decorations designed to offer security and reduce stress."
             },
             {
                 "id": "squidward",
                 "name": "Squid's House",
                 "price": 17.99,
-                "scale": 1.5
+                "scale": 1.5,
+                "description": "Beautiful decor that provides shelter and hiding places for critters to help reduce stress."
             },
             {
                 "id": "spongebob",
                 "name": "Sponge's House",
                 "price": 20.99,
-                "scale": 1.5
+                "scale": 1.5,
+                "description": "Beautiful decor that provides shelter and hiding places for critters to help reduce stress."
             },
             {
                 "id": "shack",
                 "name": "Shack",
                 "price": 12.99,
-                "scale": 1.5
+                "scale": 1.5,
+                "description": "Provide both aesthetic appeal and functional, cozy hiding spots for critters to reduce stress."
             },
             {
                 "id": "rock",
                 "name": "Aquatic Rock",
                 "price": 7.99,
-                "scale": 0.5
+                "scale": 0.5,
+                "description": "Provide both aesthetic appeal and functional, cozy hiding spots for critters to reduce stress."
             },
             {
                 "id": "couch",
                 "name": "Fish Couch",
                 "price": 16.95,
-                "scale": 0.5
+                "scale": 0.5,
+                "description": "Adorable decor that provides a homey feel and creates a cozy spot for critters."
             },
             {
                 "id": "squidward",
                 "name": "Squid Figure",
                 "price": 14.99,
-                "scale": 0.7
+                "scale": 0.7,
+                "description": "Unique decor that the critters will love."
             },
             {
                 "id": "turtle_statue",
                 "name": "Turtle Statue",
                 "price": 11.99,
-                "scale": 0.5
+                "scale": 0.5,
+                "description": "Unique decor that the critters will love."
             },
             {
                 "id": "fish_statue",
                 "name": "Fish Statue",
                 "price": 10.99,
-                "scale": 0.5
+                "scale": 0.5,
+                "description": "Unique decor that the critters will love."
             }
         ],
     "substrate": [

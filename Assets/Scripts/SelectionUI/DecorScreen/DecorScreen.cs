@@ -66,6 +66,6 @@ public class DecorScreen : MonoBehaviour
         Sprite sprite = Resources.Load<Sprite>("Images/Decor/" + decor.name);
         _displayImage.sprite = sprite;
         _displayImage.transform.localScale = new Vector3(1, sprite.rect.height / sprite.rect.width, 1);
-        _displayDesc.SetText("$"+decor.price);
+        _displayDesc.SetText("$"+decor.price+"\n"+decor.description);
     }
 }
