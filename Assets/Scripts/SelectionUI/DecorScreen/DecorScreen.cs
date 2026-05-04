@@ -65,6 +65,6 @@ public class DecorScreen : MonoBehaviour
         _displayTitle.SetText(decor.name);
         Sprite sprite = Resources.Load<Sprite>("Images/Shop/Decor/" + decor.name);
         _displayImage.sprite = sprite;
-        _displayDesc.SetText("$"+decor.price);
+        _displayDesc.SetText("$"+decor.price+"\n"+decor.description);
     }
 }

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      unknown_soil_thing_0: 3136921932733061900
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
