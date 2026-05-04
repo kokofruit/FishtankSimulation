@@ -31,6 +31,7 @@ public class JSONReader : MonoBehaviour
         public float[] salinity;
         public float[] price;
         public string description;
+        public string info;
     };
 
     [Serializable]
