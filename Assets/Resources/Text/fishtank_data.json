@@ -17,14 +17,22 @@
                 "starfish",
                 "snail"
             ],
-            "decor": [
-                "Amazon Sword Plant",
-                "Anubias Plant",
-                "Java Fern",
-                "Driftwood",
-                "Big Log",
-                "Driftwood Tree"
-            ],
+            "decor": {
+                "plants": [
+                    "sword",
+                    "anubias",
+                    "fern"
+                ],
+                "driftwood": [
+                    "driftwood",
+                    "log",
+                    "tree"
+                ],
+                "coral": [],
+                "caves": [],
+                "buildings": [],
+                "misc": []
+            },
             "substrate": [
                 "sand",
                 "sm_gravel"
@@ -55,75 +63,88 @@
                 10,
                 20
             ],
-            "description": ""
+            "description": "Angelfish (Pterophyllum Scalare) are diamond shaped fish with laterally compressed bodies, long trailing fins, and grow to around 5-7 inches in length. They typically live 8-12 years and can reach full size in 6-12 months under good conditions. Behaviorally they are considered semi-aggressive but are generally calm." ,
+            "info":"Angelfish can live in both freshwater and saltwater and require a fully cycled tank of at least 30 gallons to maintain stable water conditions. Their specific water requirement needs are a PH ranging between 6.8-7.8, a temperature of around 78-84 °F, and a DKH between 3-8."
         },
-        {
-            "scale": 1,
-            "id": "betta",
-            "name": "Betta Fish",
-            "gallons": 5,
-            "count": [
-                1,
-                1
-            ],
-            "friends": [
-                "corydoras",
-                "danios",
-                "guppy",
-                "otocinclus",
-                "rasbora",
-                "shrimp",
-                "snail",
-                "tetra"
-            ],
-            "decor": [
-                "Grassy Plant",
-                "Amazon Sword Plant",
-                "Anubias Plant",
-                "Java Fern",
-                "Java Moss",
-                "Floating Plant",
-                "Rotala Rotundifolia",
-                "Big Log",
-                "Small Cave",
-                "Medium Cave",
-                "Large Cave",
-                "Shack",
-                "Fish Couch"
-            ],
-            "substrate": [
-                "sand",
-                "lg_gravel"
-            ],
-            "diet": [
-                "flakes",
-                "pellets",
-                "bloodworms",
-                "shrimp",
-                "daphnia"
-            ],
-            "ph": [
-                6.5,
-                7.5
-            ],
-            "temp": [
-                74,
-                84
-            ],
-            "dkh": [
-                3,
-                5
-            ],
-            "salinity": [
-                0,
-                0
-            ],
-            "price": [
-                4,
-                10
-            ],
-            "description": ""
+      {
+        "scale": 1,
+        "id": "betta",
+        "name": "Betta Fish",
+        "gallons": 5,
+        "count": [
+          1,
+          1
+        ],
+        "friends": [
+          "corydoras",
+          "danios",
+          "guppy",
+          "otocinclus",
+          "rasbora",
+          "shrimp",
+          "snail",
+          "tetra"
+        ],
+        "decor": {
+          "plants": [
+            "grassy",
+            "sword",
+            "anubias",
+            "fern",
+            "moss",
+            "floating",
+            "rotala"
+          ],
+          "driftwood": [
+            "log"
+          ],
+          "coral": [],
+          "caves": [
+            "small",
+            "medium",
+            "large"
+          ],
+          "buildings": [
+            "shack"
+          ],
+          "misc": [
+            "couch"
+          ]
         },
+        "substrate": [
+          "sand",
+          "lg_gravel"
+        ],
+        "diet": [
+          "flakes",
+          "pellets",
+          "bloodworms",
+          "shrimp",
+          "daphnia"
+        ],
+        "ph": [
+          6.5,
+          7.5
+        ],
+        "temp": [
+          74,
+          84
+        ],
+        "dkh": [
+          3,
+          5
+        ],
+        "salinity": [
+          0,
+          0
+        ],
+        "price": [
+          4,
+          10
+        ],
+        "description": "Betta fish (Betta Splendens) also known as Siamese fighting fish have elaborate fins that have a diverse range in colors and grow to 2-3 inches. The betta fish only has a 3-5-year life span. Despite their solitary and territorial behavior, they are a low maintenance pet and can even be trained to do simple tricks.",
+            "info":"Betta fish live in freshwater and require a fully cycled tank of at least 5 gallons to maintain stable water conditions. Their specific water requirement needs are a PH ranging between 6.5-7.5, a temperature of around 74-84 °F, and a DKH between 3-5."
+      },
         {
             "scale": 0.5,
             "id": "shrimp",
@@ -146,20 +167,29 @@
                 "snail",
                 "tetra"
             ],
-            "decor": [
-                "Grassy Plant",
-                "Java Fern",
-                "Java Moss",
-                "Rotala Rotundifolia",
-                "Driftwood",
-                "Big Log",
-                "Driftwood Tree",
-                "Small Cave"
-            ],
+            "decor": {
+                "plants": [
+                    "grassy",
+                    "fern",
+                    "moss",
+                    "rotala"
+                ],
+                "driftwood": [
+                    "driftwood",
+                    "log",
+                    "tree"
+                ],
+                "coral": [],
+                "caves": [
+                    "small"
+                ],
+                "buildings": [],
+                "misc": []
+            },
             "substrate": [
                 "sand",
                 "sm_gravel",
-                "sand"
+                "blck_sand"
             ],
             "diet": [
                 "algae",
@@ -186,7 +216,8 @@
                 4,
                 6
             ],
-            "description": ""
+            "description": "Cherry Shrimp (Neocaridina Davidi) are small invertebrates with a translucent to bright (cherry) red coloration. They grow to about 1-1.5 inches in length and typically live for 1-2 years reaching maturity around 2-3 months. They are peaceful scavengers that graze on biofilm and algae.",
+            "info":"Cherry Shrimp live in freshwater and require a fully cycled tank of at least 1 gallon to maintain stable water conditions. Their specific water requirement needs are a PH ranging between 6.4-8.0, a temperature of around 65-85 °F, and a DKH between 0-10."
         },
         {
             "scale": 1.5,
@@ -201,12 +232,20 @@
                 "angelfish",
                 "gramma"
             ],
-            "decor": [
-                "Small Cave",
-                "Medium Cave",
-                "Large Cave",
-                "Aquatic Rock"
-            ],
+            "decor": {
+                "plants": [],
+                "driftwood": [],
+                "coral": [],
+                "caves": [
+                    "small",
+                    "medium",
+                    "large"
+                ],
+                "buildings": [],
+                "misc": [
+                    "rock"
+                ]
+            },
             "substrate": [
                 "sand"
             ],
@@ -236,7 +275,8 @@
                 10,
                 18
             ],
-            "description": ""
+            "description": "Chocolate Chip Starfish (Protoreaster Nodosus) are recognizable by their tan or brown bodies covered in dark and raised tubercles (small, rounded nodule, bony protrusion, or knobby lump found on bones, skin, or organs) that look like chocolate chips. They reach up to 12-14 inches in length and live typically for 5-10 years. They can be predatory to coral but are slow-moving scavengers.",
+            "info":"Chocolate Chip Starfish live in saltwater and require a fully cycled tank of at least 50-75 gallons to maintain stable water conditions. Their specific water requirement needs are a salinity of 1.020-1.026 specific gravity, a PH ranging between 8.1-8.4, a temperature of around 72-78 °F, and a DKH between 8-12."
         },
         {
             "scale": 1.2,
@@ -254,15 +294,25 @@
                 "shrimp",
                 "snail"
             ],
-            "decor": [
-                "Anemone",
-                "Small Coral",
-                "Medium Coral",
-                "Swim-Through Coral",
-                "Small Cave",
-                "Medium Cave",
-                "Aquatic Rock"
-            ],
+            "decor": {
+                "plants": [
+                    "anemone"
+                ],
+                "driftwood": [],
+                "coral": [
+                    "duncan",
+                    "toadstool",
+                    "torch"
+                ],
+                "caves": [
+                    "small",
+                    "medium"
+                ],
+                "buildings": [],
+                "misc": [
+                    "rock"
+                ]
+            },
             "substrate": [
                 "sand"
             ],
@@ -292,68 +342,79 @@
                 15,
                 20
             ],
-            "description": ""
+            "description": "Clownfish (Amphiprion Ocellaris/Amphiprion Percula) are brightly colored with orange bodies, white bands, and black edging on the fins. They typically live for 6-10 years, reaching 3-4 inches within 1-2 years. Behaviorally they are highly territorial and semi-aggressive.",
+            "info":"Clownfish live in saltwater and require a fully cycled tank of at least 10 gallons to maintain stable water conditions. Their specific water requirement needs are a salinity of 1.020-1.026 specific gravity, a PH ranging between 7.5-8.2, a temperature of around 75-82 °F, and a DKH between 8-12."
         },
-        {
-            "scale": 1.2,
-            "id": "corydoras",
-            "name": "Corydoras",
-            "gallons": 4,
-            "count": [
-                6,
-                99
-            ],
-            "friends": [
-                "angelfish",
-                "betta",
-                "danios",
-                "guppy",
-                "killifish",
-                "otocinclus",
-                "rasbora",
-                "shrimp",
-                "snail",
-                "tetra"
-            ],
-            "decor": [
-                "Driftwood",
-                "Big Log",
-                "Small Cave",
-                "Medium Cave",
-                "Aquatic Rock"
-            ],
-            "substrate": [
-                "sand"
-            ],
-            "diet": [
-                "bloodworms",
-                "shrimp",
-                "daphnia",
-                "veg",
-                "pellets"
-            ],
-            "ph": [
-                6.0,
-                7.5
-            ],
-            "temp": [
-                74,
-                80
-            ],
-            "dkh": [
-                2,
-                10
-            ],
-            "salinity": [
-                0,
-                0
-            ],
-            "price": [
-                5,
-                7
-            ],
-            "description": ""
+      {
+        "scale": 1.2,
+        "id": "corydoras",
+        "name": "Corydoras",
+        "gallons": 4,
+        "count": [
+          6,
+          99
+        ],
+        "friends": [
+          "angelfish",
+          "betta",
+          "danios",
+          "guppy",
+          "killifish",
+          "otocinclus",
+          "rasbora",
+          "shrimp",
+          "snail",
+          "tetra"
+        ],
+        "decor": {
+          "plants": [],
+          "driftwood": [
+            "driftwood",
+            "log"
+          ],
+          "coral": [],
+          "caves": [
+            "small",
+            "medium"
+          ],
+          "buildings": [],
+          "misc": [
+            "rock"
+          ]
         },
+        "substrate": [
+          "sand"
+        ],
+        "diet": [
+          "bloodworms",
+          "shrimp",
+          "daphnia",
+          "veg",
+          "pellets"
+        ],
+        "ph": [
+          6.0,
+          7.5
+        ],
+        "temp": [
+          74,
+          80
+        ],
+        "dkh": [
+          2,
+          10
+        ],
+        "salinity": [
+          0,
+          0
+        ],
+        "price": [
+          5,
+          7
+        ],
+        "description": "Corydoras (Corydoras) are small, armored bottom-dwelling catfish with rounded bodies, barbels (slender, whisker-like sensory organs located near the mouth used for finding food by taste or touch in murky water) around the mouth, and various patterns per species. They grow around 1.5-3 inches in length within 6-12 months and live around 5-10 years. They spend most of their time scavenging the substrate in peaceful schools.",
+            "info":"Corydoras live in freshwater and require a fully cycled tank of at least 4 gallons to maintain stable water conditions. Their specific water requirement needs are a PH ranging between 6.0-7.5, a temperature of around 74-80 °F, and a DKH between 2-10."
+      },
         {
             "scale": 0.5,
             "id": "danios",
@@ -373,15 +434,24 @@
                 "snail",
                 "tetra"
             ],
-            "decor": [
-                "Java Fern",
-                "Anubias Plant",
-                "Java Moss",
-                "Driftwood",
-                "Small Cave",
-                "Medium Cave",
-                "Large Cave"
-            ],
+            "decor": {
+                "plants": [
+                    "fern",
+                    "anubias",
+                    "moss"
+                ],
+                "driftwood": [
+                    "driftwood"
+                ],
+                "coral": [],
+                "caves": [
+                    "small",
+                    "medium",
+                    "large"
+                ],
+                "buildings": [],
+                "misc": []
+            },
             "substrate": [
                 "sand",
                 "sm_gravel"
@@ -413,7 +483,8 @@
                 2,
                 4
             ],
-            "description": ""
+            "description": "Danios (Danio Rerio) are slender and quick with horizontal striping or spotted patterns. They live for 3-5 years reaching 2-4 inches in length within a few months. They are a very active schooling fish that should be kept in groups and have constant swimming activity.",
+            "info":"Danios live in freshwater and require a fully cycled tank of at least 2 gallons to maintain stable water conditions. Their specific water requirement needs are a PH ranging between 6.8-7.8, a temperature of around 64-75 °F, and a DKH between 3-8."
         },
         {
             "scale": 1,
@@ -427,13 +498,22 @@
             "friends": [
                 "snail"
             ],
-            "decor": [
-                "Java Fern",
-                "Anubias Plant",
-                "Java Moss",
-                "Large Cave",
-                "Aquatic Rock"
-            ],
+            "decor": {
+                "plants": [
+                    "fern",
+                    "anubias",
+                    "moss"
+                ],
+                "driftwood": [],
+                "coral": [],
+                "caves": [
+                    "large"
+                ],
+                "buildings": [],
+                "misc": [
+                    "rock"
+                ]
+            },
             "substrate": [
                 "sand"
             ],
@@ -464,7 +544,8 @@
                 5,
                 30
             ],
-            "description": ""
+            "description": "Goldfish (Carassius Auratus) have a wide variety of body shapes and colors. They grow to 6-12+ inches depending on type and environment within 1-3 years and live for 10-20. Behaviorally they are social, messy, and curious that require strong filtration systems and space.",
+            "info":"Goldfish live in freshwater and require a fully cycled tank of at least 20 gallons to maintain stable water conditions. Their specific water requirement needs are a PH ranging between 7.0-8.4, a temperature of around 68-74 °F, and a DKH between 4-8."
         },
         {
             "scale": 0.5,
@@ -484,22 +565,28 @@
                 "snail",
                 "tetra"
             ],
-            "decor": [
-                "Grassy Plant",
-                "Amazon Sword Plant",
-                "Anubias Plant",
-                "Java Fern",
-                "Java Moss",
-                "Floating Plant",
-                "Rotala Rotundifolia",
-                "Driftwood",
-                "Small Cave",
-                "Medium Cave",
-                "Aquatic Rock"
-            ],
+            "decor": {
+                "plants": [
+                    "grass",
+                    "hornwort",
+                    "moss"
+                ],
+                "driftwood": [
+                    "driftwood"
+                ],
+                "coral": [],
+                "caves": [
+                    "small",
+                    "medium"
+                ],
+                "buildings": [],
+                "misc": [
+                    "rock"
+                ]
+            },
             "substrate": [
                 "sand",
-                "sand",
+                "blck_sand",
                 "sm_gravel"
             ],
             "diet": [
@@ -528,7 +615,8 @@
                 5,
                 15
             ],
-            "description": ""
+            "description": "Guppies (Poecilia Reticulata) are small with vivid color variations and fan shaped tails in males; they are also live-bearing fish. They typically live for 2-3 years, growing around 1.5-2.5 inches in length within a few months. They are peaceful and active fish that are popular as beginner aquarium fish for being prolific breeders.",
+            "info":"Guppies live in freshwater and require a fully cycled tank of at least 2 gallons to maintain stable water conditions. Their specific water requirement needs are a PH ranging between 7.0-8.0, a temperature of around 72-82 °F, and a DKH between 8-12."
         },
         {
             "scale": 0.5,
@@ -543,11 +631,19 @@
                 "clownfish",
                 "snail"
             ],
-            "decor": [
-                "Small Cave",
-                "Medium Cave",
-                "Aquatic Rock"
-            ],
+            "decor": {
+                "plants": [],
+                "driftwood": [],
+                "coral": [],
+                "caves": [
+                    "small",
+                    "medium"
+                ],
+                "buildings": [],
+                "misc": [
+                    "rock"
+                ]
+            },
             "substrate": [
                 "sand"
             ],
@@ -578,7 +674,8 @@
                 120,
                 180
             ],
-            "description": ""
+            "description": "Helfrichi Firefish (Nemateleotris Helfrichi) are slender and have a striking lavender and yellow coloration with elongated dorsal fins. They grow to 2-3 inches within 6-12 months and typically live for 5-7 years in a well-maintained aquarium. They are shy and peaceful fish that often stay near hiding places that can quickly move when startled.",
+            "info":"Helfrichi Firefish live in saltwater and require a fully cycled tank of at least 15 gallons to maintain stable water conditions. Their specific water requirement needs are a salinity of 1.020-1.025 specific gravity, a PH ranging between 8.1-8.4, a temperature of around 72-79 °F, and a DKH between 8-12."
         },
         {
             "scale": 1,
@@ -598,15 +695,23 @@
                 "snail",
                 "tetra"
             ],
-            "decor": [
-                "Java Moss",
-                "hornwort",
-                "Java Fern",
-                "Driftwood"
-            ],
+            "decor": {
+                "plants": [
+                    "moss",
+                    "hornwort",
+                    "fern"
+                ],
+                "driftwood": [
+                    "driftwood"
+                ],
+                "coral": [],
+                "caves": [],
+                "buildings": [],
+                "misc": []
+            },
             "substrate": [
                 "sand",
-                "sand",
+                "blck_sand",
                 "sm_gravel",
                 "lg_gravel"
             ],
@@ -637,7 +742,8 @@
                 4,
                 12
             ],
-            "description": ""
+            "description": "Killifish (Fundulopanchax, Nothobranchius, and more) have vibrant coloration and streamlined bodies. They can live between 1-5 years depending on species and can reach 1.5-3 inches. Behaviorally they can be peaceful or semi-aggressive and show strong territorial and breeding behaviors.",
+            "info":"Killifish live in freshwater and require a fully cycled tank of at least 5 gallons to maintain stable water conditions. Their specific water requirement needs are a PH ranging between 6.0-7.0, a temperature of around 68-75 °F, and a DKH between 7-10."
         },
         {
             "scale": 0.5,
@@ -660,18 +766,26 @@
                 "snail",
                 "tetra"
             ],
-            "decor": [
-                "Anubias Plant",
-                "Java Moss",
-                "Java Fern",
-                "Amazon Sword Plant",
-                "Driftwood",
-                "Big Log"
-            ],
+            "decor": {
+                "plants": [
+                    "anubias",
+                    "moss",
+                    "fern",
+                    "sword"
+                ],
+                "driftwood": [
+                    "driftwood",
+                    "log"
+                ],
+                "coral": [],
+                "caves": [],
+                "buildings": [],
+                "misc": []
+            },
             "substrate": [
                 "sand",
                 "sm_gravel",
-                "sand"
+                "blck_sand"
             ],
             "diet": [
                 "flakes",
@@ -699,7 +813,8 @@
                 3,
                 5
             ],
-            "description": ""
+            "description": "Neon Tetra (Paracheirodon Innesi) have iridescent blue stripes and bright red coloration along the lower body. They reach 1-1.5 inches within a few months and can live for 5-8 years. They are a peaceful schooling fish that stay in large groups and are synchronized swimmers.",
+            "info":"Neon Tetra live in freshwater and require a fully cycled tank of at least 5 gallons to maintain stable water conditions. Their specific water requirement needs are a PH ranging between 6.8-7.8, a temperature of around 75-80 °F, and a DKH between 3-8. "
         },
         {
             "scale": 0.7,
@@ -727,14 +842,23 @@
                 "snail",
                 "tetra"
             ],
-            "decor": [
-                "Java Fern",
-                "Anubias Plant",
-                "Java Moss",
-                "Pond Weed",
-                "Driftwood",
-                "Aquatic Rock"
-            ],
+            "decor": {
+                "plants": [
+                    "fern",
+                    "anubias",
+                    "moss",
+                    "duckweed"
+                ],
+                "driftwood": [
+                    "driftwood"
+                ],
+                "coral": [],
+                "caves": [],
+                "buildings": [],
+                "misc": [
+                    "rock"
+                ]
+            },
             "substrate": [
                 "sand"
             ],
@@ -762,7 +886,8 @@
                 2,
                 6
             ],
-            "description": ""
+            "description": "Nerite Snail (Neritina Natalensis, Neritina Pulligera, and others) are brackish snails with hard, rounded shells with striped or spotted patterns. They live for 1-3 years, growing to about .5-1 inch. They are peaceful algae grazers that do not reproduce in aquariums.",
+            "info":"Nerite Snail can live in both freshwater and saltwater and require a fully cycled tank of at least 5 gallons to maintain stable water conditions. Their specific water requirement needs are a PH ranging between 7.5-8.5, a temperature of around 72-78 °F, and a DKH between 2-12."
         },
         {
             "scale": 1,
@@ -783,12 +908,20 @@
                 "snail",
                 "tetra"
             ],
-            "decor": [
-                "Java Moss",
-                "Anubias Plant",
-                "Java Fern",
-                "Driftwood"
-            ],
+            "decor": {
+                "plants": [
+                    "moss",
+                    "anubias",
+                    "fern"
+                ],
+                "driftwood": [
+                    "driftwood"
+                ],
+                "coral": [],
+                "caves": [],
+                "buildings": [],
+                "misc": []
+            },
             "substrate": [
                 "sand",
                 "sm_gravel"
@@ -816,7 +949,8 @@
                 3,
                 5
             ],
-            "description": ""
+            "description": "Otocinclus (Otocinclus) are catfish with streamlined bodies and poses a sucker mouth adapted for grazing algae. They grow up to 1-2 inches in length within 6-12 months and typically live for 3-5 years. Behaviorally they are peaceful schooling fish that spend their time cleaning leaves or tank surfaces.",
+            "info":"Otocinclus live in freshwater and require a fully cycled tank of at least 3 gallons to maintain stable water conditions. Their specific water requirement needs are a PH ranging between 6.5-7.5, a temperature of around 72-79 °F, and a DKH between 6-15."
         },
         {
             "scale": 0.5,
@@ -837,17 +971,26 @@
                 "snail",
                 "tetra"
             ],
-            "decor": [
-                "Java Fern",
-                "Java Moss",
-                "Pond Weed",
-                "Driftwood",
-                "Aquatic Rock"
-            ],
+            "decor": {
+                "plants": [
+                    "fern",
+                    "moss",
+                    "duckweed"
+                ],
+                "driftwood": [
+                    "driftwood"
+                ],
+                "coral": [],
+                "caves": [],
+                "buildings": [],
+                "misc": [
+                    "rock"
+                ]
+            },
             "substrate": [
                 "sand",
                 "sm_gravel",
-                "sand"
+                "blck_sand"
             ],
             "diet": [
                 "flakes",
@@ -876,7 +1019,8 @@
                 4,
                 13
             ],
-            "description": ""
+            "description": "Rasbora (Rasbora Borapetensis, Rasbora Caudimaculata, and more) are small and slender featuring subtle metallic or triangular markings. They grow to about 1-2 inches reaching maturity in a few months and live for 4-6 years. They are active mid-water swimmers that are peaceful schooling fish.",
+            "info":"Rasbora live in freshwater and require a fully cycled tank of at least 2 gallons to maintain stable water conditions. Their specific water requirement needs are a PH ranging between 6-7, a temperature of around 73-82 °F, and a DKH between 2-15."
         },
         {
             "scale": 1.5,
@@ -893,13 +1037,22 @@
                 "starfish",
                 "snail"
             ],
-            "decor": [
-                "Driftwood Tree",
-                "Small Cave",
-                "Medium Cave",
-                "Large Cave",
-                "Aquatic Rock"
-            ],
+            "decor": {
+                "plants": [],
+                "driftwood": [
+                    "tree"
+                ],
+                "coral": [],
+                "caves": [
+                    "small",
+                    "medium",
+                    "large"
+                ],
+                "buildings": [],
+                "misc": [
+                    "rock"
+                ]
+            },
             "substrate": [
                 "sand"
             ],
@@ -928,234 +1081,235 @@
                 30,
                 40
             ],
-            "description": ""
+            "description": "Royal Gramma (Gramma Loreto) have a distinct half-purple, half-yellow coloration with compact bodies. They typically live for 5-7 years reaching around 3 inches in length. Behaviorally they are generally peaceful but are semi-aggressive towards similar species that often hide near crevices.",
+            "info":"Royal Gramma can live in saltwater and require a fully cycled tank of at least 30 gallons to maintain stable water conditions. Their specific water requirement needs are a salinity of 1.020-1.025 specific gravity, a PH ranging between 8.1-8.4, a temperature of around 72-78 °F, and a DKH between 8-12."
         }
     ],
-    "decor": [
-        {
-            "name": "Grassy Plant",
-            "price": 8.99,
-            "scale": 1.2,
-            "description": "Creates natural hiding spots for fish, enhance oxygen levels, and offer an attractive look for aquariums."
-        },
-        {
-            "name": "Amazon Sword Plant",
-            "price": 9.99,
-            "scale": 1.5,
-            "description": "Hardy, beginner-friendly plant, perfect as a centerpiece or background plant."
-        },
-        {
-            "name": "Anubias Plant",
-            "price": 10.99,
-            "scale": 1.5,
-            "description": "Hardy, slow-growing, low-maintenance plant popular for its dark green leaves."
-        },
-        {
-            "name": "Java Fern",
-            "price": 8.49,
-            "scale": 1,
-            "description": "Hardy, slow-growing, low-maintenance plant popular for its dark green, leathery leaves."
-        },
-        {
-            "name": "Java Moss",
-            "price": 9.99,
-            "scale": 0.5,
-            "description": "Hardy, fast-growing, low-maintenance moss ideal for beginners."
-        },
-        {
-            "name": "Pond Weed",
-            "price": 8.99,
-            "scale": 1.5,
-            "description": "Hardy, fast-growing, plants used for oxygenation, algae control, and providing shelter for critters."
-        },
-        {
-            "name": "Floating Plant",
-            "price": 7.49,
-            "scale": 1.5,
-            "description": "Fast-growing, surface-dwelling plants that offer natural filtration, shading, and shelter."
-        },
-        {
-            "name": "Rotala Rotundifolia",
-            "price": 8.49,
-            "scale": 1.5,
-            "description": "Popular, fast-growing, and versatile stem plant perfect for aquascaping, offering soft texture and vibrant colors from green to deep red."
-        },
-        {
-            "name": "Driftwood",
-            "price": 10.99,
-            "scale": 1.2,
-            "description": "Natural, water-matured hardwood used for decoration and functionality."
-        },
-        {
-            "name": "Big Log",
-            "price": 17.99,
-            "scale": 1.8,
-            "description": "Sunken tree look-alike offering natural-looking and hollow shelters for critters to hide, play, and sleep in."
-        },
-        {
-            "name": "Driftwood Tree",
-            "price": "25.99",
-            "scale": 2,
-            "description": "Natural wood designed to mimic underwater trees for decoration and functionality."
-        },
-        {
-            "name": "Small Coral",
-            "price": 10.59,
-            "scale": 0.5,
-            "description": "Corals provide essential habitat, shelter, and security for critters while improving water quality."
-        },
-        {
-            "name": "Medium Coral",
-            "price": 13.99,
-            "scale": 1.2,
-            "description": "Corals provide essential habitat, shelter, and security for critters while improving water quality."
-        },
-        {
-            "name": "Swim-Through Coral",
-            "price": 23.99,
-            "scale": 2,
-            "description": "A multi-coral structure that allows critters to explore, hide, and sleep."
-        },
-        {
-            "name": "Anemone",
-            "price": 50.99,
-            "scale": 0.5,
-            "description": "Popular, photosynthetic cnidarians that provide vibrant colors and, often, a home for clownfish."
-        },
-        {
-            "name": "Small Cave",
-            "price": 12.99,
-            "scale": 1,
-            "description": "Essential decorations designed to offer security and reduce stress."
-        },
-        {
-            "name": "Medium Cave",
-            "price": 15.99,
-            "scale": 1.5,
-            "description": "Essential decorations designed to offer security and reduce stress."
-        },
-        {
-            "name": "Large Cave",
-            "price": 21.99,
-            "scale": 2,
-            "description": "Essential decorations designed to offer security and reduce stress."
-        },
-        {
-            "name": "Squid's House",
-            "price": 17.99,
-            "scale": 1.5,
-            "description": "Beautiful decor that provides shelter and hiding places for critters to help reduce stress."
-        },
-        {
-            "name": "Sponge's House",
-            "price": 20.99,
-            "scale": 1.5,
-            "description": "Beautiful decor that provides shelter and hiding places for critters to help reduce stress."
-        },
-        {
-            "name": "Shack",
-            "price": 12.99,
-            "scale": 1.5,
-            "description": "Provide both aesthetic appeal and functional, cozy hiding spots for critters to reduce stress."
-        },
-        {
-            "name": "Aquatic Rock",
-            "price": 7.99,
-            "scale": 0.5,
-            "description": "Provide both aesthetic appeal and functional, cozy hiding spots for critters to reduce stress."
-        },
-        {
-            "name": "Fish Couch",
-            "price": 16.95,
-            "scale": 0.5,
-            "description": "Adorable decor that provides a homey feel and creates a cozy spot for critters."
-        },
-        {
-            "name": "Squid Figure",
-            "price": 14.99,
-            "scale": 0.7,
-            "description": "Unique decor that the critters will love."
-        },
-        {
-            "name": "Turtle Statue",
-            "price": 11.99,
-            "scale": 0.5,
-            "description": "Unique decor that the critters will love."
-        },
-        {
-            "name": "Fish Statue",
-            "price": 10.99,
-            "scale": 0.5,
-            "description": "Unique decor that the critters will love."
-        }
-    ],
-    "substrate": [
-        {
-            "id": "sm_gravel",
-            "name": "Small Gravel",
-            "description": "The small Aquatic Rocks help hold plants, and smaller fish can't swallow it.",
-            "price": 1
-        },
-        {
-            "id": "lg_gravel",
-            "name": "Large Gravel",
-            "description": "The small Aquatic Rocks help hold plants, and many fish can't swallow it.",
-            "price": 1.8
-        },
-        {
-            "id": "sand",
-            "name": "Sand",
-            "description": "Fine sand can help hold plants, and it is best for bottom-dwelling fish.",
-            "price": 1.2
-        },
-        {
-            "id": "coral",
-            "name": "Crushed Coral",
-            "description": "Ground coral substrate helps to raise and maintain pH levels.",
-            "price": 0.8
-        },
-        {
-            "id": "soil",
-            "name": "Soil / Clay",
-            "description": "Soil and clay are great for plants, but it makes the water cloudy at first.",
-            "price": 3.6
-        }
-    ],
-    "diet": [
-        {
-            "id": "flakes",
-            "name": "Flakes",
-            "price": 4.99
-        },
-        {
-            "id": "pellets",
-            "name": "Pellets",
-            "price": 5.99
-        },
-        {
-            "id": "bloodworms",
-            "name": "Bloodworms",
-            "price": 9.99
-        },
-        {
-            "id": "shrimp",
-            "name": "Shrimp",
-            "price": 8.99
-        },
-        {
-            "id": "daphnia",
-            "name": "Daphnia",
-            "price": 14.99
-        },
-        {
-            "id": "algae",
-            "name": "Algae",
-            "price": 9.99
-        },
-        {
-            "id": "veg",
-            "name": "Vegetables",
-            "price": 8.99
-        }
-    ]
+"decor": [
+    {
+        "name": "Grassy Plant",
+        "price": 8.99,
+        "scale": 1.2,
+        "description": "Creates natural hiding spots for fish, enhance oxygen levels, and offer an attractive look for aquariums."
+    },
+    {
+        "name": "Amazon Sword Plant",
+        "price": 9.99,
+        "scale": 1.5,
+        "description": "Hardy, beginner-friendly plant, perfect as a centerpiece or background plant."
+    },
+    {
+        "name": "Anubias Plant",
+        "price": 10.99,
+        "scale": 1.5,
+        "description": "Hardy, slow-growing, low-maintenance plant popular for its dark green leaves."
+    },
+    {
+        "name": "Java Fern",
+        "price": 8.49,
+        "scale": 1,
+        "description": "Hardy, slow-growing, low-maintenance plant popular for its dark green, leathery leaves."
+    },
+    {
+        "name": "Java Moss",
+        "price": 9.99,
+        "scale": 0.5,
+        "description": "Hardy, fast-growing, low-maintenance moss ideal for beginners."
+    },
+    {
+        "name": "Pond Weed",
+        "price": 8.99,
+        "scale": 1.5,
+        "description": "Hardy, fast-growing, plants used for oxygenation, algae control, and providing shelter for critters."
+    },
+    {
+        "name": "Floating Plant",
+        "price": 7.49,
+        "scale": 1.5,
+        "description": "Fast-growing, surface-dwelling plants that offer natural filtration, shading, and shelter."
+    },
+    {
+        "name": "Rotala Rotundifolia",
+        "price": 8.49,
+        "scale": 1.5,
+        "description": "Popular, fast-growing, and versatile stem plant perfect for aquascaping, offering soft texture and vibrant colors from green to deep red."
+    },
+    {
+        "name": "Driftwood",
+        "price": 10.99,
+        "scale": 1.2,
+        "description": "Natural, water-matured hardwood used for decoration and functionality."
+    },
+    {
+        "name": "Big Log",
+        "price": 17.99,
+        "scale": 1.8,
+        "description": "Sunken tree look-alike offering natural-looking and hollow shelters for critters to hide, play, and sleep in."
+    },
+    {
+        "name": "Driftwood Tree",
+        "price": "25.99",
+        "scale": 2,
+        "description": "Natural wood designed to mimic underwater trees for decoration and functionality."
+    },
+    {
+        "name": "Small Coral",
+        "price": 10.59,
+        "scale": 0.5,
+        "description": "Corals provide essential habitat, shelter, and security for critters while improving water quality."
+    },
+    {
+        "name": "Medium Coral",
+        "price": 13.99,
+        "scale": 1.2,
+        "description": "Corals provide essential habitat, shelter, and security for critters while improving water quality."
+    },
+    {
+        "name": "Swim-Through Coral",
+        "price": 23.99,
+        "scale": 2,
+        "description": "A multi-coral structure that allows critters to explore, hide, and sleep."
+    },
+    {
+        "name": "Anemone",
+        "price": 50.99,
+        "scale": 0.5,
+        "description": "Popular, photosynthetic cnidarians that provide vibrant colors and, often, a home for clownfish."
+    },
+    {
+        "name": "Small Cave",
+        "price": 12.99,
+        "scale": 1,
+        "description": "Essential decorations designed to offer security and reduce stress."
+    },
+    {
+        "name": "Medium Cave",
+        "price": 15.99,
+        "scale": 1.5,
+        "description": "Essential decorations designed to offer security and reduce stress."
+    },
+    {
+        "name": "Large Cave",
+        "price": 21.99,
+        "scale": 2,
+        "description": "Essential decorations designed to offer security and reduce stress."
+    },
+    {
+        "name": "Squid's House",
+        "price": 17.99,
+        "scale": 1.5,
+        "description": "Beautiful decor that provides shelter and hiding places for critters to help reduce stress."
+    },
+    {
+        "name": "Sponge's House",
+        "price": 20.99,
+        "scale": 1.5,
+        "description": "Beautiful decor that provides shelter and hiding places for critters to help reduce stress."
+    },
+    {
+        "name": "Shack",
+        "price": 12.99,
+        "scale": 1.5,
+        "description": "Provide both aesthetic appeal and functional, cozy hiding spots for critters to reduce stress."
+    },
+    {
+        "name": "Aquatic Rock",
+        "price": 7.99,
+        "scale": 0.5,
+        "description": "Provide both aesthetic appeal and functional, cozy hiding spots for critters to reduce stress."
+    },
+    {
+        "name": "Fish Couch",
+        "price": 16.95,
+        "scale": 0.5,
+        "description": "Adorable decor that provides a homey feel and creates a cozy spot for critters."
+    },
+    {
+        "name": "Squid Figure",
+        "price": 14.99,
+        "scale": 0.7,
+        "description": "Unique decor that the critters will love."
+    },
+    {
+        "name": "Turtle Statue",
+        "price": 11.99,
+        "scale": 0.5,
+        "description": "Unique decor that the critters will love."
+    },
+    {
+        "name": "Fish Statue",
+        "price": 10.99,
+        "scale": 0.5,
+        "description": "Unique decor that the critters will love."
+    }
+],
+"substrate": [
+    {
+        "id": "sm_gravel",
+        "name": "Small Gravel",
+        "description": "The small Aquatic Rocks help hold plants, and smaller fish can't swallow it.",
+        "price": 1
+    },
+    {
+        "id": "lg_gravel",
+        "name": "Large Gravel",
+        "description": "The small Aquatic Rocks help hold plants, and many fish can't swallow it.",
+        "price": 1.8
+    },
+    {
+        "id": "sand",
+        "name": "Sand",
+        "description": "Fine sand can help hold plants, and it is best for bottom-dwelling fish.",
+        "price": 1.2
+    },
+    {
+        "id": "coral",
+        "name": "Crushed Coral",
+        "description": "Ground coral substrate helps to raise and maintain pH levels.",
+        "price": 0.8
+    },
+    {
+        "id": "soil",
+        "name": "Soil / Clay",
+        "description": "Soil and clay are great for plants, but it makes the water cloudy at first.",
+        "price": 3.6
+    }
+],
+"diet": [
+    {
+        "id": "flakes",
+        "name": "Flakes",
+        "price": 4.99
+    },
+    {
+        "id": "pellets",
+        "name": "Pellets",
+        "price": 5.99
+    },
+    {
+        "id": "bloodworms",
+        "name": "Bloodworms",
+        "price": 9.99
+    },
+    {
+        "id": "shrimp",
+        "name": "Shrimp",
+        "price": 8.99
+    },
+    {
+        "id": "daphnia",
+        "name": "Daphnia",
+        "price": 14.99
+    },
+    {
+        "id": "algae",
+        "name": "Algae",
+        "price": 9.99
+    },
+    {
+        "id": "veg",
+        "name": "Vegetables",
+        "price": 8.99
+    }
+]
 }
