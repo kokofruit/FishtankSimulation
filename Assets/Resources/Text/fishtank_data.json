@@ -17,22 +17,14 @@
                 "starfish",
                 "snail"
             ],
-            "decor": {
-                "plants": [
-                    "sword",
-                    "anubias",
-                    "fern"
-                ],
-                "driftwood": [
-                    "driftwood",
-                    "log",
-                    "tree"
-                ],
-                "coral": [],
-                "caves": [],
-                "buildings": [],
-                "misc": []
-            },
+            "decor": [
+                "Amazon Sword Plant",
+                "Anubias Plant",
+                "Java Fern",
+                "Driftwood",
+                "Big Log",
+                "Driftwood Tree"
+            ],
             "substrate": [
                 "sand",
                 "sm_gravel"
@@ -65,84 +57,73 @@
             ],
             "description": ""
         },
-      {
-        "scale": 1,
-        "id": "betta",
-        "name": "Betta Fish",
-        "gallons": 5,
-        "count": [
-          1,
-          1
-        ],
-        "friends": [
-          "corydoras",
-          "danios",
-          "guppy",
-          "otocinclus",
-          "rasbora",
-          "shrimp",
-          "snail",
-          "tetra"
-        ],
-        "decor": {
-          "plants": [
-            "grassy",
-            "sword",
-            "anubias",
-            "fern",
-            "moss",
-            "floating",
-            "rotala"
-          ],
-          "driftwood": [
-            "log"
-          ],
-          "coral": [],
-          "caves": [
-            "small",
-            "medium",
-            "large"
-          ],
-          "buildings": [
-            "shack"
-          ],
-          "misc": [
-            "couch"
-          ]
+        {
+            "scale": 1,
+            "id": "betta",
+            "name": "Betta Fish",
+            "gallons": 5,
+            "count": [
+                1,
+                1
+            ],
+            "friends": [
+                "corydoras",
+                "danios",
+                "guppy",
+                "otocinclus",
+                "rasbora",
+                "shrimp",
+                "snail",
+                "tetra"
+            ],
+            "decor": [
+                "Grassy Plant",
+                "Amazon Sword Plant",
+                "Anubias Plant",
+                "Java Fern",
+                "Java Moss",
+                "Floating Plant",
+                "Rotala Rotundifolia",
+                "Big Log",
+                "Small Cave",
+                "Medium Cave",
+                "Large Cave",
+                "Shack",
+                "Fish Couch"
+            ],
+            "substrate": [
+                "sand",
+                "lg_gravel"
+            ],
+            "diet": [
+                "flakes",
+                "pellets",
+                "bloodworms",
+                "shrimp",
+                "daphnia"
+            ],
+            "ph": [
+                6.5,
+                7.5
+            ],
+            "temp": [
+                74,
+                84
+            ],
+            "dkh": [
+                3,
+                5
+            ],
+            "salinity": [
+                0,
+                0
+            ],
+            "price": [
+                4,
+                10
+            ],
+            "description": ""
         },
-        "substrate": [
-          "sand",
-          "lg_gravel"
-        ],
-        "diet": [
-          "flakes",
-          "pellets",
-          "bloodworms",
-          "shrimp",
-          "daphnia"
-        ],
-        "ph": [
-          6.5,
-          7.5
-        ],
-        "temp": [
-          74,
-          84
-        ],
-        "dkh": [
-          3,
-          5
-        ],
-        "salinity": [
-          0,
-          0
-        ],
-        "price": [
-          4,
-          10
-        ],
-        "description": ""
-      },
         {
             "scale": 0.5,
             "id": "shrimp",
@@ -165,29 +146,20 @@
                 "snail",
                 "tetra"
             ],
-            "decor": {
-                "plants": [
-                    "grassy",
-                    "fern",
-                    "moss",
-                    "rotala"
-                ],
-                "driftwood": [
-                    "driftwood",
-                    "log",
-                    "tree"
-                ],
-                "coral": [],
-                "caves": [
-                    "small"
-                ],
-                "buildings": [],
-                "misc": []
-            },
+            "decor": [
+                "Grassy Plant",
+                "Java Fern",
+                "Java Moss",
+                "Rotala Rotundifolia",
+                "Driftwood",
+                "Big Log",
+                "Driftwood Tree",
+                "Small Cave"
+            ],
             "substrate": [
                 "sand",
                 "sm_gravel",
-                "blck_sand"
+                "sand"
             ],
             "diet": [
                 "algae",
@@ -229,20 +201,12 @@
                 "angelfish",
                 "gramma"
             ],
-            "decor": {
-                "plants": [],
-                "driftwood": [],
-                "coral": [],
-                "caves": [
-                    "small",
-                    "medium",
-                    "large"
-                ],
-                "buildings": [],
-                "misc": [
-                    "rock"
-                ]
-            },
+            "decor": [
+                "Small Cave",
+                "Medium Cave",
+                "Large Cave",
+                "Aquatic Rock"
+            ],
             "substrate": [
                 "sand"
             ],
@@ -290,25 +254,15 @@
                 "shrimp",
                 "snail"
             ],
-            "decor": {
-                "plants": [
-                    "anemone"
-                ],
-                "driftwood": [],
-                "coral": [
-                    "duncan",
-                    "toadstool",
-                    "torch"
-                ],
-                "caves": [
-                    "small",
-                    "medium"
-                ],
-                "buildings": [],
-                "misc": [
-                    "rock"
-                ]
-            },
+            "decor": [
+                "Anemone",
+                "Small Coral",
+                "Medium Coral",
+                "Swim-Through Coral",
+                "Small Cave",
+                "Medium Cave",
+                "Aquatic Rock"
+            ],
             "substrate": [
                 "sand"
             ],
@@ -340,75 +294,66 @@
             ],
             "description": ""
         },
-      {
-        "scale": 1.2,
-        "id": "corydoras",
-        "name": "Corydoras",
-        "gallons": 4,
-        "count": [
-          6,
-          99
-        ],
-        "friends": [
-          "angelfish",
-          "betta",
-          "danios",
-          "guppy",
-          "killifish",
-          "otocinclus",
-          "rasbora",
-          "shrimp",
-          "snail",
-          "tetra"
-        ],
-        "decor": {
-          "plants": [],
-          "driftwood": [
-            "driftwood",
-            "log"
-          ],
-          "coral": [],
-          "caves": [
-            "small",
-            "medium"
-          ],
-          "buildings": [],
-          "misc": [
-            "rock"
-          ]
+        {
+            "scale": 1.2,
+            "id": "corydoras",
+            "name": "Corydoras",
+            "gallons": 4,
+            "count": [
+                6,
+                99
+            ],
+            "friends": [
+                "angelfish",
+                "betta",
+                "danios",
+                "guppy",
+                "killifish",
+                "otocinclus",
+                "rasbora",
+                "shrimp",
+                "snail",
+                "tetra"
+            ],
+            "decor": [
+                "Driftwood",
+                "Big Log",
+                "Small Cave",
+                "Medium Cave",
+                "Aquatic Rock"
+            ],
+            "substrate": [
+                "sand"
+            ],
+            "diet": [
+                "bloodworms",
+                "shrimp",
+                "daphnia",
+                "veg",
+                "pellets"
+            ],
+            "ph": [
+                6.0,
+                7.5
+            ],
+            "temp": [
+                74,
+                80
+            ],
+            "dkh": [
+                2,
+                10
+            ],
+            "salinity": [
+                0,
+                0
+            ],
+            "price": [
+                5,
+                7
+            ],
+            "description": ""
         },
-        "substrate": [
-          "sand"
-        ],
-        "diet": [
-          "bloodworms",
-          "shrimp",
-          "daphnia",
-          "veg",
-          "pellets"
-        ],
-        "ph": [
-          6.0,
-          7.5
-        ],
-        "temp": [
-          74,
-          80
-        ],
-        "dkh": [
-          2,
-          10
-        ],
-        "salinity": [
-          0,
-          0
-        ],
-        "price": [
-          5,
-          7
-        ],
-        "description": ""
-      },
         {
             "scale": 0.5,
             "id": "danios",
@@ -428,24 +373,15 @@
                 "snail",
                 "tetra"
             ],
-            "decor": {
-                "plants": [
-                    "fern",
-                    "anubias",
-                    "moss"
-                ],
-                "driftwood": [
-                    "driftwood"
-                ],
-                "coral": [],
-                "caves": [
-                    "small",
-                    "medium",
-                    "large"
-                ],
-                "buildings": [],
-                "misc": []
-            },
+            "decor": [
+                "Java Fern",
+                "Anubias Plant",
+                "Java Moss",
+                "Driftwood",
+                "Small Cave",
+                "Medium Cave",
+                "Large Cave"
+            ],
             "substrate": [
                 "sand",
                 "sm_gravel"
@@ -491,22 +427,13 @@
             "friends": [
                 "snail"
             ],
-            "decor": {
-                "plants": [
-                    "fern",
-                    "anubias",
-                    "moss"
-                ],
-                "driftwood": [],
-                "coral": [],
-                "caves": [
-                    "large"
-                ],
-                "buildings": [],
-                "misc": [
-                    "rock"
-                ]
-            },
+            "decor": [
+                "Java Fern",
+                "Anubias Plant",
+                "Java Moss",
+                "Large Cave",
+                "Aquatic Rock"
+            ],
             "substrate": [
                 "sand"
             ],
@@ -557,28 +484,22 @@
                 "snail",
                 "tetra"
             ],
-            "decor": {
-                "plants": [
-                    "grass",
-                    "hornwort",
-                    "moss"
-                ],
-                "driftwood": [
-                    "driftwood"
-                ],
-                "coral": [],
-                "caves": [
-                    "small",
-                    "medium"
-                ],
-                "buildings": [],
-                "misc": [
-                    "rock"
-                ]
-            },
+            "decor": [
+                "Grassy Plant",
+                "Amazon Sword Plant",
+                "Anubias Plant",
+                "Java Fern",
+                "Java Moss",
+                "Floating Plant",
+                "Rotala Rotundifolia",
+                "Driftwood",
+                "Small Cave",
+                "Medium Cave",
+                "Aquatic Rock"
+            ],
             "substrate": [
                 "sand",
-                "blck_sand",
+                "sand",
                 "sm_gravel"
             ],
             "diet": [
@@ -622,19 +543,11 @@
                 "clownfish",
                 "snail"
             ],
-            "decor": {
-                "plants": [],
-                "driftwood": [],
-                "coral": [],
-                "caves": [
-                    "small",
-                    "medium"
-                ],
-                "buildings": [],
-                "misc": [
-                    "rock"
-                ]
-            },
+            "decor": [
+                "Small Cave",
+                "Medium Cave",
+                "Aquatic Rock"
+            ],
             "substrate": [
                 "sand"
             ],
@@ -685,23 +598,15 @@
                 "snail",
                 "tetra"
             ],
-            "decor": {
-                "plants": [
-                    "moss",
-                    "hornwort",
-                    "fern"
-                ],
-                "driftwood": [
-                    "driftwood"
-                ],
-                "coral": [],
-                "caves": [],
-                "buildings": [],
-                "misc": []
-            },
+            "decor": [
+                "Java Moss",
+                "hornwort",
+                "Java Fern",
+                "Driftwood"
+            ],
             "substrate": [
                 "sand",
-                "blck_sand",
+                "sand",
                 "sm_gravel",
                 "lg_gravel"
             ],
@@ -755,26 +660,18 @@
                 "snail",
                 "tetra"
             ],
-            "decor": {
-                "plants": [
-                    "anubias",
-                    "moss",
-                    "fern",
-                    "sword"
-                ],
-                "driftwood": [
-                    "driftwood",
-                    "log"
-                ],
-                "coral": [],
-                "caves": [],
-                "buildings": [],
-                "misc": []
-            },
+            "decor": [
+                "Anubias Plant",
+                "Java Moss",
+                "Java Fern",
+                "Amazon Sword Plant",
+                "Driftwood",
+                "Big Log"
+            ],
             "substrate": [
                 "sand",
                 "sm_gravel",
-                "blck_sand"
+                "sand"
             ],
             "diet": [
                 "flakes",
@@ -830,23 +727,14 @@
                 "snail",
                 "tetra"
             ],
-            "decor": {
-                "plants": [
-                    "fern",
-                    "anubias",
-                    "moss",
-                    "duckweed"
-                ],
-                "driftwood": [
-                    "driftwood"
-                ],
-                "coral": [],
-                "caves": [],
-                "buildings": [],
-                "misc": [
-                    "rock"
-                ]
-            },
+            "decor": [
+                "Java Fern",
+                "Anubias Plant",
+                "Java Moss",
+                "Pond Weed",
+                "Driftwood",
+                "Aquatic Rock"
+            ],
             "substrate": [
                 "sand"
             ],
@@ -895,20 +783,12 @@
                 "snail",
                 "tetra"
             ],
-            "decor": {
-                "plants": [
-                    "moss",
-                    "anubias",
-                    "fern"
-                ],
-                "driftwood": [
-                    "driftwood"
-                ],
-                "coral": [],
-                "caves": [],
-                "buildings": [],
-                "misc": []
-            },
+            "decor": [
+                "Java Moss",
+                "Anubias Plant",
+                "Java Fern",
+                "Driftwood"
+            ],
             "substrate": [
                 "sand",
                 "sm_gravel"
@@ -957,26 +837,17 @@
                 "snail",
                 "tetra"
             ],
-            "decor": {
-                "plants": [
-                    "fern",
-                    "moss",
-                    "duckweed"
-                ],
-                "driftwood": [
-                    "driftwood"
-                ],
-                "coral": [],
-                "caves": [],
-                "buildings": [],
-                "misc": [
-                    "rock"
-                ]
-            },
+            "decor": [
+                "Java Fern",
+                "Java Moss",
+                "Pond Weed",
+                "Driftwood",
+                "Aquatic Rock"
+            ],
             "substrate": [
                 "sand",
                 "sm_gravel",
-                "blck_sand"
+                "sand"
             ],
             "diet": [
                 "flakes",
@@ -1022,22 +893,13 @@
                 "starfish",
                 "snail"
             ],
-            "decor": {
-                "plants": [],
-                "driftwood": [
-                    "tree"
-                ],
-                "coral": [],
-                "caves": [
-                    "small",
-                    "medium",
-                    "large"
-                ],
-                "buildings": [],
-                "misc": [
-                    "rock"
-                ]
-            },
+            "decor": [
+                "Driftwood Tree",
+                "Small Cave",
+                "Medium Cave",
+                "Large Cave",
+                "Aquatic Rock"
+            ],
             "substrate": [
                 "sand"
             ],
@@ -1070,202 +932,174 @@
         }
     ],
     "decor": [
-            {
-                "id": "grassy",
-                "name": "Grassy Plant",
-                "price": 8.99,
-                "scale": 1.2,
-                "description": "Creates natural hiding spots for fish, enhance oxygen levels, and offer an attractive look for aquariums."
-            },
-            {
-                "id": "sword",
-                "name": "Amazon Sword Plant",
-                "price": 9.99,
-                "scale": 1.5,
-                "description": "Hardy, beginner-friendly plant, perfect as a centerpiece or background plant."
-            },
-            {
-                "id": "anubias",
-                "name": "Anubias Plant",
-                "price": 10.99,
-                "scale": 1.5,
-                "description": "Hardy, slow-growing, low-maintenance plant popular for its dark green leaves."
-            },
-            {
-                "id": "fern",
-                "name": "Java Fern",
-                "price": 8.49,
-                "scale": 1,
-                "description": "Hardy, slow-growing, low-maintenance plant popular for its dark green, leathery leaves."
-            },
-            {
-                "id": "moss",
-                "name": "Java Moss",
-                "price": 9.99,
-                "scale": 0.5,
-                "description": "Hardy, fast-growing, low-maintenance moss ideal for beginners."
-            },
-            {
-                "id": "pond",
-                "name": "Pond Weed",
-                "price": 8.99,
-                "scale": 1.5,
-                "description": "Hardy, fast-growing, plants used for oxygenation, algae control, and providing shelter for critters."
-
-            },
-            {
-                "id": "floating",
-                "name": "Floating Plant",
-                "price": 7.49,
-                "scale": 1.5,
-                "description": "Fast-growing, surface-dwelling plants that offer natural filtration, shading, and shelter."
-            },
-            {
-                "id": "rotala",
-                "name": "Rotala Rotundifolia",
-                "price": 8.49,
-                "scale":  1.5,
-                "description": "Popular, fast-growing, and versatile stem plant perfect for aquascaping, offering soft texture and vibrant colors from green to deep red."
-            },
-            {
-                "id": "driftwood",
-                "name": "Driftwood",
-                "price": 10.99,
-                "scale": 1.2,
-                "description": "Natural, water-matured hardwood used for decoration and functionality."
-            },
-            {
-                "id": "log",
-                "name": "Big Log",
-                "price": 17.99,
-                "scale": 1.8,
-                "description": "Sunken tree look-alike offering natural-looking and hollow shelters for critters to hide, play, and sleep in."
-
-            },
-            {
-                "id": "tree",
-                "name": "Driftwood Tree",
-                "price": "25.99",
-                "scale": 2,
-                "description": "Natural wood designed to mimic underwater trees for decoration and functionality."
-            },
-            {
-                "id": "small",
-                "name": "Small Coral",
-                "price": 10.59,
-                "scale": 0.5,
-                "description": "Corals provide essential habitat, shelter, and security for critters while improving water quality."
-            },
-            {
-                "id": "medium",
-                "name": "Medium Coral",
-                "price": 13.99,
-                "scale": 1.2,
-                "description": "Corals provide essential habitat, shelter, and security for critters while improving water quality."
-            },
-            {
-                "id": "swimmable",
-                "name": "Swim-Through Coral",
-                "price": 23.99,
-                "scale": 2,
-                "description": "A multi-coral structure that allows critters to explore, hide, and sleep."
-            },
-            {
-                "id": "anenome",
-                "name": "Anenome",
-                "price": 50.99,
-                "scale": 0.5,
-                "description": "Popular, photosynthetic cnidarians that provide vibrant colors and, often, a home for clownfish."
-            },
-            {
-                "id": "small",
-                "name": "Small Cave",
-                "price": 12.99,
-                "scale": 1,
-                "description": "Essential decorations designed to offer security and reduce stress."
-            },
-            {
-                "id": "medium",
-                "name": "Medium Cave",
-                "price": 15.99,
-                "scale": 1.5,
-                "description": "Essential decorations designed to offer security and reduce stress."
-            },
-            {
-                "id": "large",
-                "name": "Large Cave",
-                "price": 21.99,
-                "scale": 2,
-                "description": "Essential decorations designed to offer security and reduce stress."
-            },
-            {
-                "id": "squidward",
-                "name": "Squid's House",
-                "price": 17.99,
-                "scale": 1.5,
-                "description": "Beautiful decor that provides shelter and hiding places for critters to help reduce stress."
-            },
-            {
-                "id": "spongebob",
-                "name": "Sponge's House",
-                "price": 20.99,
-                "scale": 1.5,
-                "description": "Beautiful decor that provides shelter and hiding places for critters to help reduce stress."
-            },
-            {
-                "id": "shack",
-                "name": "Shack",
-                "price": 12.99,
-                "scale": 1.5,
-                "description": "Provide both aesthetic appeal and functional, cozy hiding spots for critters to reduce stress."
-            },
-            {
-                "id": "rock",
-                "name": "Aquatic Rock",
-                "price": 7.99,
-                "scale": 0.5,
-                "description": "Provide both aesthetic appeal and functional, cozy hiding spots for critters to reduce stress."
-            },
-            {
-                "id": "couch",
-                "name": "Fish Couch",
-                "price": 16.95,
-                "scale": 0.5,
-                "description": "Adorable decor that provides a homey feel and creates a cozy spot for critters."
-            },
-            {
-                "id": "squidward",
-                "name": "Squid Figure",
-                "price": 14.99,
-                "scale": 0.7,
-                "description": "Unique decor that the critters will love."
-            },
-            {
-                "id": "turtle_statue",
-                "name": "Turtle Statue",
-                "price": 11.99,
-                "scale": 0.5,
-                "description": "Unique decor that the critters will love."
-            },
-            {
-                "id": "fish_statue",
-                "name": "Fish Statue",
-                "price": 10.99,
-                "scale": 0.5,
-                "description": "Unique decor that the critters will love."
-            }
-        ],
+        {
+            "name": "Grassy Plant",
+            "price": 8.99,
+            "scale": 1.2,
+            "description": "Creates natural hiding spots for fish, enhance oxygen levels, and offer an attractive look for aquariums."
+        },
+        {
+            "name": "Amazon Sword Plant",
+            "price": 9.99,
+            "scale": 1.5,
+            "description": "Hardy, beginner-friendly plant, perfect as a centerpiece or background plant."
+        },
+        {
+            "name": "Anubias Plant",
+            "price": 10.99,
+            "scale": 1.5,
+            "description": "Hardy, slow-growing, low-maintenance plant popular for its dark green leaves."
+        },
+        {
+            "name": "Java Fern",
+            "price": 8.49,
+            "scale": 1,
+            "description": "Hardy, slow-growing, low-maintenance plant popular for its dark green, leathery leaves."
+        },
+        {
+            "name": "Java Moss",
+            "price": 9.99,
+            "scale": 0.5,
+            "description": "Hardy, fast-growing, low-maintenance moss ideal for beginners."
+        },
+        {
+            "name": "Pond Weed",
+            "price": 8.99,
+            "scale": 1.5,
+            "description": "Hardy, fast-growing, plants used for oxygenation, algae control, and providing shelter for critters."
+        },
+        {
+            "name": "Floating Plant",
+            "price": 7.49,
+            "scale": 1.5,
+            "description": "Fast-growing, surface-dwelling plants that offer natural filtration, shading, and shelter."
+        },
+        {
+            "name": "Rotala Rotundifolia",
+            "price": 8.49,
+            "scale": 1.5,
+            "description": "Popular, fast-growing, and versatile stem plant perfect for aquascaping, offering soft texture and vibrant colors from green to deep red."
+        },
+        {
+            "name": "Driftwood",
+            "price": 10.99,
+            "scale": 1.2,
+            "description": "Natural, water-matured hardwood used for decoration and functionality."
+        },
+        {
+            "name": "Big Log",
+            "price": 17.99,
+            "scale": 1.8,
+            "description": "Sunken tree look-alike offering natural-looking and hollow shelters for critters to hide, play, and sleep in."
+        },
+        {
+            "name": "Driftwood Tree",
+            "price": "25.99",
+            "scale": 2,
+            "description": "Natural wood designed to mimic underwater trees for decoration and functionality."
+        },
+        {
+            "name": "Small Coral",
+            "price": 10.59,
+            "scale": 0.5,
+            "description": "Corals provide essential habitat, shelter, and security for critters while improving water quality."
+        },
+        {
+            "name": "Medium Coral",
+            "price": 13.99,
+            "scale": 1.2,
+            "description": "Corals provide essential habitat, shelter, and security for critters while improving water quality."
+        },
+        {
+            "name": "Swim-Through Coral",
+            "price": 23.99,
+            "scale": 2,
+            "description": "A multi-coral structure that allows critters to explore, hide, and sleep."
+        },
+        {
+            "name": "Anemone",
+            "price": 50.99,
+            "scale": 0.5,
+            "description": "Popular, photosynthetic cnidarians that provide vibrant colors and, often, a home for clownfish."
+        },
+        {
+            "name": "Small Cave",
+            "price": 12.99,
+            "scale": 1,
+            "description": "Essential decorations designed to offer security and reduce stress."
+        },
+        {
+            "name": "Medium Cave",
+            "price": 15.99,
+            "scale": 1.5,
+            "description": "Essential decorations designed to offer security and reduce stress."
+        },
+        {
+            "name": "Large Cave",
+            "price": 21.99,
+            "scale": 2,
+            "description": "Essential decorations designed to offer security and reduce stress."
+        },
+        {
+            "name": "Squid's House",
+            "price": 17.99,
+            "scale": 1.5,
+            "description": "Beautiful decor that provides shelter and hiding places for critters to help reduce stress."
+        },
+        {
+            "name": "Sponge's House",
+            "price": 20.99,
+            "scale": 1.5,
+            "description": "Beautiful decor that provides shelter and hiding places for critters to help reduce stress."
+        },
+        {
+            "name": "Shack",
+            "price": 12.99,
+            "scale": 1.5,
+            "description": "Provide both aesthetic appeal and functional, cozy hiding spots for critters to reduce stress."
+        },
+        {
+            "name": "Aquatic Rock",
+            "price": 7.99,
+            "scale": 0.5,
+            "description": "Provide both aesthetic appeal and functional, cozy hiding spots for critters to reduce stress."
+        },
+        {
+            "name": "Fish Couch",
+            "price": 16.95,
+            "scale": 0.5,
+            "description": "Adorable decor that provides a homey feel and creates a cozy spot for critters."
+        },
+        {
+            "name": "Squid Figure",
+            "price": 14.99,
+            "scale": 0.7,
+            "description": "Unique decor that the critters will love."
+        },
+        {
+            "name": "Turtle Statue",
+            "price": 11.99,
+            "scale": 0.5,
+            "description": "Unique decor that the critters will love."
+        },
+        {
+            "name": "Fish Statue",
+            "price": 10.99,
+            "scale": 0.5,
+            "description": "Unique decor that the critters will love."
+        }
+    ],
     "substrate": [
         {
             "id": "sm_gravel",
             "name": "Small Gravel",
-            "description": "The small rocks help hold plants, and smaller fish can't swallow it.",
+            "description": "The small Aquatic Rocks help hold plants, and smaller fish can't swallow it.",
             "price": 1
         },
         {
             "id": "lg_gravel",
             "name": "Large Gravel",
-            "description": "The small rocks help hold plants, and many fish can't swallow it.",
+            "description": "The small Aquatic Rocks help hold plants, and many fish can't swallow it.",
             "price": 1.8
         },
         {
@@ -1285,12 +1119,6 @@
             "name": "Soil / Clay",
             "description": "Soil and clay are great for plants, but it makes the water cloudy at first.",
             "price": 3.6
-        },
-        {
-            "id": "plant",
-            "name": "Planted Substrate",
-            "description": "This is specifically made to help plants grow.",
-            "price": 2.5
         }
     ],
     "diet": [

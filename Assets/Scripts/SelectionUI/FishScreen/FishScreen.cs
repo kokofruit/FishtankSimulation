@@ -139,19 +139,18 @@ public class FishScreen : MonoBehaviour
     void DisplayFish(JSONReader.Fish fish)
     {
         _displayTitle.SetText(fish.name);
-        Sprite sprite = Resources.Load<Sprite>("Images/fish/" + fish.id);
+        Sprite sprite = Resources.Load<Sprite>("Images/Shop/Fish/" + fish.id);
         _displayImage.sprite = sprite;
-        _displayImage.transform.localScale = new Vector3(1, sprite.rect.height/sprite.rect.width, 1);
         _displayDesc.SetText(fish.description);
     }
 
     void penis() {
-        Debug.Log("dom");
+        // Debug.Log("dom");
         foreach (KeyValuePair<JSONReader.Fish,int> benson in SimulationManager.instance.fishInv)
         {
-            Debug.Log("domenic");
+            // Debug.Log("domenic");
             if ((benson.Key.count[0]>benson.Value) || (benson.Key.count[1] < benson.Value)) {
-                Debug.Log("domenic cannela");
+                // Debug.Log("domenic cannela");
                 _popUpScreen.live(
                     benson.Key.name+
                     " requires that it must be in a school of between "

@@ -3,18 +3,7 @@ using UnityEngine;
 
 public class JSONReader : MonoBehaviour
 {
-    [Serializable]
-    public class FishDecor
-    {
-        public string[] plants;
-        public string[] driftwood;
-        public string[] coral;
-        public string[] caves;
-        public string[] buildings;
-        public string[] misc;
-    }
-
-    [Serializable]
+        [Serializable]
     public class Fish
     {
         public string id;
@@ -22,7 +11,7 @@ public class JSONReader : MonoBehaviour
         public int gallons;
         public int[] count;
         public string[] friends;
-        public FishDecor decor;
+        public string[] decor;
         public string[] substrate;
         public string[] diet;
         public float[] ph;

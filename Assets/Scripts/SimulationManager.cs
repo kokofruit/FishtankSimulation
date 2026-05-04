@@ -24,7 +24,6 @@ public class SimulationManager : MonoBehaviour
     // the screen index
     private int _screenIndex = 0;
 
-
     void Awake()
     {
         // Set the singleton instance
